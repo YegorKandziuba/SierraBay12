@@ -22,6 +22,8 @@
 	var/attack_cooldown = DEFAULT_WEAPON_COOLDOWN
 	var/melee_accuracy_bonus = 0
 
+	var/equip_slot = slot_none	//What slot this item was last equipped into
+
 	var/heat_protection = 0 //flags which determine which body parts are protected from heat. Use the HEAD, UPPER_TORSO, LOWER_TORSO, etc. flags. See setup.dm
 	var/cold_protection = 0 //flags which determine which body parts are protected from cold. Use the HEAD, UPPER_TORSO, LOWER_TORSO, etc. flags. See setup.dm
 	var/max_heat_protection_temperature //Set this variable to determine up to which temperature (IN KELVIN) the item protects against heat damage. Keep at null to disable protection. Only protects areas set by heat_protection flags
@@ -56,6 +58,8 @@
 	var/obj/item/device/uplink/hidden_uplink = null // All items can have an uplink hidden inside, just remember to add the triggers.
 	var/zoomdevicename = null //name used for message when binoculars/scope is used
 	var/zoom = 0 //1 if item is actively being used to zoom. For scoped guns and binoculars.
+
+	var/global/list/unworn_slots = list(slot_l_hand, slot_r_hand, slot_l_store)
 
 	var/base_parry_chance	// Will allow weapon to parry melee attacks if non-zero
 	var/icon_override = null  //Used to override hardcoded clothing dmis in human clothing proc.
@@ -363,6 +367,7 @@ note this isn't called during the initial dressing of a player
 */
 /obj/item/proc/equipped(mob/user, slot)
 	hud_layerise()
+	equip_slot = slot
 	if(user.client)	user.client.screen |= src
 	if(user.pulling == src)
 		user.stop_pulling()
@@ -911,6 +916,41 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 /obj/item/lava_act()
 	. = (!throwing) ? ..() : FALSE
+
+/obj/item/proc/is_equipped()
+	if (ismob(loc))
+		return (equip_slot != slot_none)
+
+
+/obj/item/proc/is_worn()
+	//If equip_slot is zero then it has never been equipped
+	if (equip_slot == slot_none)
+		return FALSE
+
+	if (ismob(loc))
+		return !(equip_slot in unworn_slots)
+
+
+/obj/item/proc/is_held()
+	//If equip_slot is zero then it has never been equipped
+	if (equip_slot == slot_none)
+		return FALSE
+
+	if (ismob(loc))
+		return equip_slot in list(slot_l_hand, slot_r_hand)
+
+
+/obj/item/proc/get_equip_slot()
+	if (ismob(loc))
+		return equip_slot
+	else
+		return slot_none
+
+
+/obj/item/proc/update_wear_icon()
+	if (ishuman(loc))
+		var/mob/living/carbon/human/H = loc
+		H.update_slot(equip_slot)
 
 /obj/item/proc/has_embedded()
 	return

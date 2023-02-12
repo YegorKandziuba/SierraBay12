@@ -147,6 +147,7 @@
 	#include "../../mods/quantum_mechanic/_quantum_mechanic.dme"
 	#include "../../mods/machinery/atmos_ret_field/_atm_ret_field.dme"
 	#include "../../mods/mortar/mortar.dme"
+	#include "../../mods/rigs/vintage_rig/vintage_rig.dme"
 
 	#include "../../packs/infinity/_pack.dm"
 

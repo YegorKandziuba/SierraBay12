@@ -37,6 +37,8 @@
 	var/equipment_overlay_icon = 'icons/mob/onmob/onmob_rig_modules.dmi'
 	var/hides_uniform = 1 	//used to determinate if uniform should be visible whenever the suit is sealed or not
 
+	var/desired_slot = slot_back
+
 	var/interface_path = "hardsuit.tmpl"
 	var/ai_interface_path = "hardsuit.tmpl"
 	var/interface_title = "Hardsuit Controller"
@@ -720,7 +722,8 @@
 			to_chat(module.integrated_ai, "[message]")
 			. = 1
 
-/obj/item/rig/equipped(mob/living/carbon/human/M)
+/obj/item/rig/equipped(mob/living/carbon/human/M, slot)
+	var/slot_before = equip_slot
 	..()
 
 	if(seal_delay > 0 && istype(M) && M.back == src)
@@ -743,6 +746,12 @@
 		wearer = M
 		wearer.wearing_rig = src
 		update_icon()
+
+	for(var/obj/item/rig_module/module in installed_modules)
+		if (slot == desired_slot)	//If we've been placed into our desired slot, call equipped on modules
+			module.rig_equipped(M, slot)
+		else if (slot_before == desired_slot)	//If we've been removed from our desired slot, call unequipped on modules
+			module.rig_unequipped(M, slot)
 
 /obj/item/rig/proc/toggle_piece(piece, mob/initiator, deploy_mode)
 

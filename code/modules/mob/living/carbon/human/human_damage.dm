@@ -1,6 +1,8 @@
 //Updates the mob's health from organs and mob damage variables
 /mob/living/carbon/human/updatehealth()
 
+	GLOB.updatehealth_event.raise_event(src)
+
 	if(status_flags & GODMODE)
 		health = maxHealth
 		set_stat(CONSCIOUS)
@@ -460,3 +462,23 @@ This function restores all organs.
 	if(stat == UNCONSCIOUS)
 		traumatic_shock *= 0.6
 	return max(0,traumatic_shock)
+
+
+/mob/living/carbon/human/healthpercent()
+	var/list/measures = list()
+
+	//This measures braindamage, the final and most important measure
+	var/working_health = clamp(health, 0, maxHealth)
+	measures += ((working_health / maxHealth) * 100)
+
+
+	//Direct damage + Pain
+	var/remaining_physical_health = maxHealth - getFireLoss() - getBruteLoss() - getHalLoss()
+	measures += ((remaining_physical_health / maxHealth) * 100)
+
+	var/lowest = 100
+	for (var/measure in measures)
+		if (measure < lowest)
+			lowest = measure
+
+	return lowest

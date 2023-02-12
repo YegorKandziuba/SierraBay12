@@ -211,6 +211,12 @@ default behaviour is:
 	else
 		health = maxHealth - getOxyLoss() - getToxLoss() - getFireLoss() - getBruteLoss() - getCloneLoss() - getHalLoss()
 
+	GLOB.updatehealth_event.raise_event(src)
+
+
+/mob/living/proc/healthpercent()
+	var/working_health = clamp(health, 0, maxHealth)
+	return ((working_health / maxHealth) * 100)
 
 //This proc is used for mobs which are affected by pressure to calculate the amount of pressure that actually
 //affects them once clothing is factored in. ~Errorage
