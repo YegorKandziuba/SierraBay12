@@ -154,6 +154,30 @@
 /obj/structure/wall_frame/on_death()
 	dismantle()
 
+/obj/structure/wall_frame/bullet_act(var/obj/item/projectile/Proj)
+	var/proj_damage = Proj.get_structure_damage()
+	var/damage = min(proj_damage, 100)
+	take_damage(damage)
+	return
+
+/obj/structure/wall_frame/hitby(AM as mob|obj, var/datum/thrownthing/TT)
+	..()
+	var/tforce = 0
+	if(ismob(AM)) // All mobs have a multiplier and a size according to mob_defines.dm
+		var/mob/I = AM
+		tforce = I.mob_size * (TT.speed/THROWFORCE_SPEED_DIVISOR)
+	else
+		var/obj/O = AM
+		tforce = O.throwforce * (TT.speed/THROWFORCE_SPEED_DIVISOR)
+	if (tforce < 15)
+		return
+	take_damage(tforce)
+
+/obj/structure/wall_frame/take_damage(damage)
+	health -= damage
+	if(health <= 0)
+		dismantle()
+
 /obj/structure/wall_frame/proc/dismantle()
 	new /obj/item/stack/material/steel(get_turf(src), 3)
 	qdel(src)
@@ -180,3 +204,18 @@
 
 /obj/structure/wall_frame/hull/verne
 	paint_color = COLOR_GUNMETAL
+
+/obj/structure/wall_frame/osmium
+	paint_color = "#9bc6f2"
+
+/obj/structure/wall_frame/voxalloy
+	paint_color = "#6c7364"
+
+/obj/structure/wall_frame/prepainted
+	paint_color = COLOR_WALL_GUNMETAL
+
+/obj/structure/wall_frame/wood
+	paint_color = "#78523b"
+
+/obj/structure/wall_frame/crystal
+	paint_color = COLOR_PALE_BLUE_GRAY
