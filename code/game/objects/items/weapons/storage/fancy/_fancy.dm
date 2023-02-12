@@ -10,6 +10,9 @@
 	/// A cached count of things currently in this container that are not of key_type.
 	var/other_type_count
 
+	drop_sound = 'sound/items/drop/cardboardbox.ogg'
+	pickup_sound = 'sound/items/pickup/cardboardbox.ogg'
+	use_sound = 'sound/items/storage/box.ogg'
 
 /obj/item/storage/fancy/Initialize()
 	. = ..()
