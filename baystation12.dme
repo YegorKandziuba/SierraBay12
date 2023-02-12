@@ -386,6 +386,7 @@
 #include "code\datums\observation\supermatter_status.dm"
 #include "code\datums\observation\turf_changed.dm"
 #include "code\datums\observation\unequipped.dm"
+#include "code\datums\observation\updatehealth.dm"
 #include "code\datums\observation\zone_selected.dm"
 #include "code\datums\observation\~cleanup.dm"
 #include "code\datums\outfits\_defines.dm"
