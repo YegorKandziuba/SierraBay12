@@ -17,7 +17,7 @@
 //	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,/obj/item/storage/box/donut = 2)
 
 /obj/machinery/vending
-	var/restockable = 1
+	var/restockable = TRUE
 
 /obj/machinery/vending/clothing
 	name = "ClothesMate" //renamed to make the slogan rhyme
@@ -25,7 +25,6 @@
 	desc = "A clothing vending machine"
 	icon_state = "clothes"
 	product_slogans = "Dress for success!;Prepare to look swagalicious!;Look at all this free swag!;Why leave style up to fate? Use the ClothesMate!"
-	vend_delay = 15
 	vend_reply = "Thank you for using the ClothesMate!"
 	products = list(/obj/item/clothing/under/pj/red = 1, /obj/item/clothing/under/pj/blue = 1,
 					/obj/item/clothing/under/scratch = 1, /obj/item/clothing/under/sl_suit = 1, /obj/item/clothing/under/waiter = 1,
@@ -40,37 +39,7 @@
 					/obj/item/clothing/under/casual_pants/baggy/camo = 3, /obj/item/clothing/under/syndicate/combat = 3, /obj/item/clothing/under/tactical = 3,
 					/obj/item/clothing/mask/balaclava = 3, /obj/item/clothing/mask/balaclava/tactical = 3,
 					/obj/item/clothing/accessory/armband/engine = 3, /obj/item/clothing/accessory/armband/med = 3, /obj/item/clothing/accessory/armband = 3)
-/*
-/obj/machinery/vending/security_clothes
-	name = "Security clothes"
-	desc = "All our clothes - it is your clothes!"
-	icon = 'infinity/icons/obj/vending.dmi'
-	icon_state = "sec"
-	icon_deny = "sec-deny"
-	vend_delay = 15
-	req_access = list(access_security)
-	products = list(/obj/item/clothing/head/soft/sec = 5,
-					/obj/item/clothing/head/soft/sec/corp = 5,
-					/obj/item/clothing/head/beret/sec/corporate/officer = 5,
-					/obj/item/clothing/head/beret/sec/navy/officer = 5,
-					/obj/item/clothing/under/rank/security = 5,
-					/obj/item/clothing/under/rank/security2 = 5,
-					/obj/item/clothing/under/rank/security/corp =  5,
-					/obj/item/storage/backpack/dufflebag/sec = 2,
-					/obj/item/storage/backpack/satchel_sec = 3,
-					/obj/item/storage/backpack/security = 3,
-					/obj/item/clothing/accessory/armband = 7,
-					/obj/item/clothing/accessory/badge/holo = 5,
-					/obj/item/clothing/accessory/badge/holo/cord = 5,
-					/obj/item/clothing/accessory/storage/holster/thigh = 5,
-					/obj/item/clothing/accessory/storage/black_vest = 5,
-					/obj/item/clothing/shoes/jackboots = 5,
-					/obj/item/clothing/shoes/jackboots/unathi = 3)
-	premium = list(/obj/item/clothing/under/tactical = 1,
-					/obj/item/clothing/under/rank/guard = 1,
-					/obj/item/clothing/under/rank/security = 1,
-					/obj/item/clothing/glasses/hud/security = 1)
-*/
+
 /obj/machinery/vending/cola/small
 	name = "Robust Softdrinks"
 	desc = "A softdrink vendor provided by Robust Industries, LLC."
@@ -102,7 +71,6 @@
 /obj/machinery/vending/cigarette/small
 	name = "Cigarette machine"
 	desc = "A specialized vending machine designed to contribute to your slow and uncomfortable death."
-	vend_delay = 21
 	density = FALSE
 	icon = 'maps/sierra/icons/obj/vending.dmi'
 	icon_state = "Cigs_Machine_small"
@@ -156,7 +124,6 @@
 		/obj/item/gun/projectile/heavysniper = 1,
 		/obj/item/ammo_casing/shell = 2,
 	)
-	vend_delay = 10
 
 /obj/machinery/vending/parts
 	name = "Denitz-Spares Vendor"
@@ -195,7 +162,6 @@
 
 /obj/machinery/vending/armoryvend
 	density = FALSE
-	vend_delay = 10
 	icon = 'maps/sierra/icons/obj/vending.dmi'
 	icon_state = "thundervendor"
 	req_access = list(access_security)
