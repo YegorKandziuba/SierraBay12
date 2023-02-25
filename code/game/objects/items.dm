@@ -3,6 +3,7 @@
 	icon = 'icons/obj/items.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	mouse_drag_pointer = MOUSE_ACTIVE_POINTER
+	blocks_emissive = EMISSIVE_BLOCK_GENERIC
 
 	var/image/blood_overlay = null //this saves our blood splatter overlay, which will be processed not to go over the edges of the sprite
 	var/randpixel = 6
@@ -368,12 +369,12 @@ note this isn't called during the initial dressing of a player
 		user.stop_pulling()
 	if((slot_flags & slot))
 		if(equip_sound)
-			playsound(src, equip_sound, 50)
+			playsound(src, equip_sound, 25)
 		else if(drop_sound)
-			playsound(src, drop_sound, 50)
+			playsound(src, drop_sound, 25)
 	else if(slot == slot_l_hand || slot == slot_r_hand)
 		if(pickup_sound)
-			playsound(src, pickup_sound, 50)
+			playsound(src, pickup_sound, 25)
 	var/mob/M = loc
 	if(!istype(M))
 		return
