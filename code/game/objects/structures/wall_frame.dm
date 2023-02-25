@@ -154,34 +154,6 @@
 /obj/structure/wall_frame/on_death()
 	dismantle()
 
-/obj/structure/wall_frame/bullet_act(var/obj/item/projectile/Proj)
-	var/proj_damage = Proj.get_structure_damage()
-	var/damage = min(proj_damage, 100)
-	take_damage(damage)
-	return
-
-/obj/structure/wall_frame/hitby(AM as mob|obj, var/datum/thrownthing/TT)
-	..()
-	var/tforce = 0
-	if(ismob(AM)) // All mobs have a multiplier and a size according to mob_defines.dm
-		var/mob/I = AM
-		tforce = I.mob_size * (TT.speed/THROWFORCE_SPEED_DIVISOR)
-	else
-		var/obj/O = AM
-		tforce = O.throwforce * (TT.speed/THROWFORCE_SPEED_DIVISOR)
-	if (tforce < 15)
-		return
-	take_damage(tforce)
-
-/obj/structure/wall_frame/take_damage(damage)
-	health -= damage
-	if(health <= 0)
-		dismantle()
-
-/obj/structure/wall_frame/proc/dismantle()
-	new /obj/item/stack/material/steel(get_turf(src), 3)
-	qdel(src)
-
 /obj/structure/wall_frame/get_color()
 	return paint_color
 
