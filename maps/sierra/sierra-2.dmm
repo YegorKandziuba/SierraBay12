@@ -6926,7 +6926,7 @@
 "anp" = (
 /obj/machinery/papershredder,
 /obj/machinery/newscaster{
-	pixel_y = 30
+	pixel_y = 32
 	},
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -14204,7 +14204,7 @@
 "azR" = (
 /obj/structure/table/steel,
 /obj/machinery/newscaster{
-	pixel_y = 30
+	pixel_y = 32
 	},
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -22511,7 +22511,7 @@
 	dir = 4
 	},
 /obj/machinery/newscaster{
-	pixel_y = 30
+	pixel_y = 32
 	},
 /obj/item/storage/fancy/crayons,
 /obj/item/clothing/mask/gas/sexymime,
@@ -24150,7 +24150,7 @@
 	temperature = 343.15
 	},
 /obj/machinery/newscaster{
-	pixel_y = 30
+	pixel_y = 32
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/sauna)
@@ -35898,7 +35898,7 @@
 	dir = 8
 	},
 /obj/machinery/newscaster{
-	pixel_y = 30
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/sleep/cryo)
@@ -37188,15 +37188,14 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	dir = 8
-	},
-/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/bridge/nano)
@@ -37792,7 +37791,7 @@
 	},
 /obj/effect/floor_decal/techfloor/corner,
 /obj/machinery/newscaster{
-	pixel_y = 30
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/sleep/cryo)
