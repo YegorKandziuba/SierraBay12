@@ -154,6 +154,10 @@
 /obj/structure/wall_frame/on_death()
 	dismantle()
 
+/obj/structure/wall_frame/proc/dismantle()
+	new /obj/item/stack/material/steel(get_turf(src), 3)
+	qdel(src)
+
 /obj/structure/wall_frame/get_color()
 	return paint_color
 
