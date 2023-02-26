@@ -75,12 +75,12 @@
 	icon = 'maps/sierra/icons/obj/vending.dmi'
 	icon_state = "Cigs_Machine_small"
 	icon_vend = "Cigs_Machine_small-vend"
-	products = list(/obj/item/storage/fancy/cigarettes = 2,
-					/obj/item/storage/fancy/cigarettes/luckystars = 2,
-					/obj/item/storage/fancy/cigarettes/jerichos = 2,
-					/obj/item/storage/fancy/cigarettes/menthols = 2,
-					/obj/item/storage/fancy/cigarettes/carcinomas = 2,
-					/obj/item/storage/fancy/cigarettes/professionals = 2,
+	products = list(/obj/item/storage/fancy/smokable = 2,
+					/obj/item/storage/fancy/smokable/luckystars = 2,
+					/obj/item/storage/fancy/smokable/jerichos = 2,
+					/obj/item/storage/fancy/smokable/menthols = 2,
+					/obj/item/storage/fancy/smokable/carcinomas = 2,
+					/obj/item/storage/fancy/smokable/professionals = 2,
 					/obj/item/storage/box/matches = 10,
 					/obj/item/flame/lighter/random = 4,
 					/obj/item/clothing/mask/smokable/ecig/util = 1,
