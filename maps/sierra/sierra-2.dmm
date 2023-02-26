@@ -3153,7 +3153,7 @@
 /obj/machinery/embedded_controller/radio/airlock/advanced_airlock_controller{
 	id_tag = "engine_airlock";
 	name = "Engine Room Airlock Controlls";
-	pixel_x = -20;
+	pixel_x = 7;
 	pixel_y = 24;
 	req_access = list("ACCESS_ENGINE_EQUIP")
 	},
