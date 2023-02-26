@@ -36053,12 +36053,11 @@
 	},
 /obj/structure/table/standard,
 /obj/machinery/reagent_temperature/cooler,
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "iaaright"
-	},
-/obj/structure/window/reinforced/polarized{
+/obj/structure/window/reinforced{
 	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
@@ -38140,11 +38139,10 @@
 	},
 /obj/item/device/scanner/spectrometer/adv,
 /obj/item/storage/box/beakers/insulated,
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "iaaright"
-	},
 /obj/item/reagent_containers/glass/beaker/large,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
 "kfl" = (
@@ -41703,7 +41701,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/structure/table/standard,
 /obj/machinery/reagent_temperature,
-/obj/structure/window/reinforced/polarized{
+/obj/structure/window/reinforced{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
@@ -42186,15 +42184,14 @@
 /area/medical/morgue)
 "wWQ" = (
 /obj/machinery/chemical_dispenser/full,
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "iaaright"
-	},
 /obj/effect/floor_decal/borderfloorwhite,
 /obj/effect/floor_decal/corner/purple/border,
 /obj/structure/sign/warning/nosmoking_1{
 	pixel_x = 32;
 	pixel_y = -37
+	},
+/obj/structure/window/reinforced{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
