@@ -9803,14 +9803,6 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
-"ast" = (
-/obj/machinery/door/blast/regular{
-	id_tag = "SupermatterPort";
-	name = "Reactor Blast Door"
-	},
-/obj/effect/wallframe_spawn/reinforced_phoron,
-/turf/simulated/floor/reinforced,
-/area/engineering/engine_room)
 "asv" = (
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/captain/office_anteroom)
@@ -68687,11 +68679,11 @@ aai
 aaK
 aaK
 aaK
-ast
+ayv
 ayt
 aBm
 aDk
-ast
+ayv
 aaK
 aaK
 aaK
@@ -68889,11 +68881,11 @@ aai
 aaK
 aaK
 aaK
-ast
+ayv
 aAl
 avV
 bcI
-ast
+ayv
 aaK
 aaK
 aaK
@@ -69091,11 +69083,11 @@ aai
 aaK
 aaK
 aaK
-ast
+ayv
 aAA
 avY
 bcI
-ast
+ayv
 aaK
 aaK
 aaK
