@@ -1101,9 +1101,6 @@
 /area/quartermaster/expedition/storage)
 "cn" = (
 /obj/structure/closet/emcloset,
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/structure/sign/warning/airlock{
 	pixel_y = 32
 	},
@@ -1175,6 +1172,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/lime/border{
+	dir = 8
+	},
+/obj/machinery/light{
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
@@ -9350,9 +9350,6 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/stalkybush,
-/obj/machinery/light/led/small{
-	dir = 8
-	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
 "pe" = (
@@ -16857,10 +16854,7 @@
 	},
 /obj/structure/flora/ausbushes/reedbush,
 /obj/machinery/light/led/small{
-	dir = 8
-	},
-/obj/machinery/light/led/small{
-	dir = 1
+	dir = 9
 	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
@@ -19641,9 +19635,6 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
-/obj/machinery/light/led/small{
-	dir = 8
-	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
 "Gy" = (
@@ -21977,7 +21968,6 @@
 "Kd" = (
 /obj/structure/railing/mapped,
 /obj/structure/flora/ausbushes/stalkybush,
-/obj/machinery/light/led/small,
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
 "Ke" = (
@@ -21985,9 +21975,6 @@
 	dir = 1
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/obj/machinery/light/led/small{
-	dir = 1
-	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
 "Kf" = (
@@ -27963,9 +27950,8 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/fernybush,
-/obj/machinery/light/led/small,
 /obj/machinery/light/led/small{
-	dir = 4
+	dir = 6
 	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
@@ -28322,9 +28308,6 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/stalkybush,
-/obj/machinery/light/led/small{
-	dir = 4
-	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
 "VK" = (
@@ -28586,10 +28569,7 @@
 	},
 /obj/structure/flora/ausbushes/genericbush,
 /obj/machinery/light/led/small{
-	dir = 4
-	},
-/obj/machinery/light/led/small{
-	dir = 1
+	dir = 5
 	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
@@ -28916,9 +28896,6 @@
 	dir = 1
 	},
 /obj/structure/flora/ausbushes/stalkybush,
-/obj/machinery/light/led/small{
-	dir = 1
-	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
 "WQ" = (
@@ -28972,9 +28949,6 @@
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
-/obj/machinery/light/led/small{
-	dir = 4
-	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
 "WX" = (
@@ -30112,9 +30086,6 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/obj/machinery/light/led/small{
-	dir = 8
-	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
 "Zn" = (
@@ -30140,9 +30111,8 @@
 	},
 /obj/structure/railing/mapped,
 /obj/structure/flora/ausbushes/ywflowers,
-/obj/machinery/light/led/small,
 /obj/machinery/light/led/small{
-	dir = 8
+	dir = 10
 	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)

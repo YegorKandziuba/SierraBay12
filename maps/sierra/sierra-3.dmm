@@ -11572,10 +11572,12 @@
 /obj/effect/floor_decal/corner/lightgrey/border{
 	dir = 4
 	},
-/obj/structure/closet/emcloset,
 /obj/machinery/camera/network/first_deck{
 	c_tag = "First Deck - Fore Stairwell";
 	dir = 8
+	},
+/obj/structure/closet/hydrant{
+	pixel_x = 24
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
@@ -12201,7 +12203,7 @@
 /obj/effect/floor_decal/corner/lightgrey/border{
 	dir = 4
 	},
-/obj/structure/closet/hydrant,
+/obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
 "avM" = (
@@ -18076,6 +18078,9 @@
 /area/bridge/hall/level_two)
 "aFj" = (
 /obj/machinery/light/spot,
+/obj/structure/closet/hydrant{
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "aFl" = (
@@ -21730,7 +21735,9 @@
 	},
 /obj/effect/floor_decal/borderfloorblack/corner2,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/hydrant,
+/obj/structure/closet/hydrant{
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hall/level_two)
 "aKC" = (
@@ -22934,7 +22941,9 @@
 "aMn" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/green/border,
-/obj/structure/closet/hydrant,
+/obj/structure/closet/hydrant{
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/central_stairwell)
 "aMo" = (
@@ -23114,7 +23123,6 @@
 /obj/effect/floor_decal/corner/purple/bordercorner2{
 	dir = 8
 	},
-/obj/structure/closet/hydrant,
 /turf/simulated/floor/tiled/white,
 /area/rnd/entry)
 "aME" = (
@@ -29487,16 +29495,15 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/rnd/storage)
 "aVQ" = (
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
 /obj/effect/floor_decal/techfloor{
 	dir = 8
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 4
 	},
-/obj/structure/closet/hydrant,
+/obj/structure/closet/hydrant{
+	pixel_y = 28
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/rnd/storage)
 "aVR" = (
@@ -36522,7 +36529,9 @@
 /area/maintenance/firstdeck/centralstarboard)
 "eXk" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/hydrant,
+/obj/structure/closet/hydrant{
+	pixel_y = 28
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hall/level_two)
 "eZv" = (
