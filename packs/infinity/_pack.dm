@@ -38,6 +38,7 @@
 #include "items\towels.dm"
 
 // Machines
+#include "machinery\computer_presets.dm"
 #include "machinery\machines.dm"
 #include "machinery\lighting.dm"
 #include "machinery\suit_storage.dm"

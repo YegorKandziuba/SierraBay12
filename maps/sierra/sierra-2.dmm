@@ -204,6 +204,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 9
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "aav" = (
@@ -3998,6 +4001,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 10
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 10
+	},
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 10
 	},
@@ -5177,6 +5183,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/borderfloorblack,
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "akb" = (
@@ -5665,6 +5672,9 @@
 /area/maintenance/seconddeck/aftstarboard)
 "akU" = (
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 9
 	},
 /obj/effect/floor_decal/spline/fancy/black/corner{
@@ -7355,6 +7365,13 @@
 	},
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 4
+	},
+/obj/effect/floor_decal/corner/darkblue/mono,
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/nano)
@@ -9832,13 +9849,22 @@
 	dir = 6
 	},
 /obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/machinery/computer/modular/preset/security{
 	dir = 4
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy/black/corner{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/nano)
@@ -10564,6 +10590,9 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 24
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 5
 	},
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 4
@@ -12084,6 +12113,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/floor_decal/borderfloorblack/corner,
+/obj/effect/floor_decal/corner/darkblue/bordercorner,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "awx" = (
@@ -12281,6 +12311,7 @@
 	color = "#6666bb"
 	},
 /obj/effect/floor_decal/corner/black/mono,
+/obj/effect/floor_decal/corner/darkblue/diagonal,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "awN" = (
@@ -12847,6 +12878,9 @@
 /obj/structure/bed/chair/rounded/blue{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "axP" = (
@@ -13334,6 +13368,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 9
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 9
+	},
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 9
 	},
@@ -13464,6 +13501,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 4
+	},
 /obj/effect/floor_decal/borderfloorblack/corner2{
 	dir = 5
 	},
@@ -13491,6 +13531,9 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy/black/corner,
+/obj/effect/floor_decal/corner/darkblue/bordercorner2{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "ayP" = (
@@ -13887,6 +13930,9 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "azv" = (
@@ -14023,6 +14069,9 @@
 	dir = 6
 	},
 /obj/machinery/light/spot,
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "azF" = (
@@ -15198,6 +15247,9 @@
 	dir = 8;
 	pixel_x = 24
 	},
+/obj/machinery/computer/modular/preset/command{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "aBK" = (
@@ -15351,6 +15403,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -15976,6 +16031,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/bridge/hall/level_one)
 "aDa" = (
@@ -16057,6 +16115,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/machinery/computer/modular/preset/full,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck/fore)
 "aDi" = (
@@ -16375,6 +16434,9 @@
 	},
 /obj/item/folder,
 /obj/effect/floor_decal/corner/black/mono,
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "aDP" = (
@@ -16543,6 +16605,9 @@
 	pixel_y = 28
 	},
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 9
 	},
 /turf/simulated/floor/tiled/dark,
@@ -16753,6 +16818,9 @@
 	dir = 9
 	},
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -17146,6 +17214,9 @@
 	dir = 10
 	},
 /obj/machinery/light/spot,
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "aFw" = (
@@ -18631,6 +18702,10 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/borderfloorblack/corner,
+/obj/effect/floor_decal/corner/darkblue/bordercorner,
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "aIv" = (
@@ -18731,6 +18806,9 @@
 /area/engineering/engine_eva)
 "aIE" = (
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -19482,6 +19560,9 @@
 /area/rnd/xenobiology/water_cell)
 "aKd" = (
 /obj/structure/bed/chair/pew/mahogany,
+/obj/effect/floor_decal/chapel/mono{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/chapel/main)
 "aKf" = (
@@ -19607,6 +19688,7 @@
 /area/crew_quarters/safe_room/seconddeck)
 "aKt" = (
 /obj/structure/bed/chair/pew/left/mahogany,
+/obj/effect/floor_decal/chapel/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/chapel/main)
 "aKw" = (
@@ -21207,6 +21289,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "aNp" = (
@@ -21605,6 +21690,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 5
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "aOj" = (
@@ -21870,6 +21958,12 @@
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "aOI" = (
@@ -22112,6 +22206,9 @@
 /area/crew_quarters/safe_room/seconddeck)
 "aPm" = (
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 10
 	},
 /obj/effect/floor_decal/spline/fancy/black/corner{
@@ -22917,6 +23014,10 @@
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "aQT" = (
@@ -25617,6 +25718,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/borderfloorblack,
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "aVW" = (
@@ -25624,6 +25726,9 @@
 /obj/structure/noticeboard{
 	dir = 8;
 	pixel_x = 32
+	},
+/obj/effect/floor_decal/chapel/mono{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/chapel/main)
@@ -28528,9 +28633,11 @@
 	pixel_x = 36;
 	pixel_y = 7
 	},
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/nano)
 "bbF" = (
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/nano)
 "bbG" = (
@@ -28567,6 +28674,7 @@
 /obj/effect/floor_decal/spline/fancy/black/corner{
 	dir = 8
 	},
+/obj/effect/floor_decal/corner/darkblue/border,
 /obj/effect/floor_decal/spline/fancy/black,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
@@ -28603,16 +28711,22 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/window/reinforced,
+/obj/machinery/computer/modular/preset/dock{
+	dir = 4;
+	icon_state = "console"
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 1
+	},
 /obj/effect/floor_decal/spline/fancy/black/corner{
 	dir = 4
 	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
-/obj/machinery/computer/modular/preset/dock{
-	dir = 4;
-	icon_state = "console"
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 5
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/nano)
@@ -28870,6 +28984,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 4
+	},
 /obj/effect/floor_decal/borderfloorblack/corner2{
 	dir = 6
 	},
@@ -28902,6 +29019,9 @@
 /obj/effect/floor_decal/spline/fancy/black/corner{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner2{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "bcs" = (
@@ -28910,12 +29030,15 @@
 	dir = 6
 	},
 /obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 4
-	},
 /obj/machinery/power/apc/critical{
 	dir = 4;
 	pixel_x = 24
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 6
+	},
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
@@ -29030,6 +29153,9 @@
 	name = "Captain"
 	},
 /obj/structure/bed/chair/rounded/blue{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -29450,6 +29576,12 @@
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 8
 	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "bdF" = (
@@ -29608,6 +29740,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/floor_decal/chapel/mono{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/chapel/main)
 "bdY" = (
@@ -29637,6 +29772,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
+/obj/effect/floor_decal/chapel/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/chapel/main)
 "bea" = (
@@ -29821,10 +29957,16 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "beu" = (
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 10
 	},
 /turf/simulated/floor/tiled/dark,
@@ -29835,6 +29977,7 @@
 	pixel_y = -20
 	},
 /obj/effect/floor_decal/borderfloorblack,
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "bew" = (
@@ -29927,6 +30070,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 6
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "beH" = (
@@ -29982,6 +30128,9 @@
 /area/crew_quarters/sauna)
 "beP" = (
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 6
 	},
 /obj/effect/floor_decal/spline/fancy/black{
@@ -30068,6 +30217,7 @@
 /obj/effect/floor_decal/borderfloorblack/corner2{
 	dir = 6
 	},
+/obj/machinery/computer/modular/preset/command,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hall/level_one)
 "bfa" = (
@@ -30269,6 +30419,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 5
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 5
+	},
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 5
 	},
@@ -30381,6 +30534,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 8
+	},
 /obj/effect/floor_decal/spline/fancy/black/corner{
 	dir = 8
 	},
@@ -30450,6 +30606,9 @@
 /obj/effect/floor_decal/spline/fancy/black/corner{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
+	},
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 1
 	},
@@ -30466,6 +30625,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy/black/corner{
 	dir = 4
@@ -30490,6 +30652,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/borderfloorblack/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
@@ -30678,10 +30843,14 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/black/mono,
+/obj/effect/floor_decal/corner/darkblue/diagonal{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "bgs" = (
 /obj/effect/floor_decal/borderfloorblack,
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "bgt" = (
@@ -30736,6 +30905,9 @@
 /obj/structure/bed/chair/rounded/blue{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "bgz" = (
@@ -30746,6 +30918,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/black/mono,
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "bgA" = (
@@ -30759,6 +30932,9 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/rounded/blue{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -30801,6 +30977,9 @@
 /area/bridge/meeting_room)
 "bgH" = (
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -30848,6 +31027,7 @@
 /area/rnd/xenobiology/level1)
 "bgL" = (
 /obj/machinery/hologram/holopad/longrange,
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "bgM" = (
@@ -31553,6 +31733,9 @@
 "bhY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/corner/black/mono,
+/obj/structure/bed/chair/rounded/blue{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "bhZ" = (
@@ -31752,6 +31935,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/floor_decal/borderfloorblack,
 /obj/structure/bed/chair/comfy/blue,
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "biL" = (
@@ -32702,6 +32886,9 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "cNC" = (
@@ -32737,6 +32924,13 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
+"cXt" = (
+/obj/effect/floor_decal/corner/black/mono,
+/obj/machinery/computer/modular/preset/command{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge/meeting_room)
 "cZd" = (
 /obj/structure/flora/seaweed/mid,
 /obj/effect/fluid_mapped,
@@ -33814,6 +34008,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "glL" = (
@@ -33958,11 +34155,14 @@
 /area/hallway/primary/seconddeck/center)
 "gQR" = (
 /obj/effect/floor_decal/borderfloorblack/corner,
-/obj/effect/floor_decal/spline/fancy/black/corner,
-/obj/effect/floor_decal/spline/fancy/black/corner,
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner,
+/obj/effect/floor_decal/spline/fancy/black/corner,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "gTo" = (
@@ -34029,6 +34229,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shield/seconddeck)
+"haL" = (
+/obj/structure/bed/chair/pew/left/mahogany,
+/obj/effect/floor_decal/chapel/mono{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/chapel/main)
 "hcl" = (
 /obj/structure/sign/poster{
 	pixel_y = 32
@@ -34444,6 +34651,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "iar" = (
@@ -34456,6 +34666,9 @@
 	dir = 1
 	},
 /obj/structure/bed/chair/rounded/blue{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -34503,6 +34716,9 @@
 	},
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
@@ -34900,13 +35116,16 @@
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 4
 	},
-/obj/effect/floor_decal/spline/fancy/black/corner{
-	dir = 1
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/black/corner{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
@@ -34989,6 +35208,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
+"jOK" = (
+/obj/structure/table/glass{
+	color = "#6666bb"
+	},
+/obj/effect/floor_decal/corner/black/mono,
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge/meeting_room)
 "jRQ" = (
 /obj/item/device/radio/intercom{
 	pixel_y = 26
@@ -34998,6 +35227,10 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/cafe)
+"jTO" = (
+/obj/effect/floor_decal/chapel/mono,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/chapel/main)
 "jVF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/table/woodentable/walnut,
@@ -35168,6 +35401,9 @@
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "kua" = (
@@ -35277,6 +35513,7 @@
 "kLw" = (
 /obj/effect/floor_decal/borderfloorblack,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "kNJ" = (
@@ -35594,6 +35831,16 @@
 "lTu" = (
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
+"lTI" = (
+/obj/structure/table/glass{
+	color = "#6666bb"
+	},
+/obj/effect/floor_decal/corner/black/mono,
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge/meeting_room)
 "lYR" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
@@ -35980,6 +36227,7 @@
 /area/crew_quarters/sleep/cryo)
 "mPP" = (
 /obj/effect/floor_decal/borderfloorblack,
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "mRa" = (
@@ -36099,6 +36347,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/darkblue/border,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "nqe" = (
@@ -36360,12 +36609,13 @@
 /area/crew_quarters/heads/captain/office_anteroom)
 "otd" = (
 /obj/effect/floor_decal/borderfloorblack/corner,
-/obj/effect/floor_decal/spline/fancy/black/corner,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner,
+/obj/effect/floor_decal/spline/fancy/black/corner,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "owg" = (
@@ -36797,6 +37047,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "pDU" = (
@@ -37069,6 +37322,9 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced,
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "qak" = (
@@ -37542,6 +37798,9 @@
 	color = "#6666bb"
 	},
 /obj/effect/floor_decal/corner/black/mono,
+/obj/effect/floor_decal/corner/darkblue/diagonal{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "rmJ" = (
@@ -37661,6 +37920,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -37838,6 +38100,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "sdp" = (
@@ -37875,6 +38140,9 @@
 /area/space)
 "ske" = (
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -37995,6 +38263,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/borderfloorblack/corner{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -38211,6 +38482,9 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
 "sUS" = (
@@ -38308,6 +38582,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/borderfloorblack/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -38433,6 +38710,9 @@
 /obj/effect/floor_decal/spline/fancy/black/corner,
 /obj/effect/floor_decal/spline/fancy/black/corner{
 	dir = 1
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 4
 	},
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 4
@@ -38799,6 +39079,11 @@
 	name = "Bridge";
 	secured_wires = 1
 	},
+/obj/machinery/door/blast/regular/open{
+	dir = 4;
+	id_tag = "bridge_ent";
+	name = "Bridge Lockdown"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/nano)
 "usO" = (
@@ -38839,6 +39124,9 @@
 /obj/structure/table/steel,
 /obj/machinery/chemical_dispenser/bar_coffee/full{
 	dir = 8
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/bridge/hall/level_one)
@@ -38890,6 +39178,7 @@
 	},
 /obj/item/material/ashtray/bronze,
 /obj/effect/floor_decal/corner/black/mono,
+/obj/effect/floor_decal/corner/darkblue/diagonal,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
 "uCM" = (
@@ -39054,6 +39343,12 @@
 /obj/random/trash,
 /turf/simulated/floor/tiled/techmaint,
 /area/maintenance/compactor)
+"vaa" = (
+/obj/effect/floor_decal/chapel/mono{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/chapel/main)
 "vaq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -39187,6 +39482,9 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 4
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
@@ -39821,6 +40119,13 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/crew_quarters/head_big)
+"xpj" = (
+/obj/structure/bed/chair/pew/mahogany,
+/obj/effect/floor_decal/chapel/mono{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/chapel/main)
 "xrd" = (
 /obj/effect/floor_decal/industrial/traffic{
 	dir = 4
@@ -39898,11 +40203,17 @@
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 4
 	},
-/obj/effect/floor_decal/spline/fancy/black/corner{
-	dir = 1
-	},
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/bordercorner{
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/black/corner{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/nano)
@@ -39964,6 +40275,13 @@
 /obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/game_room)
+"xPa" = (
+/obj/effect/floor_decal/corner/black/mono,
+/obj/structure/bed/chair/rounded/blue{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge/meeting_room)
 "xRk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4
@@ -40088,6 +40406,9 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/rounded/blue{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -48691,7 +49012,7 @@ xWS
 kqV
 bgs
 awM
-rlk
+lTI
 rlk
 iaJ
 bev
@@ -49095,7 +49416,7 @@ xWS
 kqV
 bgs
 bgr
-rlk
+jOK
 uCz
 iaJ
 bgs
@@ -49699,7 +50020,7 @@ bkt
 ahM
 aoj
 aOI
-apJ
+xPa
 bgC
 bhY
 biW
@@ -49901,7 +50222,7 @@ aEX
 aRH
 aoj
 aLp
-apJ
+cXt
 azF
 aBJ
 iil
@@ -58394,10 +58715,10 @@ aGW
 aew
 aJF
 aQa
+xpj
 aKd
-aKd
-aKd
-aOS
+xpj
+vaa
 aJF
 aJF
 aRN
@@ -58596,10 +58917,10 @@ awV
 aew
 ajy
 bhg
+haL
 aKt
-aKt
-aKt
-aOS
+haL
+jTO
 bdT
 aJF
 aRQ
@@ -59000,9 +59321,9 @@ awV
 aew
 azC
 bhy
+xpj
 aKd
-aKd
-aKd
+xpj
 bdX
 bdT
 aJF
@@ -59204,7 +59525,7 @@ azS
 aJF
 aVW
 aKt
-aKt
+haL
 bdZ
 bhI
 bhz
