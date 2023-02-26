@@ -367,6 +367,7 @@
 	name = "\improper Glass-o-Mat"
 	desc = "A wall-mounted glass storage."
 	product_ads = "Free glasses!;Lets try something new.;Only the finest glasses.;Natural booze!;This stuff saves no lives.;Don't you want some?"
+	icon = 'maps/sierra/icons/obj/vending.dmi'
 	icon_state = "wallbartender"
 	icon_deny = "wallbartender-deny"
 	icon_vend = "wallbartender-vend"
@@ -392,3 +393,18 @@
 		/obj/item/reagent_containers/food/drinks/glass2/coffeecup/diona = 1
 	)
 	req_access = list(access_bar)
+
+/obj/machinery/vending/crates
+	name = "\improper Crate-o-Mat"
+	desc = "Vending machine that dispense crates for all your powerplay needs."
+	vend_delay = 3 SECONDS
+	req_access = list(access_cargo)
+	base_type = /obj/machinery/vending/crates
+	icon = 'maps/sierra/icons/obj/vending.dmi'
+	icon_state = "crates"
+	icon_deny = "crates-deny"
+	icon_vend = "crates-vend"
+
+	products = list(
+		/obj/structure/closet/crate/plastic = 10
+	)
