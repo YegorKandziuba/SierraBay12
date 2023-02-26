@@ -32218,6 +32218,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/shuttle/escape_pod/escape_pod5/station)
 "bct" = (
@@ -32254,6 +32257,9 @@
 	},
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod5/station)
@@ -32731,6 +32737,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod5/station)
 "bdy" = (
@@ -32755,6 +32764,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel_grid,
@@ -33146,6 +33158,9 @@
 	},
 /obj/effect/floor_decal/borderfloor/corner,
 /obj/effect/floor_decal/corner/grey/bordercorner,
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod5/station)
 "bes" = (
@@ -33155,6 +33170,9 @@
 	},
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/grey/border,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod5/station)
 "bet" = (
@@ -33166,6 +33184,9 @@
 	},
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/grey/border,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod5/station)
 "beu" = (
@@ -33180,6 +33201,9 @@
 	},
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/grey/border,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod5/station)
 "bev" = (
@@ -33193,6 +33217,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/grey/bordercorner{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel_grid,

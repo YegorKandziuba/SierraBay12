@@ -62,6 +62,15 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
+"am" = (
+/obj/effect/floor_decal/borderfloor/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/hangar)
 "an" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -1380,6 +1389,9 @@
 /obj/effect/floor_decal/borderfloor/corner2{
 	dir = 5
 	},
+/obj/effect/floor_decal/corner/grey/bordercorner2{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod1/station)
 "cU" = (
@@ -2623,6 +2635,9 @@
 /obj/effect/floor_decal/borderfloor/corner2{
 	dir = 10
 	},
+/obj/effect/floor_decal/corner/grey/bordercorner2{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod1/station)
 "fa" = (
@@ -3744,6 +3759,9 @@
 /obj/effect/floor_decal/borderfloor/corner2{
 	dir = 10
 	},
+/obj/effect/floor_decal/corner/grey/bordercorner2{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod2/station)
 "gI" = (
@@ -4224,6 +4242,9 @@
 /obj/effect/floor_decal/borderfloor/corner2{
 	dir = 5
 	},
+/obj/effect/floor_decal/corner/grey/bordercorner2{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod2/station)
 "hC" = (
@@ -4296,6 +4317,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod1/station)
 "hI" = (
@@ -4430,6 +4452,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod1/station)
 "hV" = (
@@ -4481,6 +4506,12 @@
 "ia" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -6390,6 +6421,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod1/station)
 "kT" = (
@@ -6727,6 +6761,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -7895,6 +7932,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod2/station)
 "mR" = (
@@ -8054,6 +8094,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -8255,6 +8298,7 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals4,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod1/station)
 "ns" = (
@@ -9378,15 +9422,6 @@
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
-"pf" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/danger{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/quartermaster/hangar)
 "pg" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -11396,6 +11431,7 @@
 "sm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod1/station)
 "sn" = (
@@ -15186,6 +15222,7 @@
 "yy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod2/station)
 "yz" = (
@@ -17534,6 +17571,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod3/station)
 "CO" = (
@@ -17918,6 +17956,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod4/station)
 "Dq" = (
@@ -18270,6 +18309,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod2/station)
 "DX" = (
@@ -18368,6 +18408,7 @@
 "Ee" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod3/station)
 "Ef" = (
@@ -18716,6 +18757,7 @@
 "EI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod4/station)
 "EJ" = (
@@ -18960,6 +19002,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod3/station)
 "Ff" = (
@@ -18986,6 +19031,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel_grid,
@@ -19244,6 +19292,9 @@
 	id_tag = "skipjack_shuttle_pump"
 	},
 /obj/effect/floor_decal/borderfloor/corner2{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/grey/bordercorner2{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel_grid,
@@ -20537,6 +20588,9 @@
 /obj/effect/floor_decal/borderfloor/corner2{
 	dir = 6
 	},
+/obj/effect/floor_decal/corner/grey/bordercorner2{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod3/station)
 "HG" = (
@@ -21154,6 +21208,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/borderfloor/corner2{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/grey/bordercorner2{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel_grid,
@@ -22082,16 +22139,23 @@
 /obj/effect/floor_decal/steeldecal/steel_decals4{
 	dir = 6
 	},
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod2/station)
 "Ki" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod3/station)
 "Kj" = (
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel_grid,
@@ -22159,6 +22223,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/borderfloor/corner2{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/grey/bordercorner2{
 	dir = 6
 	},
 /turf/simulated/floor/tiled/steel_grid,
@@ -26992,6 +27059,7 @@
 	},
 /obj/structure/closet/crate/freezer/rations,
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod3/station)
 "SO" = (
@@ -27000,6 +27068,7 @@
 	},
 /obj/structure/closet/crate/freezer/rations,
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod/escape_pod4/station)
 "SP" = (
@@ -27863,6 +27932,15 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
+"Uv" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/hangar)
 "Uw" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -28753,6 +28831,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod4/station)
 "Wo" = (
@@ -29561,6 +29642,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape_pod/escape_pod3/station)
 "XV" = (
@@ -30211,15 +30295,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/guppy_hangar/start)
-"Zk" = (
-/obj/effect/floor_decal/borderfloor/corner{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/danger/corner{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/quartermaster/hangar)
 "Zl" = (
 /obj/structure/bed/sofa/r/brown{
 	dir = 1
@@ -51026,18 +51101,18 @@ KM
 WU
 Zs
 VA
-pf
-pf
-pf
-pf
-pf
-pf
-pf
-pf
-pf
-pf
-pf
-pf
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
 oG
 pD
 vm
@@ -51047,14 +51122,14 @@ au
 au
 au
 Xh
-pf
-pf
-pf
-pf
-pf
-pf
-pf
-pf
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
 WU
 Wa
 HX
@@ -51446,9 +51521,9 @@ hN
 VF
 Yr
 Xh
-pf
-pf
-Zk
+Uv
+Uv
+am
 XH
 ZD
 aO
@@ -52864,18 +52939,18 @@ au
 av
 au
 Xh
-pf
-pf
+Uv
+Uv
 Jk
-pf
-pf
-pf
-pf
-pf
-pf
-pf
-pf
-Zk
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+Uv
+am
 Vi
 OB
 OB
@@ -53062,9 +53137,9 @@ FY
 VF
 Yr
 Xh
-pf
+Uv
 yZ
-pf
+Uv
 EG
 zg
 Zj
