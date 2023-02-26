@@ -410,6 +410,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "be" = (
@@ -417,6 +418,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "bf" = (
@@ -3982,6 +3984,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "hf" = (
@@ -4363,6 +4368,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/thirddeck/center)
@@ -5490,6 +5498,7 @@
 	req_access = list("ACCESS_EXTERNAL")
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "jD" = (
@@ -6177,6 +6186,9 @@
 	req_access = list("ACCESS_EXTERNAL")
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
@@ -7757,6 +7769,9 @@
 /obj/machinery/light/spot{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "mL" = (
@@ -9100,6 +9115,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "oH" = (
@@ -9110,6 +9128,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
@@ -9357,6 +9378,15 @@
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/simulated/floor/grass,
 /area/hallway/primary/thirddeck/fore)
+"pf" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/hangar)
 "pg" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -9624,6 +9654,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply,
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "pE" = (
@@ -9633,6 +9666,9 @@
 	icon_state = "2-8"
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -10818,6 +10854,9 @@
 	pixel_x = -32;
 	pixel_y = -24;
 	req_access = list("ACCESS_EXTERNAL")
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
@@ -12178,6 +12217,9 @@
 	pixel_x = -32
 	},
 /obj/effect/floor_decal/corner/lime/bordercorner{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
@@ -14226,6 +14268,9 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/yellow,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "xg" = (
@@ -15019,6 +15064,9 @@
 	c_tag = "Third Deck Hallway - Primary Docking Port";
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "ys" = (
@@ -15493,6 +15541,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "za" = (
@@ -15520,6 +15571,9 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -16131,6 +16185,9 @@
 "Ah" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -18259,6 +18316,7 @@
 	pixel_y = -29
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "Eb" = (
@@ -18642,6 +18700,10 @@
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "EH" = (
@@ -19033,6 +19095,10 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Ft" = (
@@ -19314,6 +19380,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/thirddeck/center)
 "FV" = (
@@ -20538,6 +20605,9 @@
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "HN" = (
@@ -20684,6 +20754,12 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/borderfloor/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -21477,6 +21553,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -22278,6 +22357,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "KI" = (
@@ -22322,6 +22404,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "KM" = (
@@ -22329,6 +22414,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -22414,6 +22502,9 @@
 /obj/machinery/floodlight{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "KX" = (
@@ -22433,6 +22524,9 @@
 	dir = 9
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -23138,6 +23232,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/thirddeck/center)
 "Mo" = (
@@ -24571,6 +24666,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "OL" = (
@@ -24736,6 +24834,9 @@
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Pd" = (
@@ -24781,6 +24882,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Pi" = (
@@ -24793,6 +24897,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/borderfloor/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -25092,6 +25199,9 @@
 	},
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
@@ -25458,6 +25568,7 @@
 	dir = 6
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Qo" = (
@@ -25874,11 +25985,15 @@
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "QU" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "QV" = (
@@ -25936,6 +26051,7 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Rb" = (
@@ -26390,6 +26506,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/thirddeck/center)
@@ -27456,6 +27575,9 @@
 /obj/machinery/light/spot{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "TO" = (
@@ -28252,6 +28374,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "VB" = (
@@ -28283,6 +28408,9 @@
 /area/hallway/primary/thirddeck/fore)
 "VF" = (
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -28355,6 +28483,9 @@
 "VR" = (
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 8
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
@@ -28466,6 +28597,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply,
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Wb" = (
@@ -28476,6 +28610,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Wc" = (
@@ -28942,6 +29079,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "WV" = (
@@ -29063,6 +29203,7 @@
 /area/shuttle/petrov/gas)
 "Xh" = (
 /obj/effect/floor_decal/borderfloor/corner,
+/obj/effect/floor_decal/industrial/danger/corner,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Xi" = (
@@ -29427,6 +29568,9 @@
 	dir = 6
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -29803,6 +29947,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "YI" = (
@@ -30064,6 +30211,15 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/guppy_hangar/start)
+"Zk" = (
+/obj/effect/floor_decal/borderfloor/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/hangar)
 "Zl" = (
 /obj/structure/bed/sofa/r/brown{
 	dir = 1
@@ -30120,6 +30276,9 @@
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Zs" = (
@@ -30130,6 +30289,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "Zt" = (
@@ -30211,6 +30373,7 @@
 /area/exploration_shuttle/airlock)
 "ZD" = (
 /obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "ZF" = (
@@ -50863,18 +51026,18 @@ KM
 WU
 Zs
 VA
-YD
-YD
-YD
-YD
-YD
-YD
-YD
-YD
-YD
-YD
-YD
-YD
+pf
+pf
+pf
+pf
+pf
+pf
+pf
+pf
+pf
+pf
+pf
+pf
 oG
 pD
 vm
@@ -50884,14 +51047,14 @@ au
 au
 au
 Xh
-YD
-YD
-YD
-YD
-YD
-YD
-YD
-YD
+pf
+pf
+pf
+pf
+pf
+pf
+pf
+pf
 WU
 Wa
 HX
@@ -51283,9 +51446,9 @@ hN
 VF
 Yr
 Xh
-YD
-YD
-JG
+pf
+pf
+Zk
 XH
 ZD
 aO
@@ -52701,18 +52864,18 @@ au
 av
 au
 Xh
-YD
-YD
+pf
+pf
 Jk
-YD
-YD
-YD
-YD
-YD
-YD
-YD
-YD
-JG
+pf
+pf
+pf
+pf
+pf
+pf
+pf
+pf
+Zk
 Vi
 OB
 OB
@@ -52899,9 +53062,9 @@ FY
 VF
 Yr
 Xh
-YD
+pf
 yZ
-YD
+pf
 EG
 zg
 Zj

@@ -6484,6 +6484,7 @@
 /obj/item/device/tape,
 /obj/item/device/tape,
 /obj/item/device/tape,
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/adjutants)
 "alG" = (
@@ -6492,6 +6493,7 @@
 /obj/structure/filingcabinet/wallcabinet{
 	pixel_y = 30
 	},
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/adjutants)
 "alH" = (
@@ -6506,6 +6508,7 @@
 	pixel_x = 24
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/adjutants)
 "alI" = (
@@ -7172,6 +7175,9 @@
 	dir = 4;
 	pixel_y = 32
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/adjutants)
 "amJ" = (
@@ -7180,6 +7186,9 @@
 	},
 /obj/effect/floor_decal/corner/grey/full,
 /obj/effect/floor_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -7197,6 +7206,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/adjutants)
@@ -8150,6 +8162,9 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/adjutants)
 "aob" = (
@@ -8186,6 +8201,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/adjutants)
@@ -9076,6 +9094,7 @@
 	pixel_x = -24
 	},
 /obj/item/gun/energy/gun/small/secure,
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/adjutants)
 "apv" = (
@@ -9106,6 +9125,9 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 4
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/adjutants)
@@ -9952,6 +9974,9 @@
 	req_access = list("ACCESS_BRIDGE");
 	dir = 4;
 	autoset_access = null
+	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/adjutants)
@@ -11546,6 +11571,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
 "auk" = (
@@ -11555,6 +11581,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 8
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
@@ -12180,6 +12209,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
 "avJ" = (
@@ -12189,6 +12221,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/borderfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
@@ -12821,6 +12856,9 @@
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
 "axe" = (
@@ -12833,6 +12871,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
@@ -12849,6 +12890,9 @@
 	},
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
@@ -17409,6 +17453,9 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/darkblue/border{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/adjutants)
 "aEd" = (
@@ -20070,6 +20117,7 @@
 /obj/effect/floor_decal/corner/green/border{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/central_stairwell)
 "aIm" = (
@@ -20084,6 +20132,9 @@
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals6{
 	dir = 10
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/central_stairwell)
@@ -21309,6 +21360,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/central_stairwell)
 "aJU" = (
@@ -22378,6 +22432,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/central_stairwell)
 "aLq" = (
@@ -22583,6 +22640,9 @@
 	},
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/green/border,
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/central_stairwell)
 "aLD" = (
@@ -23240,6 +23300,9 @@
 /obj/effect/floor_decal/corner/green/border,
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/central_stairwell)
@@ -35796,6 +35859,7 @@
 	},
 /obj/machinery/light/small,
 /obj/item/gun/energy/gun/small/secure,
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/adjutants)
 "cqL" = (
@@ -35958,6 +36022,7 @@
 	dir = 1
 	},
 /obj/item/gun/energy/gun/small/secure,
+/obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/adjutants)
 "cXM" = (
@@ -39254,6 +39319,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/effect/floor_decal/industrial/danger,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
 "nfQ" = (
@@ -39947,6 +40013,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/industrial/danger/corner,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore_stairwell)
 "oYR" = (
