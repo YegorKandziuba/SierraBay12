@@ -1,6 +1,6 @@
 #if FALSE
 
-// TODO: multimeter
+// SIERRA TODO: multimeter
 
 #define METER_MESURING "Measuring"
 #define METER_CHECKING "Checking"
