@@ -1208,9 +1208,6 @@
 	},
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/green/border,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/requests_console{
 	department = "Hydroponics";
 	departmentType = 4;
@@ -1325,10 +1322,6 @@
 	pixel_x = 5
 	},
 /obj/item/reagent_containers/dropper,
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "acU" = (
@@ -1395,7 +1388,6 @@
 /obj/machinery/chemical_dispenser/bar_coffee/full{
 	pixel_y = 8
 	},
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/wood/ebony,
 /area/crew_quarters/bar)
 "adg" = (
@@ -1722,9 +1714,6 @@
 /obj/structure/table/standard,
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/green/border,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/reagentgrinder/juicer,
 /turf/simulated/floor/tiled,
 /area/hydroponics)
@@ -2201,9 +2190,6 @@
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/green/border,
 /obj/machinery/light/spot,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/vending/wallmed1{
 	dir = 1;
 	name = "Emergency NanoMed";
@@ -2226,9 +2212,6 @@
 	},
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/green/border,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/biogenerator,
 /turf/simulated/floor/tiled,
 /area/hydroponics)
@@ -2247,7 +2230,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/trunk{
-	dir = 8
+	dir = 1
 	},
 /obj/machinery/disposal,
 /turf/simulated/floor/tiled,
@@ -2269,9 +2252,6 @@
 /obj/item/device/radio/intercom{
 	dir = 1;
 	pixel_y = -29
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /obj/machinery/chem_master/condimaster{
 	name = "CondiMaster Neo"
@@ -4882,11 +4862,13 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/cafe)
 "ajs" = (
-/obj/effect/floor_decal/spline/fancy/black,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/light/led/small,
-/turf/simulated/floor/wood/ebony,
-/area/crew_quarters/bar)
+/obj/structure/disposalpipe/junction{
+	dir = 8;
+	icon_state = "pipe-j2"
+	},
+/obj/effect/catwalk_plated,
+/turf/simulated/floor/plating,
+/area/hydroponics)
 "ajt" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -9246,15 +9228,13 @@
 /turf/simulated/floor/carpet,
 /area/vacant/gambling)
 "ark" = (
-/obj/structure/disposalpipe/sortjunction/flipped{
-	dir = 4;
-	name = "Hydroponics";
-	sort_type = "Hydroponics"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/wood/walnut,
@@ -30231,9 +30211,6 @@
 	name = "Space Shields";
 	pixel_y = -21
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/seed_storage/garden{
 	dir = 1
 	},
@@ -33918,10 +33895,16 @@
 /turf/simulated/floor/airless,
 /area/space)
 "gHu" = (
-/obj/machinery/light/small{
+/obj/machinery/power/terminal{
 	dir = 1
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/effect/floor_decal/techfloor{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shield/seconddeck)
 "gIa" = (
@@ -34046,8 +34029,9 @@
 	c_tag = "Shield Generator - Second Deck"
 	},
 /obj/structure/cable{
+	d1 = 4;
 	d2 = 8;
-	icon_state = "0-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shield/seconddeck)
@@ -34904,7 +34888,6 @@
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/cafe)
 "jwJ" = (
@@ -35578,17 +35561,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/center)
-"lOO" = (
-/obj/effect/wallframe_spawn/no_grille,
-/obj/machinery/door/firedoor,
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	id_tag = "hydro<-bar";
-	name = "Hydro Shutters"
-	},
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plating,
-/area/crew_quarters/bar)
 "lPA" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -35848,12 +35820,13 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 4
 	},
-/obj/machinery/power/terminal{
-	dir = 1
+/obj/machinery/light/small{
+	dir = 4
 	},
 /obj/structure/cable{
+	d1 = 1;
 	d2 = 2;
-	icon_state = "0-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shield/seconddeck)
@@ -37385,12 +37358,12 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 5
 	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/power/smes/buildable/preset/sierra/hangar{
 	RCon_tag = "Substation - Shield"
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shield/seconddeck)
@@ -37420,7 +37393,7 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/shield/seconddeck)
 "qWx" = (
 /obj/effect/floor_decal/borderfloor{
@@ -37996,7 +37969,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/nano)
 "svT" = (
-/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -56985,15 +56957,15 @@ abC
 bdh
 adK
 acR
-lOO
+agA
 ade
 svT
-ajs
-avt
+ajw
+akA
 jsV
-aVY
-aVY
-aVY
+auo
+auo
+auo
 ark
 auo
 xnj
@@ -58397,7 +58369,7 @@ abb
 abo
 abY
 acD
-bdA
+ajs
 aeM
 abW
 akw

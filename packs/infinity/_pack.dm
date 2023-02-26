@@ -42,6 +42,9 @@
 #include "machinery\lighting.dm"
 #include "machinery\suit_storage.dm"
 
+// Mobs
+#include "mobs\simple\fox.dm"
+
 // Structures
 #include "structures\table_presets.dm"
 #include "structures\chairs.dm"
