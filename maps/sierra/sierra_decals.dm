@@ -44,7 +44,7 @@
 	name = "floor"
 	icon = 'maps/sierra/icons/turf/decals.dmi'
 	icon_state = "monotile_light"
-	initial_flooring = /decl/flooring/tiling/mono/white
+	initial_flooring = /singleton/flooring/tiling/mono/white
 
 /obj/effect/floor_decal/corner/darkblue
 	name = "dark blue corner"
