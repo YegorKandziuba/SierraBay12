@@ -140,10 +140,6 @@
 	icon_state = "pr-wingrille"
 	win_path = /obj/structure/window/phoronreinforced/full
 
-/obj/effect/wallframe_spawn/reinforced_phoron/ascent
-	name = "reinforced ascent reinforced phoron wall frame window spawner"
-	frame_path = /obj/structure/wall_frame/hull/ascent
-
 /obj/effect/wallframe_spawn/reinforced_phoron/titanium
 	name = "reinforced phoron titanium wall frame window spawner"
 	frame_path = /obj/structure/wall_frame/titanium

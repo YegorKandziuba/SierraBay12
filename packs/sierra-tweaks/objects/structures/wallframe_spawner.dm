@@ -7,9 +7,6 @@
 /obj/structure/wall_frame/crystal
 	paint_color = COLOR_PALE_BLUE_GRAY
 
-/obj/structure/wall_frame/osmium
-	paint_color = "#9bc6f2"
-
 /obj/effect/wallframe_spawn/reinforced/wood
 	name = "reinforced wooden wall frame window spawner"
 	icon_state = "r-wingrille"
@@ -22,7 +19,3 @@
 /obj/effect/wallframe_spawn/reinforced/crystal
 	name = "reinforced crystal wall frame window spawner"
 	frame_path = /obj/structure/wall_frame/crystal
-
-/obj/effect/wallframe_spawn/reinforced_phoron/osmium
-	name = "reinforced phoron osmium wall frame window spawner"
-	frame_path = /obj/structure/wall_frame/osmium
