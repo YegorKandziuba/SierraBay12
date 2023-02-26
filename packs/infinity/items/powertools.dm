@@ -1,3 +1,5 @@
+// TODO: usesound с Paradise (или подобные)
+
 //
 //        DRILL
 //
