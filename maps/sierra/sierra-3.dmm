@@ -314,6 +314,7 @@
 	pixel_y = 21;
 	req_access = list("ACCESS_EXTERNAL")
 	},
+/obj/effect/floor_decal/industrial/warning/half,
 /turf/simulated/floor/plating,
 /area/maintenance/solar/starboard)
 "aaI" = (
@@ -536,6 +537,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/item/barrier,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/captain/secret_room/level_two)
 "abm" = (
@@ -1006,6 +1008,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "acg" = (
+/obj/effect/paint_stripe/nt_red,
+/obj/effect/paint/nt_white,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod/escape_pod7/station)
 "ach" = (
@@ -1014,6 +1018,8 @@
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod/escape_pod7/station)
 "aci" = (
+/obj/effect/paint_stripe/nt_red,
+/obj/effect/paint/nt_white,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod/escape_pod8/station)
 "acj" = (
@@ -1022,6 +1028,8 @@
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod/escape_pod8/station)
 "ack" = (
+/obj/effect/paint_stripe/nt_red,
+/obj/effect/paint/nt_white,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod/escape_pod9/station)
 "acl" = (
@@ -1905,6 +1913,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
 	dir = 4;
 	id_tag = "fd_starboard_pump"
+	},
+/obj/effect/floor_decal/industrial/warning/half{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
@@ -6902,6 +6913,9 @@
 	dir = 8;
 	id_tag = "fd_starboard_pump"
 	},
+/obj/effect/floor_decal/industrial/warning/half{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "amq" = (
@@ -7565,6 +7579,7 @@
 	name = "Core Modules";
 	req_access = list("ACCESS_CAPTAIN")
 	},
+/obj/effect/floor_decal/industrial/outline/green,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/turret_protected/ai_upload)
 "anm" = (
@@ -8165,6 +8180,9 @@
 /obj/effect/floor_decal/corner/darkblue/border{
 	dir = 8
 	},
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/adjutants)
 "aob" = (
@@ -9636,6 +9654,7 @@
 	dir = 1
 	},
 /obj/machinery/suit_cycler/medical/alt,
+/obj/effect/floor_decal/industrial/outline/green,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/eva)
 "aqq" = (
@@ -11984,6 +12003,16 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 4
 	},
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/sierra/armory/lobby)
 "avt" = (
@@ -13470,6 +13499,7 @@
 /obj/item/folder,
 /obj/item/folder,
 /obj/item/folder,
+/obj/effect/floor_decal/industrial/outline/green,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/iaa)
 "ayy" = (
@@ -13498,6 +13528,7 @@
 /obj/item/folder,
 /obj/item/folder,
 /obj/item/folder,
+/obj/effect/floor_decal/industrial/outline/green,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/iaa)
 "ayA" = (
@@ -17416,6 +17447,7 @@
 	name = "Chapel";
 	sort_type = "Chapel"
 	},
+/obj/machinery/tele_beacon,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "aDY" = (
@@ -33123,6 +33155,8 @@
 /area/thruster/d1port)
 "ben" = (
 /obj/effect/shuttle_landmark/escape_pod/start/pod5,
+/obj/effect/paint_stripe/nt_red,
+/obj/effect/paint/nt_white,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod/escape_pod5/station)
 "beo" = (
@@ -34745,6 +34779,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/industrial/warning/half,
 /turf/simulated/floor/plating,
 /area/maintenance/solar)
 "bhE" = (
@@ -38486,6 +38521,7 @@
 	_output_maxed = 1;
 	_output_on = 1
 	},
+/obj/effect/paint_stripe/turquoise,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/turret_protected/ai)
 "kHM" = (
@@ -38989,6 +39025,7 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 8
 	},
+/obj/effect/paint_stripe/turquoise,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/turret_protected/ai)
 "lRO" = (
@@ -39074,6 +39111,7 @@
 	dir = 9
 	},
 /obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/industrial/outline/green,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/dungeon_master_lounge)
 "muc" = (
@@ -39548,6 +39586,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/effect/floor_decal/industrial/warning/half,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "nwl" = (
@@ -40502,6 +40541,10 @@
 "qtR" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/medical/equipstorage)
+"qwc" = (
+/obj/effect/floor_decal/industrial/warning/half,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftport)
 "qym" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 1
@@ -41096,6 +41139,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/drone_fabrication)
+"sUR" = (
+/obj/effect/paint_stripe/turquoise,
+/turf/simulated/wall/r_wall/prepainted,
+/area/turret_protected/ai)
 "sWW" = (
 /obj/structure/railing/mapped,
 /obj/effect/decal/cleanable/cobweb2,
@@ -41138,6 +41185,11 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai)
+"tdN" = (
+/obj/effect/paint/nt_white,
+/obj/effect/paint_stripe/nt_red,
+/turf/simulated/wall/r_titanium,
+/area/shuttle/escape_pod/escape_pod5/station)
 "tha" = (
 /obj/structure/catwalk,
 /obj/machinery/airlock_sensor{
@@ -46981,15 +47033,15 @@ aiw
 aiw
 aiw
 aKz
-aKz
-aKz
-aKz
-aKz
-aKz
-aKz
-aKz
-aKz
-aKz
+sUR
+sUR
+sUR
+sUR
+sUR
+sUR
+sUR
+sUR
+sUR
 aKz
 aLX
 aLX
@@ -47182,8 +47234,8 @@ aiw
 aiw
 aiw
 aiw
-aKz
-aKz
+sUR
+sUR
 fyG
 izy
 lhO
@@ -47191,8 +47243,8 @@ xRg
 lPv
 izy
 gtm
-aKz
-aKz
+sUR
+sUR
 aLX
 aLX
 aLX
@@ -47384,7 +47436,7 @@ aiw
 aiw
 aiw
 aiw
-aKz
+sUR
 blj
 bkl
 tdd
@@ -47394,7 +47446,7 @@ kvK
 nUg
 dZG
 kHG
-aKz
+sUR
 aLX
 aLX
 aLX
@@ -47586,17 +47638,17 @@ akJ
 akJ
 akJ
 akJ
-aKz
+sUR
 aKz
 axY
 azk
-aKz
+sUR
 aCk
-aKz
+sUR
 aFR
 aHn
-aKz
-aKz
+sUR
+sUR
 aLY
 aLY
 aLY
@@ -47788,17 +47840,17 @@ cXv
 apu
 cpF
 akJ
-aKz
+sUR
 aKz
 bkm
-aKz
-aKz
+sUR
+sUR
 eOT
-aKz
-aKz
+sUR
+sUR
 iwy
-aKz
-aKz
+sUR
+sUR
 aLY
 aNn
 aNt
@@ -47990,17 +48042,17 @@ apx
 arb
 aEc
 akJ
-aKz
+sUR
 aKz
 bkn
-aKz
-aKz
-aKz
-aKz
-aKz
+sUR
+sUR
+sUR
+sUR
+sUR
 ixK
-aKz
-aKz
+sUR
+sUR
 aLY
 aNo
 aOI
@@ -48192,17 +48244,17 @@ rcw
 ard
 asn
 akJ
-aKz
+sUR
 aKz
 bkt
-aKz
+sUR
 nmQ
-aKz
+sUR
 ycs
-aKz
+sUR
 oJf
-aKz
-aKz
+sUR
+sUR
 aLY
 aNp
 aSd
@@ -48394,7 +48446,7 @@ apz
 apv
 bia
 akJ
-aKz
+sUR
 bjZ
 bkv
 knM
@@ -48404,7 +48456,7 @@ sqT
 knM
 ist
 lPB
-aKz
+sUR
 aLY
 aNq
 aOK
@@ -48596,8 +48648,8 @@ apt
 apv
 bka
 akJ
-aKz
-aKz
+sUR
+sUR
 bkK
 bkX
 oEz
@@ -48605,8 +48657,8 @@ xhz
 ouD
 kyK
 qqd
-aKz
-aKz
+sUR
+sUR
 aLY
 aNr
 aSd
@@ -48798,17 +48850,17 @@ apA
 are
 eWy
 akJ
-aKz
-aKz
-aKz
-aKz
+sUR
+sUR
+sUR
+sUR
 lfi
-aKz
+sUR
 lAF
-aKz
-aKz
-aKz
-aKz
+sUR
+sUR
+sUR
+sUR
 aLY
 aNs
 aSd
@@ -49001,15 +49053,15 @@ arf
 aso
 akJ
 aKz
-aKz
-aKz
-aKz
+sUR
+sUR
+sUR
 cyK
-aKz
+sUR
 krA
-aKz
-aKz
-aKz
+sUR
+sUR
+sUR
 aKz
 aLY
 aNs
@@ -49205,11 +49257,11 @@ akJ
 aKz
 aKz
 aKz
-aKz
+sUR
 lGo
-aKz
+sUR
 fOb
-aKz
+sUR
 aKz
 aKz
 aKz
@@ -51851,11 +51903,11 @@ aUZ
 aXL
 aXL
 bbh
-bbi
+tdN
 bcy
 ben
 bcy
-bbi
+tdN
 bbh
 bcI
 bcI
@@ -52052,13 +52104,13 @@ aWB
 aXP
 aXL
 aXL
-bbi
-bbi
+tdN
+tdN
 rbU
 beo
 oYR
-bbi
-bbi
+tdN
+tdN
 bcI
 bcI
 bcI
@@ -52254,13 +52306,13 @@ iez
 aXN
 aXL
 aXL
-bbi
+tdN
 kqT
 bdv
 bep
 bft
 bgg
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -52456,13 +52508,13 @@ kED
 aXO
 aXL
 aXL
-bbi
+tdN
 bcr
 bdw
 beq
 bfu
 bgh
-bbi
+tdN
 bcI
 bcI
 aae
@@ -52658,13 +52710,13 @@ aUZ
 aUZ
 aXL
 aXL
-bbi
+tdN
 bcs
 bdx
 ber
 bfv
 bgi
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -52860,13 +52912,13 @@ aWC
 aXQ
 aXL
 aXL
-bbi
+tdN
 bct
 bdy
 bes
 bfw
 xNg
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -53062,13 +53114,13 @@ iez
 aXN
 aXL
 aXL
-bbi
+tdN
 bcu
 bdz
 bet
 bfx
 bfx
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -53264,13 +53316,13 @@ kED
 aXO
 aXL
 aXL
-bbi
+tdN
 bcv
 bdA
 beu
 bfy
 bfy
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -53466,13 +53518,13 @@ aUZ
 aUZ
 aXL
 aXL
-bbi
+tdN
 bcw
 bdB
 bev
 bfz
 bgj
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -53674,7 +53726,7 @@ bdC
 bew
 bfA
 bgk
-bbi
+tdN
 bcI
 bcI
 aae
@@ -53870,13 +53922,13 @@ aWE
 aXS
 aYV
 aZZ
-bbi
+tdN
 bcy
 bcy
 bcy
 bbi
 bgl
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -54072,13 +54124,13 @@ aPe
 aPe
 aPe
 baa
-bbi
+tdN
 bcz
 bdD
 bex
 bfB
 bgm
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -54274,13 +54326,13 @@ aUt
 aXT
 aVb
 baa
-bbi
+tdN
 bcA
 bcA
 bey
 bgn
 tHI
-bbi
+tdN
 bcI
 bcI
 bcI
@@ -67814,7 +67866,7 @@ beK
 wqp
 aOF
 sug
-aRY
+qwc
 bhd
 aLW
 aam
@@ -68016,7 +68068,7 @@ bfc
 bgH
 aOF
 bfU
-aRY
+qwc
 beL
 aLW
 aam
@@ -68218,7 +68270,7 @@ aOF
 aOF
 aOF
 aUV
-aRY
+qwc
 aNm
 aLW
 aam

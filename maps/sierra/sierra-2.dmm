@@ -233,6 +233,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
+/obj/item/material/twohanded/jack,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/storage/tech)
 "aay" = (
@@ -17369,6 +17370,7 @@
 "aFB" = (
 /obj/structure/mattress,
 /obj/item/bedsheet/purple,
+/obj/item/clothing/gloves/daft_punk,
 /turf/simulated/floor/carpet,
 /area/maintenance/seconddeck/foreport)
 "aFC" = (
@@ -33687,6 +33689,7 @@
 	dir = 5
 	},
 /obj/item/clothing/suit/storage/toggle/track/red,
+/obj/item/clothing/gloves/daft_punk,
 /obj/item/clothing/under/color/white,
 /obj/item/clothing/shoes/syndigaloshes,
 /obj/item/storage/backpack,
@@ -33973,6 +33976,7 @@
 /obj/item/book/manual/stasis,
 /obj/item/device/flashlight/lamp/green,
 /obj/machinery/light,
+/obj/item/clothing/gloves/wristwatch,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/sleep/bunk_big/room_two)
 "fHS" = (

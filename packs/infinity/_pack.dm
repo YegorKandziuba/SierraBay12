@@ -18,10 +18,14 @@
 #include "clothing\accessories\other.dm"
 #include "clothing\accessories\pins.dm"
 #include "clothing\accessories\torch.dm"
+#include "clothing\gloves\gloves.dm"
 #include "clothing\suits\armor.dm"
 #include "clothing\suits\under_bluebrig.dm"
 #include "clothing\suits\suits.dm"
 #include "clothing\shoes\shoes.dm"
+
+// Effects
+#include "effects\paint.dm"
 
 // Items
 #include "items\music_player\_music_player.dm"
@@ -48,6 +52,8 @@
 #include "mobs\simple\koala.dm"
 
 // Structures
-#include "structures\table_presets.dm"
+#include "structures\barrier.dm"
 #include "structures\chairs.dm"
+#include "structures\signs.dm"
+#include "structures\table_presets.dm"
 #endif
