@@ -140,8 +140,8 @@
 		/obj/item/flame/lighter/zippo = 2
 	)
 	premium = list(
-		/obj/item/storage/fancy/cigar = 5,
-		/obj/item/storage/fancy/cigarettes/killthroat = 5
+		/obj/item/storage/fancy/smokable = 5,
+		/obj/item/storage/fancy/smokable/killthroat = 5
 	)
 
 // From Old-World-Blues
@@ -219,7 +219,7 @@
 	contraband = list(
 		/obj/item/device/flash = 2,
 		/obj/item/airlock_brace = 2,
-		/obj/item/crowbar/brace_jack = 1
+		/obj/item/material/twohanded/jack = 1
 	)
 
 /obj/machinery/vending/parts/public
@@ -236,7 +236,7 @@
 	)
 	contraband = list(
 		/obj/item/device/flash = 2,
-		/obj/item/crowbar/brace_jack = 1
+		/obj/item/material/twohanded/jack = 1
 	)
 
 
@@ -276,35 +276,6 @@
 		/obj/item/gun/energy/gun/secure = 4
 	)
 
-/obj/machinery/vending/paimod
-	name = "IntelligenceTech"
-	desc = "A pai modification vendor. Inside of showcase you see many of circuits, devices and etc."
-	icon = 'maps/sierra/icons/obj/vending.dmi'
-	density = TRUE
-	icon_state = "pai"
-	products = list(
-		/obj/item/paimod/special/advanced_holo  = 3,
-		/obj/item/paimod/holoskins/paiwoman     = 3,
-		/obj/item/paimod/memory/standart        = 5,
-		/obj/item/paimod/memory/advanced        = 3,
-		/obj/item/paimod/memory/lambda          = 1
-	)
-	prices = list(
-		/obj/item/paimod/special/advanced_holo = 150,
-		/obj/item/paimod/holoskins/paiwoman    = 50,
-		/obj/item/paimod/memory/standart       = 20,
-		/obj/item/paimod/memory/advanced       = 60,
-		/obj/item/paimod/memory/lambda         = 120,
-		/obj/item/paimod/special/hack_camo     = 150,
-		/obj/item/paimod/hack_speed/standart   = 120,
-		/obj/item/paimod/hack_speed/advanced   = 200
-	)
-	contraband = list(
-		/obj/item/paimod/special/hack_camo   = 2,
-		/obj/item/paimod/hack_speed/standart = 2,
-		/obj/item/paimod/hack_speed/advanced = 1
-	)
-
 /obj/machinery/vending/costumes
 	name = "costumes dispenser"
 	desc = "All the costumes an actor could need. Probably."
@@ -319,12 +290,9 @@
 		/obj/item/clothing/head/fedora = 2,
 		/obj/item/clothing/head/festive = 4,
 		/obj/item/clothing/head/flatcap = 2,
-		/obj/item/clothing/head/gentle_cap = 2,
 		/obj/item/clothing/head/that = 2,
 		/obj/item/clothing/under/assistantformal = 2,
 		/obj/item/clothing/under/blackjumpskirt = 2,
-		/obj/item/clothing/under/civilian = 2,
-		/obj/item/clothing/under/civilian/black = 2,
 		/obj/item/clothing/under/gentlesuit = 2,
 		/obj/item/clothing/under/schoolgirl = 2,
 		/obj/item/clothing/under/scratch = 2,
@@ -343,7 +311,7 @@
 	products = list(
 		/obj/item/device/flashlight = 3,
 		/obj/item/device/multitool = 3,
-		/obj/item/device/multitool/multimeter = 3,
+		// /obj/item/device/multitool/multimeter = 3, // TODO: multimeter
 		/obj/item/device/geiger = 3,
 		/obj/item/device/scanner/gas = 3,
 		/obj/item/device/t_scanner = 3,
@@ -358,7 +326,6 @@
 		/obj/item/cell/potato = 5
 	)
 	premium = list(
-		/obj/item/combitool = 1,
 		/obj/item/wrench/power = 1,
 		/obj/item/wirecutters/power = 1
 	)
