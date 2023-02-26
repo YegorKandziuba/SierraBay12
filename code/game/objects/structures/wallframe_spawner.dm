@@ -164,6 +164,6 @@
 	name = "polarized wall frame window spawner (no grille) (non reinforced)"
 	win_path = /obj/structure/window/basic/full/polarized
 
-/obj/effect/wallframe_spawn/reinforced/polarized/handle_window_spawn(var/obj/structure/window/reinforced/polarized/P)
+/obj/effect/wallframe_spawn/reinforced/polarized/handle_window_spawn(obj/structure/window/reinforced/polarized/P)
 	if(id)
 		P.id = id
