@@ -8150,6 +8150,7 @@
 /obj/effect/floor_decal/corner/yellow/border{
 	dir = 4
 	},
+/mob/living/simple_animal/passive/opossum/poppy,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/ce)
 "apr" = (
