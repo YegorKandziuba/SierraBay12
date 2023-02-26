@@ -7,4 +7,5 @@
 
 // Objects
 #include "objects\structures\wall_frame.dm"
+#include "objects\structures\wallframe_spawner.dm"
 #endif

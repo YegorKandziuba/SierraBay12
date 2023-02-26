@@ -100,16 +100,6 @@
 	icon_state = "r-wingrille"
 	win_path = /obj/structure/window/reinforced/full
 
-/obj/effect/wallframe_spawn/reinforced/prepainted
-	name = "reinforced wall frame window spawner"
-	icon_state = "r-wingrille"
-	frame_path = /obj/structure/wall_frame/prepainted
-
-/obj/effect/wallframe_spawn/reinforced/wood
-	name = "reinforced wooden wall frame window spawner"
-	icon_state = "r-wingrille"
-	frame_path = /obj/structure/wall_frame/wood
-
 /obj/effect/wallframe_spawn/reinforced/no_grille
 	name = "reinforced wall frame window spawner (no grille)"
 	grille_path = null
@@ -117,14 +107,6 @@
 /obj/effect/wallframe_spawn/reinforced/titanium
 	name = "reinforced titanium wall frame window spawner"
 	frame_path = /obj/structure/wall_frame/titanium
-
-/obj/effect/wallframe_spawn/reinforced/voxalloy
-	name = "reinforced voxalloy wall frame window spawner"
-	frame_path = /obj/structure/wall_frame/voxalloy
-
-/obj/effect/wallframe_spawn/reinforced/crystal
-	name = "reinforced crystal wall frame window spawner"
-	frame_path = /obj/structure/wall_frame/crystal
 
 /obj/effect/wallframe_spawn/reinforced/hull
 	name = "reinforced hull wall frame window spawner"
@@ -165,10 +147,6 @@
 /obj/effect/wallframe_spawn/reinforced_phoron/titanium
 	name = "reinforced phoron titanium wall frame window spawner"
 	frame_path = /obj/structure/wall_frame/titanium
-
-/obj/effect/wallframe_spawn/reinforced_phoron/osmium
-	name = "reinforced phoron osmium wall frame window spawner"
-	frame_path = /obj/structure/wall_frame/osmium
 
 /obj/effect/wallframe_spawn/reinforced_phoron/hull
 	name = "reinforced phoron hull wall frame window spawner"
