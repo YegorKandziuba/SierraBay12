@@ -30084,6 +30084,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
+/mob/living/simple_animal/friendly/koala/samorey,
 /turf/simulated/floor/tiled/dark,
 /area/chapel/office)
 "bfb" = (

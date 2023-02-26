@@ -44,6 +44,7 @@
 
 // Mobs
 #include "mobs\simple\fox.dm"
+#include "mobs\simple\koala.dm"
 
 // Structures
 #include "structures\table_presets.dm"
