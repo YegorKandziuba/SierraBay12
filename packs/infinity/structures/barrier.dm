@@ -90,7 +90,7 @@
 
 /obj/structure/barrier/attack_hand(mob/living/carbon/human/user as mob)
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	if(user.species.can_shred(user) && user.a_intent == I_HURT || user.get_species() == SPECIES_XENO)
+	if(user.species.can_shred(user) && user.a_intent == I_HURT)
 		take_damage(20)
 		return
 	if(deployed)
@@ -231,7 +231,7 @@
 	icon = 'packs/infinity/icons/obj/items.dmi'
 	icon_state = "barrier_hand"
 	w_class = 4
-	health = 200
+	var/health = 200
 
 /obj/item/barrier/proc/turf_check(mob/user as mob)
 	for(var/obj/structure/barrier/D in user.loc.contents)
