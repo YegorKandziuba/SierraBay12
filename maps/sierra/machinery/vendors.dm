@@ -308,10 +308,10 @@
 	contraband = list()
 
 /obj/machinery/vending/engivend
-		// /obj/item/device/multitool/multimeter = 3, // SIERRA TODO: multimeter
 	products = list(
 		/obj/item/device/flashlight = 3,
 		/obj/item/device/multitool = 3,
+		// /obj/item/device/multitool/multimeter = 3, // SIERRA TODO: multimeter,
 		/obj/item/device/geiger = 3,
 		/obj/item/device/scanner/gas = 3,
 		/obj/item/device/t_scanner = 3,
