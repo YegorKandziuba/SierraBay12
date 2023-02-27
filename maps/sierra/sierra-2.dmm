@@ -16205,7 +16205,6 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/machinery/computer/modular/preset/full,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck/fore)
 "aDi" = (
