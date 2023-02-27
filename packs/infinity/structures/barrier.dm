@@ -19,7 +19,7 @@
 	update_layers()
 	update_icon()
 
-/obj/structure/barrier/examine(var/user)
+/obj/structure/barrier/examine(mob/user)
 	..()
 	if(health>=200)
 		to_chat(user, "<span class='notice'>It looks undamaged.</span>")
