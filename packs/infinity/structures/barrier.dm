@@ -103,14 +103,15 @@
 			update_layers()
 			update_icon()
 
-/obj/structure/barrier/attackby(obj/item/W as obj, mob/user as mob)
-	if(isWelder(W))
-		var/obj/item/weldingtool/WT = W
+/obj/structure/barrier/use_tool(obj/item/tool, mob/user, list/click_params)
+	. = ..()
+	if(isWelder(tool))
+		var/obj/item/weldingtool/WT = tool
 		if(health == maxhealth)
 			to_chat(user, "<span class='notice'>\The [src] is fully repaired.</span>")
 			return
 		if(!WT.isOn())
-			to_chat(user, "<span class='notice'>[W] should be turned on firstly.</span>")
+			to_chat(user, "<span class='notice'>[tool] should be turned on firstly.</span>")
 			return
 		if(WT.remove_fuel(0,user))
 			visible_message("<span class='warning'>[user] is repairing \the [src]...</span>")
@@ -123,7 +124,7 @@
 			to_chat(user, "<span class='notice'>You need more welding fuel to complete this task.</span>")
 		update_icon()
 		return
-	if(isScrewdriver(W))
+	if(isScrewdriver(tool))
 		if(density)
 			visible_message("<span class='danger'>[user] begins to [deployed ? "un" : ""]deploy \the [src]...</span>")
 			playsound(src, 'sound/items/Screwdriver.ogg', 100, 1)
@@ -136,7 +137,7 @@
 					basic_chance = 50
 		update_icon()
 		return
-	if(isCrowbar(W))
+	if(isCrowbar(tool))
 		if(!deployed && !density)
 			visible_message("<span class='danger'>[user] is begins disassembling \the [src]...</span>")
 			playsound(src, 'sound/items/Crowbar.ogg', 100, 1)
@@ -153,7 +154,7 @@
 		return
 	else
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-		take_damage(W.force)
+		take_damage(tool.force)
 		..()
 
 /obj/structure/barrier/bullet_act(obj/item/projectile/P)
@@ -255,11 +256,12 @@
 		user.drop_item()
 		qdel(src)
 
-/obj/item/barrier/attackby(obj/item/W as obj, mob/user as mob)
-	if(health != 200 && isWelder(W))
-		var/obj/item/weldingtool/WT = W
+/obj/item/barrier/use_tool(obj/item/tool, mob/user, list/click_params)
+	. = ..()
+	if(health != 200 && isWelder(tool))
+		var/obj/item/weldingtool/WT = tool
 		if(!WT.isOn())
-			to_chat(user, "<span class='notice'>The [W] should be turned on firstly.</span>")
+			to_chat(user, "<span class='notice'>The [tool] should be turned on firstly.</span>")
 			return
 		if(WT.remove_fuel(0,user))
 			to_chat(user, "<span class='notice'>You start repairing the damage to [src].</span>")
