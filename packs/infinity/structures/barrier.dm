@@ -109,10 +109,10 @@
 		var/obj/item/weldingtool/WT = tool
 		if(health == maxhealth)
 			to_chat(user, "<span class='notice'>\The [src] is fully repaired.</span>")
-			return
+			return TRUE
 		if(!WT.isOn())
 			to_chat(user, "<span class='notice'>[tool] should be turned on firstly.</span>")
-			return
+			return TRUE
 		if(WT.remove_fuel(0,user))
 			visible_message("<span class='warning'>[user] is repairing \the [src]...</span>")
 			playsound(src, 'sound/items/Welder.ogg', 100, 1)
@@ -123,7 +123,7 @@
 		else
 			to_chat(user, "<span class='notice'>You need more welding fuel to complete this task.</span>")
 		update_icon()
-		return
+		return TRUE
 	if(isScrewdriver(tool))
 		if(density)
 			visible_message("<span class='danger'>[user] begins to [deployed ? "un" : ""]deploy \the [src]...</span>")
@@ -136,7 +136,7 @@
 				else
 					basic_chance = 50
 		update_icon()
-		return
+		return TRUE
 	if(isCrowbar(tool))
 		if(!deployed && !density)
 			visible_message("<span class='danger'>[user] is begins disassembling \the [src]...</span>")
@@ -151,11 +151,11 @@
 		else
 			to_chat(user, "<span class='notice'>You should unsecure \the [src] firstly. Use a screwdriver.</span>")
 		update_icon()
-		return
+		return TRUE
 	else
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		take_damage(tool.force)
-		..()
+		return TRUE
 
 /obj/structure/barrier/bullet_act(obj/item/projectile/P)
 	..()
@@ -262,7 +262,7 @@
 		var/obj/item/weldingtool/WT = tool
 		if(!WT.isOn())
 			to_chat(user, "<span class='notice'>The [tool] should be turned on firstly.</span>")
-			return
+			return TRUE
 		if(WT.remove_fuel(0,user))
 			to_chat(user, "<span class='notice'>You start repairing the damage to [src].</span>")
 			playsound(src, 'sound/items/Welder.ogg', 100, 1)
@@ -270,7 +270,7 @@
 				to_chat(user, "<span class='notice'>You finish repairing the damage to [src].</span>")
 				playsound(src, 'sound/items/Welder2.ogg', 100, 1)
 				health = 200
+			return TRUE
 		else
 			to_chat(user, "<span class='notice'>You need more welding fuel to complete this task.</span>")
-			return
-	return
+			return TRUE
