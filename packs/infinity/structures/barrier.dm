@@ -156,11 +156,11 @@
 		take_damage(W.force)
 		..()
 
-/obj/structure/barrier/bullet_act(var/obj/item/projectile/P)
+/obj/structure/barrier/bullet_act(obj/item/projectile/P)
 	..()
 	take_damage(P.get_structure_damage())
 
-/obj/structure/barrier/attack_generic(var/mob/user, var/damage, var/attack_verb)
+/obj/structure/barrier/attack_generic(mob/user, damage, attack_verb)
 	take_damage(damage)
 	attack_animation(user)
 	if(damage >=1)
@@ -169,10 +169,10 @@
 		user.visible_message("<span class='danger'>[user] [attack_verb] \the [src] harmlessly!</span>")
 	return 1
 
-/obj/structure/barrier/take_damage(damage)
+/obj/structure/barrier/proc/take_damage(damage)
 	health -= damage * 0.5
 	if(health <= 0)
-		Destroy()
+		qdel(src)
 	else
 		playsound(src.loc, 'sound/effects/bang.ogg', 75, 1)
 
