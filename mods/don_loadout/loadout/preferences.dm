@@ -121,9 +121,9 @@
 		if(i + character_slots_count <= config.character_slots)
 			dat += "<a href='?src=\ref[src];changeslot=[i + character_slots_count];[details?"details=1":""]'>[name]</a><br>"
 	if(config.character_slots>10)
-		dat += "<br><a href='?src=\ref[src];changeslot_prev=1'> <b>\<</b> </a>"
+		dat += "<br><a href='?src=\ref[src];changeslot_prev=1'> <b>&lt;</b> </a>"
 		dat += " <b>[character_slots_count + 1]</b> - <b>[character_slots_count + 10]</b> "
-		dat += "<a href='?src=\ref[src];changeslot_next=1'> <b>\></b> </a><br>"
+		dat += "<a href='?src=\ref[src];changeslot_next=1'> <b>&gt;</b> </a><br>"
 	dat += "<hr>"
 	dat += "</center>"
 	panel = new(user, "character_slots", "Слоты персонажей", 300, 390, src)
