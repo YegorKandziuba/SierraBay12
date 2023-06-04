@@ -36,7 +36,6 @@
 
 	var/datum/category_collection/player_setup_collection/player_setup
 	var/datum/browser/panel
-	var/character_slots_count = 0
 
 /datum/preferences/New(client/C)
 	if(istype(C))
