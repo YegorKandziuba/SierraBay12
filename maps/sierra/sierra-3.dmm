@@ -10705,7 +10705,7 @@
 /turf/space,
 /area/space)
 "asn" = (
-/obj/machinery/jukebox/old,
+/obj/machinery/jukebox/custom_tape/old,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
 	},
@@ -23929,7 +23929,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/radio_beacon,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/bridge)
 "aNu" = (

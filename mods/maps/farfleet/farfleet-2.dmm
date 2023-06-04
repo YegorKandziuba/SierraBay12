@@ -1441,7 +1441,7 @@
 /obj/effect/floor_decal/corner/b_green/diagonal{
 	dir = 8
 	},
-/obj/machinery/jukebox/old,
+/obj/machinery/jukebox/custom_tape/old,
 /turf/simulated/floor/tiled/white,
 /area/ship/farfleet/crew/canteen)
 "oH" = (
@@ -2245,6 +2245,9 @@
 /obj/effect/floor_decal/industrial/outline,
 /obj/machinery/pointdefense_control{
 	initial_id_tag = "snz_pd"
+	},
+/obj/machinery/iff_beacon{
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/ship/snz)
@@ -4440,7 +4443,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/ship/farfleet/crew/freezer)
 "Se" = (
-/obj/structure/stasis_cage,
+/obj/machinery/stasis_cage,
 /obj/effect/floor_decal/industrial/outline/green,
 /turf/simulated/floor/tiled/techmaint,
 /area/ship/farfleet/maintenance/anomaly)
