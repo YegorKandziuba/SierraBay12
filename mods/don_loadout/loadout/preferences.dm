@@ -1,4 +1,6 @@
 /datum/preferences
+	var/character_slots_count = 0
+
 	var/datum/gear/trying_on_gear
 	var/list/trying_on_tweaks = new
 
@@ -129,3 +131,21 @@
 	panel = new(user, "character_slots", "Слоты персонажей", 300, 390, src)
 	panel.set_content(jointext(dat,null))
 	panel.open()
+
+/datum/preferences/Topic(href, list/href_list)
+	if(..())
+		return 1
+
+	if(href_list["changeslot_next"])
+		character_slots_count += 10
+		if(character_slots_count >= config.character_slots)
+			character_slots_count = 0
+		open_load_dialog(usr, href_list["details"])
+		return 1
+
+	else if(href_list["changeslot_prev"])
+		character_slots_count -= 10
+		if(character_slots_count < 0)
+			character_slots_count = config.character_slots - config.character_slots % 10
+		open_load_dialog(usr, href_list["details"])
+		return 1
