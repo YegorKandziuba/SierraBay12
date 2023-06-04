@@ -114,16 +114,12 @@
 	dat += "<center>"
 
 	dat += "<b>Выберите слот для загрузки</b><hr>"
-	for(var/i=1, i<= 10, i++)
-		var/name = (slot_names && slot_names[get_slot_key(i + character_slots_count)]) || "Персонаж [i + character_slots_count]"
-		if((i + character_slots_count) == default_slot)
+	for(var/i=1, i<= config.character_slots, i++)
+		var/name = (slot_names && slot_names[get_slot_key(i)]) || "Персонаж [i]"
+		if(i==default_slot)
 			name = "<b>[name]</b>"
-		if(i + character_slots_count <= config.character_slots)
-			dat += "<a href='?src=\ref[src];changeslot=[i + character_slots_count];[details?"details=1":""]'>[name]</a><br>"
-	if(config.character_slots>10)
-		dat += "<br><a href='?src=\ref[src];changeslot_prev=1'> <b>\<</b> </a>"
-		dat += " <b>[character_slots_count + 1]</b> - <b>[character_slots_count + 10]</b> "
-		dat += "<a href='?src=\ref[src];changeslot_next=1'> <b>\></b> </a><br>"
+		dat += "<a href='?src=\ref[src];changeslot=[i];[details?"details=1":""]'>[name]</a><br>"
+
 	dat += "<hr>"
 	dat += "</center>"
 	panel = new(user, "character_slots", "Слоты персонажей", 300, 390, src)

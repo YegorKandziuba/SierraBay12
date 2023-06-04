@@ -36,7 +36,6 @@
 
 	var/datum/category_collection/player_setup_collection/player_setup
 	var/datum/browser/panel
-	var/character_slots_count = 0
 
 /datum/preferences/New(client/C)
 	if(istype(C))
@@ -208,18 +207,6 @@
 
 		if (href_list["details"])
 			return 1
-	else if(href_list["changeslot_next"])
-		character_slots_count+=10
-		if(character_slots_count >= config.character_slots)
-			character_slots_count = 0
-		open_load_dialog(usr, href_list["details"])
-		return 1
-	else if(href_list["changeslot_prev"])
-		character_slots_count-=10
-		if(character_slots_count < 0)
-			character_slots_count = config.character_slots - config.character_slots % 10
-		open_load_dialog(usr, href_list["details"])
-		return 1
 	else if(href_list["resetslot"])
 		if(real_name != input("This will reset the current slot. Enter the character's full name to confirm."))
 			return 0
