@@ -29,10 +29,9 @@
 /* SMALL PODS
  * ==========
  */
-/*
+
 /area/shuttle/escape_pod/escape_pod6/station
 	name = "Shuttle - Escape - Small Pod Six"
-*/
 
 /area/shuttle/escape_pod/escape_pod7/station
 	name = "Shuttle - Escape - Small Pod Seven"
@@ -41,6 +40,12 @@
 	name = "Shuttle - Escape - Small Pod Eight"
 
 /area/shuttle/escape_pod/escape_pod9/station
+	name = "Shuttle - Escape - Small Pod Nine"
+
+/area/shuttle/escape_pod/escape_pod10/station
+	name = "Shuttle - Escape - Small Pod Nine"
+
+/area/shuttle/escape_pod/escape_pod11/station
 	name = "Shuttle - Escape - Small Pod Nine"
 
 /* VESSEL'S SHUTTLES
