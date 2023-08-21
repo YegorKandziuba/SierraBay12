@@ -31,15 +31,15 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_engine)
 	// Sounds for Substation rooms. Just electrical sounds, really.
-	ambience =  list(\
-	'sound/ambience/substation/substation1.ogg',\
-	'sound/ambience/substation/substation2.ogg',\
-	'sound/ambience/substation/substation3.ogg',\
-	'sound/ambience/substation/substation4.ogg',\
-	'sound/ambience/substation/substation5.ogg',\
-	'sound/ambience/substation/substation6.ogg',\
-	'sound/ambience/substation/substation7.ogg',\
-	'sound/ambience/substation/substation8.ogg'\
+	ambience =  list(
+		'maps/sierra/sound/ambience/substation1.ogg',
+		'maps/sierra/sound/ambience/substation2.ogg',
+		'maps/sierra/sound/ambience/substation3.ogg',
+		'maps/sierra/sound/ambience/substation4.ogg',
+		'maps/sierra/sound/ambience/substation5.ogg',
+		'maps/sierra/sound/ambience/substation6.ogg',
+		'maps/sierra/sound/ambience/substation7.ogg',
+		'maps/sierra/sound/ambience/substation8.ogg'
 	)
 
 /area/crew_quarters
@@ -67,7 +67,7 @@
 
 #include "areas/multideck.dm"
 #include "areas/shuttles.dm"
-#include "areas/sierra1.dm"
-#include "areas/sierra2.dm"
-#include "areas/sierra3.dm"
-#include "areas/sierra4.dm"
+#include "areas/z1_sierra_deck3.dm"
+#include "areas/z2_sierra_deck2.dm"
+#include "areas/z3_sierra_deck1.dm"
+#include "areas/z4_admin.dm"
