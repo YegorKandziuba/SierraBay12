@@ -1,3 +1,4 @@
+
 /* LARGE PODS
  * ==========
  */
@@ -28,6 +29,7 @@
 /* SMALL PODS
  * ==========
  */
+
 /area/shuttle/escape_pod/escape_pod6/station
 	name = "Shuttle - Escape - Small Pod Six"
 
@@ -36,6 +38,15 @@
 
 /area/shuttle/escape_pod/escape_pod8/station
 	name = "Shuttle - Escape - Small Pod Eight"
+
+/area/shuttle/escape_pod/escape_pod9/station
+	name = "Shuttle - Escape - Small Pod Nine"
+
+/area/shuttle/escape_pod/escape_pod10/station
+	name = "Shuttle - Escape - Small Pod Nine"
+
+/area/shuttle/escape_pod/escape_pod11/station
+	name = "Shuttle - Escape - Small Pod Nine"
 
 /* VESSEL'S SHUTTLES
  * =================
@@ -120,19 +131,19 @@
 	name = "Elevator - First Deck"
 	lift_floor_label = "1 Палуба"
 	lift_floor_name = "Оперативная палуба"
-	lift_announce_str = "Палуба 1 - Оперативная"
+	lift_announce_str = "Оперативная палуба: исследовательский отсек, медицинский отсек, отсек службы безопасности, серверная телекоммуникаций, отсек ВКД."
 
 /area/turbolift/sierra_middle
 	name = "Elevator - Second Deck"
 	lift_floor_label = "2 Палуба"
 	lift_floor_name = "Жилая палуба"
-	lift_announce_str = "Палуба 2 - Жилая"
+	lift_announce_str = "Жилая палуба: мостик, комната совещаний, отсек криосна, спальное крыло, голодек, библиотека, бар, кафе, гидропоника, спортзал, прачечная, инженерный отсек."
 
 /area/turbolift/sierra_ground
 	name = "Elevator - Third Deck"
 	lift_floor_label = "3 Палуба"
 	lift_floor_name = "Лётная палуба"
-	lift_announce_str = "Палуба 3 - Лётная"
+	lift_announce_str = "Лётная палуба: главный ангар, экспедиционное крыло, крыло снабжения, стыковочные доки, склады, переработка руды, коморка уборщика, нижний этаж ксенобиологии, NSS 'Petrov'."
 	base_turf = /turf/simulated/floor
 
 /area/turbolift/start
