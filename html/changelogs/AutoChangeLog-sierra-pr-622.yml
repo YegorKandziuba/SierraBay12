@@ -1,0 +1,4 @@
+author: ImJustKisik
+delete-after: true
+changes:
+  - bugfix: Чинит отображение скорости объектов на овермапе
