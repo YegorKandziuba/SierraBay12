@@ -481,7 +481,7 @@
 			/datum/reagent/nanites,
 			/datum/reagent/water/holywater,
 			/datum/reagent/toxin/plantbgone,
-			/datum/reagent/chloralhydrate/beer2,
+			/datum/reagent/chloralhydrate/beer,
 			/datum/reagent/zombie
 			)
 		banned_chems += subtypesof(/datum/reagent/ethanol)
@@ -872,6 +872,6 @@
 		var/image/I = image(res.icon, "[plant_icon]-[growth_stage]-leaves")
 		I.color = leaves
 		I.appearance_flags = DEFAULT_APPEARANCE_FLAGS | RESET_COLOR
-		res.overlays += I
+		res.AddOverlays(I)
 
 	return res

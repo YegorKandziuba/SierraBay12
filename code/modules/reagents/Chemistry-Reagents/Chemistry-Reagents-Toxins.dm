@@ -655,7 +655,7 @@
 	if(M.chem_doses[type] > 1 * threshold)
 		M.adjustToxLoss(removed)
 
-/datum/reagent/chloralhydrate/beer2 //disguised as normal beer for use by emagged brobots
+/datum/reagent/chloralhydrate/beer //disguised as normal beer for use by emagged brobots
 	name = "Beer"
 	description = "An alcoholic beverage made from malted grains, hops, yeast, and water. The fermentation appears to be incomplete." //If the players manage to analyze this, they deserve to know something is wrong.
 	taste_description = "shitty piss water"
@@ -1062,7 +1062,7 @@
 	to_chat(M, SPAN_DANGER("Your flesh rapidly mutates!"))
 	ADD_TRANSFORMATION_MOVEMENT_HANDLER(M)
 	M.icon = null
-	M.overlays.Cut()
+	M.ClearOverlays()
 	M.set_invisibility(INVISIBILITY_ABSTRACT)
 	for(var/obj/item/W in M)
 		if(istype(W, /obj/item/implant)) //TODO: Carn. give implants a dropped() or something
