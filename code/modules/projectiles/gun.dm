@@ -234,11 +234,15 @@
 		return
 
 	if(safety())
+		// [SIERRA-EDIT] - Mirror revert
+		// handle_click_safety(user) // SIERRA-EDIT - ORIGINAL
 		if(user.a_intent == I_HURT && user.skill_check(SKILL_WEAPONS, SKILL_EXPERIENCED))
 			toggle_safety(user)
 		else
 			handle_click_safety(user)
 			return
+		// [/SIERRA-EDIT]
+		return
 
 	if(world.time < next_fire_time)
 		if (world.time % 3) //to prevent spam

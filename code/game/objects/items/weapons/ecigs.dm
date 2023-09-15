@@ -46,7 +46,7 @@
 
 /obj/item/clothing/mask/smokable/ecig/util
 	name = "electronic cigarette"
-	desc = "A popular utilitarian model electronic cigarette, the ONI-55. Comes in a variety of colors."
+	desc = "A popular utilitarian model of electronic cigarette, the ONI-55. Comes in a variety of colors."
 	icon_state = "ecigoff1"
 	icon_off = "ecigoff1"
 	icon_empty = "ecigoff1"
@@ -156,7 +156,7 @@
 			update_icon()
 			to_chat(user, "[SPAN_NOTICE("You insert \the [I] into \the [src].")] ")
 
-	if(IsScrewdriver(I))
+	if (isScrewdriver(I))
 		if(cigcell) //if contains powercell
 			cigcell.update_icon()
 			cigcell.dropInto(loc)
