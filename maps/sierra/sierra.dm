@@ -134,7 +134,8 @@
 	// --- MAP FILES --- //
 
 		// ~SIERRA~ //
-	#include "z1-3_sierra.dmm"
+	//#include "z1-3_sierra.dmm"
+	#include "sierra-workplace.dmm"
 	#include "z4_admin.dmm"
 	#include "z5_transit.dmm"
 	#include "../away/empty.dmm"
