@@ -101,38 +101,6 @@
 	icon_state = "engine_smes"
 	sound_env = SMALL_ENCLOSED
 
-/area/engineering/drone_fabrication
-	name = "First Deck - Engineering - Drone Fabrication"
-	icon_state = "drone_fab"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_ai_upload)
-
-// Solars
-/area/maintenance/solar
-	name = "First Deck - Solar - Port"
-	icon_state = "SolarcontrolP"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine)
-
-/area/maintenance/solar/starboard
-	name = "First Deck - Solar - Starboard"
-	icon_state = "SolarcontrolS"
-
-/area/solar
-	area_flags = AREA_FLAG_EXTERNAL
-	requires_power = 1
-	always_unpowered = 1
-	has_gravity = FALSE
-	base_turf = /turf/space
-	sound_env = SPACE
-
-/area/solar/starboard
-	name = "First Deck - Solar - Starboard Array"
-	icon_state = "panelsS"
-
-/area/solar/port
-	name = "First Deck - Solar - Port Array"
-	icon_state = "panelsP"
 
 // Storage
 /area/storage/bridge
@@ -175,26 +143,6 @@
 	icon_state = "eva"
 	req_access = list(access_eva)
 
-// AI
-/area/turret_protected
-	req_access = list(access_ai_upload)
-	ambience = list(
-		'maps/sierra/sound/ambience/aimalf.ogg',
-		'maps/sierra/sound/ambience/aiservers.wav',
-		'maps/sierra/sound/ambience/aiporthum.ogg',
-		'maps/sierra/sound/ambience/ai1.ogg',
-		'maps/sierra/sound/ambience/ai2.ogg',
-		'maps/sierra/sound/ambience/ai3.ogg'
-	)
-	forced_ambience = list('maps/sierra/sound/ambience/ambxerxes_looped.wav')
-
-/area/turret_protected/ai
-	name = "AI Chamber"
-	icon_state = "ai_chamber"
-
-/area/turret_protected/ai_upload
-	name = "First Deck - AI Upload"
-	icon_state = "ai_upload"
 
 
 /* RND AREAS
@@ -405,3 +353,11 @@
 /area/medical/backstorage
 	name = "First Deck - Infirmary - Auxiliary Storage"
 	icon_state = "auxstorage"
+
+/* VACANT AREAS
+ * ============
+ */
+/area/vacant/dormintories
+	name = "First Deck - Cabin"
+	icon_state = "restrooms"
+	sound_env = MEDIUM_SOFTFLOOR

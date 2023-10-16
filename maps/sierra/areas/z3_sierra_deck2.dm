@@ -54,22 +54,12 @@
 	name = "Second Deck - Maintenance - Aft-Port"
 	icon_state = "apmaint"
 
-/area/teleporter/seconddeck
-	name = "Second Deck - Teleporter"
-	icon_state = "teleporter"
-
 /area/crew_quarters/safe_room/seconddeck
 	name = "Second Deck - Safe Room"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/maintenance/substation/seconddeck
 	name = "Second Deck - Substation"
-
-/area/maintenance/compactor
-	name = "Second Deck - Compactor"
-	icon_state = "disposal"
-	sound_env = STANDARD_STATION
-	req_access = list(list(access_cargo, access_maint_tunnels))
 
 /area/crew_quarters/laundry
 	name = "Second Deck - Laundry Room"
@@ -86,157 +76,9 @@
 	icon_state = "music_room"
 	turf_initializer = /singleton/turf_initializer/maintenance/heavy
 
-/* COMMAND AREAS
- * =============
- */
-/area/crew_quarters/heads/cobed
-	name = "Second Deck - Command - Captain's Quarters"
-	sound_env = MEDIUM_SOFTFLOOR
-	icon_state = "captain"
-	req_access = list(access_captain)
 
-/area/crew_quarters/heads/office/captain
-	name = "Second Deck - Command - Captain's Office"
-	icon_state = "heads_cap"
-	sound_env = MEDIUM_SOFTFLOOR
-	req_access = list(access_captain)
 
-/area/crew_quarters/heads/captain
-	req_access = list(access_captain)
-	icon_state = "heads_cap"
 
-/area/crew_quarters/heads/captain/office_anteroom
-	name = "Second Deck - Command - Captain's Office Anteroom"
-	sound_env = MEDIUM_SOFTFLOOR
-
-/area/crew_quarters/heads/captain/beach
-	name = "Second Deck - Command - Captain's Recreation Facility"
-	icon_state = "heads_cap"
-	sound_env = PLAIN
-	req_access = list()
-
-/area/crew_quarters/heads/office/ce
-	icon_state = "heads_ce"
-	name = "Second Deck - Command - CE's Office"
-	req_access = list(access_ce)
-
-/area/bridge
-	name = "Second Deck - Bridge"
-	icon_state = "bridge"
-	req_access = list(access_bridge)
-	ambience = list('maps/sierra/sound/ambience/bridge.wav')
-
-/area/bridge/nano
-	icon = 'maps/sierra/icons/turf/areas.dmi'
-	icon_state = "bridge_room"
-
-/area/bridge/meeting_room
-	name = "Second Deck - Command - Meeting Room"
-	ambience = list()
-	sound_env = MEDIUM_SOFTFLOOR
-
-/area/bridge/lobby
-	name = "Bridge - Lobby"
-	req_access = list()
-
-/area/teleporter
-	name = "Second Deck - Teleporter"
-	icon_state = "teleporter"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_teleporter)
-
-/* ENGINEERING AREAS
- * =================
- */
-/area/engineering/hallway
-	name = "Second Deck - Engineering - Hallway"
-	icon_state = "engineering_workshop"
-
-/area/engineering/hardstorage
-	name = "Second Deck - Engineering - Storage"
-	icon_state = "engineering_storage"
-	sound_env = SMALL_ENCLOSED
-
-/area/engineering/engine_room
-	name = "Second Deck - Engine - Supermatter"
-	icon_state = "engine"
-	sound_env = LARGE_ENCLOSED
-	area_flags = AREA_FLAG_ION_SHIELDED
-	ambience = list(
-		'maps/sierra/sound/ambience/engineering1.ogg',
-		'maps/sierra/sound/ambience/engineering2.ogg',
-		'maps/sierra/sound/ambience/engineering3.ogg'
-	)
-	req_access = list(access_engine_equip)
-
-/area/engineering/engine_eva
-	name = "Second Deck - Engineering - EVA"
-	icon_state = "engine_eva"
-	req_access = list(list(access_eva, access_external_airlocks), access_engine)
-
-/area/engineering/engine_monitoring
-	name = "Second Deck - Engine - Monitoring"
-	icon_state = "engine_monitoring"
-	ambience = list(
-		'maps/sierra/sound/ambience/engineering1.ogg',
-		'maps/sierra/sound/ambience/engineering2.ogg',
-		'maps/sierra/sound/ambience/engineering3.ogg'
-	)
-
-/area/engineering/engine_smes
-	name = "Second Deck - Engine - SMES"
-	icon_state = "engine_smes"
-	sound_env = SMALL_ENCLOSED
-
-/area/engineering/engineering_monitoring
-	name = "Second Deck - Engineering - Monitoring"
-	icon_state = "engine_monitoring"
-
-/area/engineering/locker_room
-	name = "Second Deck - Engineering - Locker Room"
-	icon_state = "engineering_locker"
-
-/area/engineering/materials_storage
-	name = "Second Deck - Engineering - Materials Storage"
-	icon_state = "engineering_storage"
-
-/area/engineering/atmos
-	name = "Second Deck - Engineering - Atmospherics"
-	icon_state = "atmos"
-	ambience = list(
-		'maps/sierra/sound/ambience/engineering1.ogg',
-		'maps/sierra/sound/ambience/engineering2.ogg',
-		'maps/sierra/sound/ambience/engineering3.ogg',
-		'maps/sierra/sound/ambience/atmospherics1.ogg'
-	)
-	sound_env = LARGE_ENCLOSED
-	req_access = list(access_atmospherics)
-
-/area/engineering/gravitaional_generator
-	name = "Second Deck - Gravitational Generator"
-	icon_state = "engine_monitoring"
-	req_access = list(list(access_engine_equip, access_heads), list(access_seneng, access_engine_equip))
-	sound_env = SMALL_ENCLOSED
-
-/area/engineering/bluespace
-	name = "Second Deck - Engineering - BlueSpace Drive"
-	icon_state = "engine_monitoring"
-	req_access = list(list(access_engine_equip, access_heads), access_engine, access_maint_tunnels)
-	sound_env = SMALL_ENCLOSED
-
-/area/engineering/bluespace/chamber
-	name = "Second Deck - Engineering - BlueSpace Drive - Chamber"
-	icon_state = "engine"
-	sound_env = LARGE_ENCLOSED
-
-/area/shield/seconddeck
-	name = "Second Deck - Shield Generator"
-
-// Storage
-/area/storage/tech
-	name = "Second Deck - Engineering - Technical Storage"
-	icon_state = "storage"
-	req_access = list(access_tech_storage)
 
 /* VACANT AREAS
  * ============
@@ -379,9 +221,3 @@
 	name = "Second Deck - Infirmary - Lower Storage"
 	icon_state = "medbay4"
 	req_access = list(access_medical_equip)
-
-/area/turret_protected/ai_cyborg_station
-	name = "Second Deck - Cyborg Station"
-	icon_state = "ai_cyborg"
-	sound_env = SMALL_ENCLOSED
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED

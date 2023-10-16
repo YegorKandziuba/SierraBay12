@@ -1,23 +1,3 @@
-/* COMMAND AREAS
- * =============
- */
-
-// First deck
-/area/crew_quarters/heads/captain/secret_room/level_two
-	name = "First Deck - Captain's bathroom"
-	area_flags = AREA_FLAG_RAD_SHIELDED
-
-/area/bridge/hall/level_two
-	name = "Bridge - Hall - Upper"
-	req_access = list(access_sec_doors)
-
-// Second deck
-/area/crew_quarters/heads/captain/secret_room/level_one
-	name = "Second Deck - Captain's restroom"
-	area_flags = AREA_FLAG_RAD_SHIELDED
-
-/area/bridge/hall/level_one
-	name = "Bridge - Hall - Lower"
 
 
 /* RND AREAS

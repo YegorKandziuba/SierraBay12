@@ -4,7 +4,6 @@
 		/area/space = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/exoplanet = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/engineering/auxpower = NO_SCRUBBER|NO_VENT,
-		/area/engineering/drone_fabrication = NO_SCRUBBER|NO_VENT,
 		/area/engineering/engine_smes = NO_SCRUBBER|NO_VENT,
 		/area/holodeck = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance = NO_SCRUBBER|NO_VENT,
