@@ -12,7 +12,7 @@
 
 /turf/simulated/floor/exoplanet/New()
 	if(GLOB.using_map.use_overmap)
-		var/obj/effect/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
+		var/obj/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
 		if(istype(E))
 			if(E.atmosphere)
 				initial_gas = E.atmosphere.gas.Copy()
@@ -20,8 +20,7 @@
 			else
 				initial_gas = list()
 				temperature = T0C
-			//Must be done here, as light data is not fully carried over by ChangeTurf (but overlays are).
-			set_light(E.lightlevel, 0.1, 2)
+
 			if(E.planetary_area && istype(loc, world.area))
 				ChangeArea(src, E.planetary_area)
 	..()
@@ -145,7 +144,7 @@
 /turf/simulated/floor/exoplanet/grass/Initialize()
 	. = ..()
 	if(GLOB.using_map.use_overmap)
-		var/obj/effect/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
+		var/obj/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
 		if(istype(E) && E.grass_color)
 			color = E.grass_color
 	if(!resources)
@@ -216,10 +215,11 @@
 	dynamic_lighting = FALSE
 	icon = null
 	icon_state = null
+	permit_ao = FALSE
 
 /turf/simulated/planet_edge/Initialize()
 	. = ..()
-	var/obj/effect/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
+	var/obj/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
 	if(!istype(E))
 		return
 	var/nx = x
@@ -239,14 +239,14 @@
 		vis_contents = list(NT)
 
 	//Need to put a mouse-opaque overlay there to prevent people turning/shooting towards ACTUAL location of vis_content things
-	var/obj/effect/overlay/O = new(src)
+	var/obj/overlay/O = new(src)
 	O.mouse_opacity = 2
 	O.name = "distant terrain"
 	O.desc = "You need to come over there to take a better look."
 
 /turf/simulated/planet_edge/Bumped(atom/movable/A)
 	. = ..()
-	var/obj/effect/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
+	var/obj/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
 	if(!istype(E))
 		return
 	if(E.planetary_area && istype(loc, world.area))

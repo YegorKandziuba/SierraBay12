@@ -10,7 +10,7 @@
 /// The base /renderer definition and defaults.
 /atom/movable/renderer
 	abstract_type = /atom/movable/renderer
-	appearance_flags = PLANE_MASTER
+	appearance_flags = DEFAULT_RENDERER_APPEARANCE_FLAGS
 	screen_loc = "CENTER"
 	plane = LOWEST_PLANE
 	blend_mode = BLEND_OVERLAY
@@ -132,7 +132,6 @@ INITIALIZE_IMMEDIATE(/atom/movable/renderer)
 	name = "Letterbox"
 	group = RENDER_GROUP_SCENE
 	plane = BLACKNESS_PLANE
-	appearance_flags = PLANE_MASTER | NO_CLIENT_COLOR
 	blend_mode = BLEND_MULTIPLY
 	mouse_opacity = MOUSE_OPACITY_UNCLICKABLE
 
@@ -188,15 +187,7 @@ GLOBAL_LIST_EMPTY(zmimic_renderers)
 	name = "Lighting"
 	group = RENDER_GROUP_SCENE
 	plane = LIGHTING_PLANE
-	appearance_flags = PLANE_MASTER | NO_CLIENT_COLOR
 	relay_blend_mode = BLEND_MULTIPLY
-	color = list(
-		-1,  0,  0,  0, // R
-		 0, -1,  0,  0, // G
-		 0,  0, -1,  0, // B
-		 0,  0,  0,  0, // A
-		 1,  1,  1,  1  // Mapping
-	)
 	mouse_opacity = MOUSE_OPACITY_UNCLICKABLE
 
 
@@ -271,7 +262,7 @@ GLOBAL_LIST_EMPTY(zmimic_renderers)
 */
 
 
-/// Renders the /obj/effect/effect/warp example effect as well as gravity catapult effects
+/// Renders the /obj/effect/warp example effect as well as gravity catapult effects
 /atom/movable/renderer/warp
 	name = "Warp Effect"
 	group = RENDER_GROUP_NONE
@@ -299,21 +290,17 @@ GLOBAL_LIST_EMPTY(zmimic_renderers)
 			vis_contents -= gas_heat_object
 
 		if (quality == GLOB.PREF_LOW)
-			if(!istype(gas_heat_object, /obj/effect/heat))
-				QDEL_NULL(gas_heat_object)
-				gas_heat_object = new /obj/effect/heat(null)
+			QDEL_NULL(gas_heat_object)
+			gas_heat_object = new /obj/heat(null)
 		else
-			if(!istype(gas_heat_object, /obj/particle_emitter/heat))
-				QDEL_NULL(gas_heat_object)
-				gas_heat_object = new /obj/particle_emitter/heat(null, -1)
+			QDEL_NULL(gas_heat_object)
 			if (quality == GLOB.PREF_MED)
-				gas_heat_object.particles?.count = 250
-				gas_heat_object.particles?.spawning = 15
+				gas_heat_object = new /obj/particle_emitter/heat(null)
 			else if (quality == GLOB.PREF_HIGH)
-				gas_heat_object.particles?.count = 600
-				gas_heat_object.particles?.spawning = 35
+				gas_heat_object = new /obj/particle_emitter/heat/high(null)
 
 		vis_contents += gas_heat_object
+
 
 /atom/movable/renderer/heat/Initialize()
 	. = ..()

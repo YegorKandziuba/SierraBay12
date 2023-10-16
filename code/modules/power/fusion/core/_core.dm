@@ -17,7 +17,7 @@
 	stat_immune = 0
 	base_type = /obj/machinery/power/fusion_core
 
-	var/obj/effect/fusion_em_field/owned_field
+	var/obj/fusion_em_field/owned_field
 	var/field_strength = 1//0.01
 	var/initial_id_tag
 
@@ -66,9 +66,9 @@
 		owned_field = null
 	update_use_power(POWER_USE_IDLE)
 
-/obj/machinery/power/fusion_core/proc/AddParticles(name, quantity = 1)
+/obj/machinery/power/fusion_core/proc/AddReactants(name, quantity = 1)
 	if(owned_field)
-		owned_field.AddParticles(name, quantity)
+		owned_field.AddReactants(name, quantity)
 		. = 1
 
 /obj/machinery/power/fusion_core/bullet_act(obj/item/projectile/Proj)

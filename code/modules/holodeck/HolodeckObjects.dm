@@ -232,12 +232,12 @@
 /obj/item/holo/esword/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")
 	. = ..()
 	if(.)
-		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		var/datum/effect/spark_spread/spark_system = new /datum/effect/spark_spread()
 		spark_system.set_up(5, 0, user.loc)
 		spark_system.start()
 		playsound(user.loc, 'sound/weapons/blade1.ogg', 50, 1)
 
-/obj/item/holo/esword/get_parry_chance(mob/user)
+/obj/item/holo/esword/get_parry_chance(mob/user, mob/attacker)
 	return active ? ..() : 0
 
 /obj/item/holo/esword/Initialize()
@@ -419,10 +419,9 @@
 /mob/living/simple_animal/hostile/carp/holodeck/on_update_icon()
 	return
 
-
 /mob/living/simple_animal/hostile/carp/holodeck/Initialize(mapload, ...)
 	. = ..()
-	set_light(0.5, 0.1, 2) //hologram lighting
+	set_light(2, 0.5) //hologram lighting
 
 
 /mob/living/simple_animal/hostile/carp/holodeck/proc/set_safety(safe)

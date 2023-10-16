@@ -24,8 +24,7 @@ GLOBAL_DATUM_INIT(cult, /datum/antagonist/cultist, new)
 	id = MODE_CULTIST
 	role_text = "Cultist"
 	role_text_plural = "Cultists"
-	restricted_jobs = list(/datum/job/lawyer, /datum/job/captain, /datum/job/hos)
-	protected_jobs = list(/datum/job/officer, /datum/job/warden, /datum/job/detective)
+	restricted_jobs = list(/datum/job/lawyer, /datum/job/captain, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/detective)
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/submap)
 	feedback_tag = "cult_objective"
 	antag_indicator = "hudcultist"
@@ -45,7 +44,7 @@ GLOBAL_DATUM_INIT(cult, /datum/antagonist/cultist, new)
 	var/allow_narsie = 1
 	var/powerless = 0
 	var/datum/mind/sacrifice_target
-	var/list/obj/effect/rune/teleport/teleport_runes = list()
+	var/list/obj/rune/teleport/teleport_runes = list()
 	var/list/rune_strokes = list()
 	var/list/sacrificed = list()
 	var/cult_rating = 0

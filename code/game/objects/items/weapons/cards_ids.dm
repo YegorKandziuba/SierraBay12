@@ -284,6 +284,7 @@ var/global/const/NO_EMAG_ACT = -50
 		. += ", [assignment]"
 
 /obj/item/card/id/proc/set_id_photo(mob/M)
+	M.ImmediateOverlayUpdate()
 	front = getFlatIcon(M, SOUTH, always_use_defdir = 1)
 	side = getFlatIcon(M, WEST, always_use_defdir = 1)
 
@@ -467,7 +468,7 @@ var/global/const/NO_EMAG_ACT = -50
 	detail_color = COLOR_AMBER
 
 /obj/item/card/id/synthetic/New()
-	access = get_all_station_access() + access_synth
+	access = GLOB.using_map.synth_access.Copy()
 	..()
 
 /obj/item/card/id/centcom

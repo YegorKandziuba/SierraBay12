@@ -1,4 +1,4 @@
-/obj/effect/overmap/visitable/sector/exoplanet/volcanic
+/obj/overmap/visitable/sector/exoplanet/volcanic
 	name = "volcanic exoplanet"
 	desc = "A tectonically unstable planet, extremely rich in minerals."
 	color = "#9c2020"
@@ -16,21 +16,21 @@
 	fauna_types = list(/mob/living/simple_animal/thinbug, /mob/living/simple_animal/hostile/retaliate/beast/shantak/lava, /mob/living/simple_animal/hostile/retaliate/beast/charbaby)
 	megafauna_types = list(/mob/living/simple_animal/hostile/drake)
 
-/obj/effect/overmap/visitable/sector/exoplanet/volcanic/get_atmosphere_color()
+/obj/overmap/visitable/sector/exoplanet/volcanic/get_atmosphere_color()
 	return COLOR_GRAY20
 
-/obj/effect/overmap/visitable/sector/exoplanet/volcanic/generate_atmosphere()
+/obj/overmap/visitable/sector/exoplanet/volcanic/generate_atmosphere()
 	..()
 	if(atmosphere)
 		atmosphere.temperature = T20C + rand(220, 800)
 		atmosphere.update_values()
 
-/obj/effect/overmap/visitable/sector/exoplanet/volcanic/adapt_seed(datum/seed/S)
+/obj/overmap/visitable/sector/exoplanet/volcanic/adapt_seed(datum/seed/S)
 	..()
 	S.set_trait(TRAIT_REQUIRES_WATER,0)
 	S.set_trait(TRAIT_HEAT_TOLERANCE, 1000 + S.get_trait(TRAIT_HEAT_TOLERANCE))
 
-/obj/effect/overmap/visitable/sector/exoplanet/volcanic/adapt_animal(mob/living/simple_animal/A)
+/obj/overmap/visitable/sector/exoplanet/volcanic/adapt_animal(mob/living/simple_animal/A)
 	..()
 	A.heat_damage_per_tick = 0 //animals not hot, no burning in lava
 
@@ -94,16 +94,18 @@
 	turf_flags = TURF_DISALLOW_BLOB
 	var/list/victims
 
+	ambient_light_multiplier = 1
+
+/turf/simulated/floor/exoplanet/lava/setup_local_ambient()
+	set_ambient_light(COLOR_ORANGE, 1)
+
 /turf/simulated/floor/exoplanet/lava/on_update_icon()
 	return
-
-/turf/simulated/floor/exoplanet/lava/Initialize()
-	. = ..()
-	set_light(0.95, 0.5, 2, l_color = COLOR_ORANGE)
 
 /turf/simulated/floor/exoplanet/lava/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	. = ..()
+	clear_ambient_light()
 
 /turf/simulated/floor/exoplanet/lava/Entered(atom/movable/AM)
 	..()

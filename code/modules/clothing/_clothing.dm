@@ -16,7 +16,7 @@
 	var/smell_state = SMELL_DEFAULT
 	var/volume_multiplier = 1
 
-	var/move_trail = /obj/effect/decal/cleanable/blood/tracks/footprints // if this item covers the feet, the footprints it should leave
+	var/move_trail = /obj/decal/cleanable/blood/tracks/footprints // if this item covers the feet, the footprints it should leave
 
 
 /obj/item/clothing/Initialize()
@@ -188,13 +188,15 @@
 		return STATUS_INTERACTIVE
 
 /obj/item/clothing/OnTopic(user, list/href_list, datum/topic_state/state)
+	. = ..()
+
 	if(href_list["list_ungabunga"])
 		var/list/visible = get_visible_accessories()
 		if (length(visible))
 			var/list/display = list()
 			for (var/obj/item/clothing/accessory/A in visible)
 				if (!(A.accessory_flags & ACCESSORY_HIDDEN))
-					display += "[icon2html(A, user)] \a [A]"
+					display += "[icon2html(A, user)] \a [A]<a href='?src=\ref[A];examine=1'>\[?\]</a>"
 			to_chat(user, "Attached to \the [src] are [english_list(display)].")
 		return TOPIC_HANDLED
 	if(href_list["list_armor_damage"])
@@ -204,6 +206,14 @@
 		for(var/key in damages)
 			to_chat(user, "<li><b>[capitalize(damages[key])]</b> damage to the <b>[key]</b> armor.")
 		return TOPIC_HANDLED
+
+/obj/item/clothing/use_tool(obj/item/tool, mob/living/user, list/click_params)
+	SHOULD_CALL_PARENT(TRUE)
+	if (attempt_attach_accessory(tool, user))
+		return TRUE
+	if (attempt_store_item(tool, user))
+		return TRUE
+	return ..()
 
 ///////////////////////////////////////////////////////////////////////
 // Ears: headsets, earmuffs and tiny objects
@@ -454,7 +464,7 @@ BLIND     // can't see anything
 
 /obj/item/clothing/head/proc/update_flashlight(mob/user = null)
 	if(on && !light_applied)
-		set_light(brightness_on, 1, 3)
+		set_light(3, brightness_on, angle = LIGHT_WIDE)
 		light_applied = 1
 	else if(!on && light_applied)
 		set_light(0)

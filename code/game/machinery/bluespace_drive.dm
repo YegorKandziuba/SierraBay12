@@ -37,8 +37,8 @@
 /obj/machinery/bluespacedrive/Initialize()
 	. = ..()
 	drive_sound = GLOB.sound_player.PlayLoopingSound(src, "\ref[src]", 'sound/machines/BSD_idle.ogg', 50, 7)
-	particles = new /particles/bluespace_torus
-	set_light(1, 5, 15, 10, COLOR_CYAN)
+	AddParticles(/particles/torus/bluespace)
+	set_light(15, 1, COLOR_CYAN)
 	update_icon()
 
 
@@ -154,7 +154,7 @@
 			to_chat(living, SPAN_DANGER(FONT_LARGE("The Drive's field cracks open briefly, emitting a blinding flash of blue light and a deafenening screech!")))
 		living.flash_eyes(FLASH_PROTECTION_MAJOR)
 		living.Stun(3)
-		living.confused += 15
+		living.mod_confused(15)
 		living.ear_damage += rand(0, 5)
 		living.ear_deaf = max(living.ear_deaf, 15)
 	if (!change_turf)
@@ -164,22 +164,6 @@
 			continue
 		floor.ChangeTurf(/turf/simulated/floor/bluespace)
 
-
-
-
-/particles/bluespace_torus
-	width = 700
-	height = 700
-	count = 2700
-	spawning = 260
-	lifespan = 0.75 SECONDS
-	fade = 0.95 SECONDS
-	position = generator("circle", 16, 24, NORMAL_RAND)
-	velocity = generator("circle", -6, 6, NORMAL_RAND)
-	friction = 0.15
-	gradient = list(0, COLOR_WHITE, 0.75, COLOR_BLUE_LIGHT)
-	color_change = 0.125
-	drift = generator("vector", list(-0.2, -0.2), list(0.2, 0.2))
 
 /datum/bubble_effect/bluespace_pulse
 	///List of mobs that can be swapped around when the pulse hits
@@ -213,7 +197,7 @@
 	if (TICK_CHECK)
 		return TRUE
 	if (radius <= 20)
-		new /obj/effect/temporary (turf, 0.2 SECONDS, 'icons/effects/effects.dmi', "cyan_sparkles")
+		new /obj/temporary (turf, 0.2 SECONDS, 'icons/effects/effects.dmi', "cyan_sparkles")
 	var/obj/machinery/light/light = locate() in turf
 	if (light && prob(20))
 		light.broken()

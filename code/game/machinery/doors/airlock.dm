@@ -705,21 +705,21 @@ About the new airlock wires panel:
 			if(AIRLOCK_CLOSED)
 				if(lights && locked)
 					new_overlays += overlay_image(bolts_file, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
-					set_light(0.25, 0.1, 1, 2, COLOR_RED_LIGHT)
+					set_light(2, 0.75, COLOR_RED_LIGHT)
 			if(AIRLOCK_DENY)
 				if(lights)
 					new_overlays += overlay_image(deny_file, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
-					set_light(0.25, 0.1, 1, 2, COLOR_RED_LIGHT)
+					set_light(2, 0.75, COLOR_RED_LIGHT)
 			if(AIRLOCK_EMAG)
 				new_overlays += overlay_image(emag_file, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 			if(AIRLOCK_CLOSING)
 				if(lights)
 					new_overlays += overlay_image(lights_file, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
-					set_light(0.25, 0.1, 1, 2, COLOR_LIME)
+					set_light(2, 0.75, COLOR_LIME)
 			if(AIRLOCK_OPENING)
 				if(lights)
 					new_overlays += overlay_image(lights_file, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
-					set_light(0.25, 0.1, 1, 2, COLOR_LIME)
+					set_light(2, 0.75, COLOR_LIME)
 		if(MACHINE_IS_BROKEN(src))
 			new_overlays += overlay_image(sparks_broken_file, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		else if (get_damage_percentage() >= 25)
@@ -800,7 +800,7 @@ About the new airlock wires panel:
 		if (istype(mover, /obj/item))
 			var/obj/item/i = mover
 			if (i.matter && (MATERIAL_STEEL in i.matter) && i.matter[MATERIAL_STEEL] > 0)
-				var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
+				var/datum/effect/spark_spread/s = new /datum/effect/spark_spread
 				s.set_up(5, 1, src)
 				s.start()
 	return ..()
@@ -1104,7 +1104,7 @@ About the new airlock wires panel:
 	da.symbol_color = symbol_color
 
 	if(moved)
-		var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
+		var/datum/effect/spark_spread/s = new /datum/effect/spark_spread
 		s.set_up(5, 1, src)
 		s.start()
 	else
@@ -1138,7 +1138,7 @@ About the new airlock wires panel:
 		if (secured_wires)
 			lock()
 		visible_message("\The [src]'s control panel bursts open, sparks spewing out!")
-		var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
+		var/datum/effect/spark_spread/s = new /datum/effect/spark_spread
 		s.set_up(5, 1, src)
 		s.start()
 

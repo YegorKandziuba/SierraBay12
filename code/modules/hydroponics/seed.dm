@@ -21,7 +21,7 @@
 	var/list/exude_gasses          // The plant will exude these gasses during its life.
 	var/kitchen_tag                // Used by the reagent grinder.
 	var/trash_type                 // Garbage item produced when eaten.
-	var/splat_type = /obj/effect/decal/cleanable/fruit_smudge // Graffiti decal
+	var/splat_type = /obj/decal/cleanable/fruit_smudge // Graffiti decal
 	/// Used when product isn't under /food/snacks/grown (e.g. simplemobs, aquaculture).
 	var/product_type
 	/// If mob, whether players can possess
@@ -102,7 +102,7 @@
 		var/injecting = min(5,max(1,get_trait(TRAIT_POTENCY)/3))
 		R.add_reagent(rid,injecting)
 
-	var/datum/effect/effect/system/smoke_spread/chem/spores/S = new(name)
+	var/datum/effect/smoke_spread/chem/spores/S = new(name)
 	S.attach(T)
 	S.set_up(R, round(get_trait(TRAIT_POTENCY)/4), 0, T)
 	S.start()
@@ -196,15 +196,15 @@
 
 //Splatter a turf.
 /datum/seed/proc/splatter(turf/T,obj/item/thrown)
-	if(splat_type && !(locate(/obj/effect/vine) in T))
-		var/obj/effect/vine/splat = new splat_type(T, src)
+	if(splat_type && !(locate(/obj/vine) in T))
+		var/obj/vine/splat = new splat_type(T, src)
 		if(!istype(splat)) // Plants handle their own stuff.
 			splat.SetName("[thrown.name] [pick("smear","smudge","splatter")]")
 			if(get_trait(TRAIT_BIOLUM))
 				var/clr
 				if(get_trait(TRAIT_BIOLUM_COLOUR))
 					clr = get_trait(TRAIT_BIOLUM_COLOUR)
-				splat.set_light(0.5, 0.1, 3, l_color = clr)
+				splat.set_light(3, 0.5, l_color = clr)
 			var/flesh_colour = get_trait(TRAIT_FLESH_COLOUR)
 			if(!flesh_colour) flesh_colour = get_trait(TRAIT_PRODUCT_COLOUR)
 			if(flesh_colour) splat.color = get_trait(TRAIT_PRODUCT_COLOUR)
@@ -343,7 +343,7 @@
 		if(abs(light_supplied - get_trait(TRAIT_IDEAL_LIGHT)) > get_trait(TRAIT_LIGHT_TOLERANCE))
 			health_change += rand(1,3) * HYDRO_SPEED_MULTIPLIER
 
-	for(var/obj/effect/effect/smoke/chem/smoke in range(1, current_turf))
+	for(var/obj/effect/smoke/chem/smoke in range(1, current_turf))
 		if(smoke.reagents.has_reagent(/datum/reagent/toxin/plantbgone))
 			return 100
 
@@ -370,10 +370,10 @@
 
 		var/turf/T = get_random_turf_in_range(target, outer_teleport_radius, inner_teleport_radius)
 		if(T)
-			var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
+			var/datum/effect/spark_spread/s = new /datum/effect/spark_spread
 			s.set_up(3, 1, get_turf(target))
 			s.start()
-			new/obj/effect/decal/cleanable/molten_item(get_turf(target)) // Leave a pile of goo behind for dramatic effect...
+			new/obj/decal/cleanable/molten_item(get_turf(target)) // Leave a pile of goo behind for dramatic effect...
 			target.forceMove(T)                                     // And teleport them to the chosen location.
 			impact = 1
 
@@ -787,7 +787,7 @@
 				var/clr
 				if(get_trait(TRAIT_BIOLUM_COLOUR))
 					clr = get_trait(TRAIT_BIOLUM_COLOUR)
-				product.set_light(0.5, 0.1, 3, l_color = clr)
+				product.set_light(3, 0.5, l_color = clr)
 
 			//Handle spawning in living, mobile products (like dionaea).
 			if(istype(product,/mob/living))

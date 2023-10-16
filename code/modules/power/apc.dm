@@ -345,7 +345,7 @@
 		if(update_state & (UPDATE_OPENED1|UPDATE_OPENED2|UPDATE_BROKE))
 			set_light(0)
 		else if(update_state & UPDATE_BLUESCREEN)
-			set_light(0.8, 0.1, 1, 2, "#00ecff")
+			set_light(1, 0.8, "#00ecff")
 		else if(!MACHINE_IS_BROKEN(src) && !GET_FLAGS(stat, MACHINE_STAT_MAINT) && update_state & UPDATE_ALLGOOD)
 			var/color
 			switch(charging)
@@ -355,13 +355,13 @@
 					color = "#a8b0f8"
 				if(2)
 					color = "#82ff4c"
-			set_light(0.8, 0.1, 1, l_color = color)
+			set_light(1, 0.8, l_color = color)
 		else
 			set_light(0)
 
 /obj/machinery/power/apc/proc/check_updates()
 	if(!update_overlay_chan)
-		update_overlay_chan = new/list()
+		update_overlay_chan = list()
 	var/last_update_state = update_state
 	var/last_update_overlay = update_overlay
 	var/list/last_update_overlay_chan = update_overlay_chan.Copy()

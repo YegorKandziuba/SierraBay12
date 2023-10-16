@@ -1,4 +1,4 @@
-/obj/effect/overmap/visitable/sector/exoplanet/chlorine
+/obj/overmap/visitable/sector/exoplanet/chlorine
 	name = "chlorine exoplanet"
 	desc = "An exoplanet with a chlorine based ecosystem. Large quantities of liquid chlorine are present."
 	color = "#c9df9f"
@@ -14,18 +14,12 @@
 	flora_diversity = 5
 	fauna_types = list(/mob/living/simple_animal/thinbug, /mob/living/simple_animal/hostile/retaliate/beast/samak/alt, /mob/living/simple_animal/yithian, /mob/living/simple_animal/tindalos, /mob/living/simple_animal/hostile/retaliate/jelly)
 	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/jelly/mega)
+	sun_brightness_modifier = 0.5 //The dense atmosphere makes it all dark
 
-/obj/effect/overmap/visitable/sector/exoplanet/chlorine/get_atmosphere_color()
+/obj/overmap/visitable/sector/exoplanet/chlorine/get_atmosphere_color()
 	return "#e5f2bd"
 
-/obj/effect/overmap/visitable/sector/exoplanet/chlorine/generate_map()
-	if(prob(50))
-		lightlevel = rand(7,10)/10 //It could be night.
-	else
-		lightlevel = 0.1
-	..()
-
-/obj/effect/overmap/visitable/sector/exoplanet/chlorine/generate_atmosphere()
+/obj/overmap/visitable/sector/exoplanet/chlorine/generate_atmosphere()
 	..()
 	if(atmosphere)
 		atmosphere.adjust_gas(GAS_CHLORINE, MOLES_O2STANDARD)

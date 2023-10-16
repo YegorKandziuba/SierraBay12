@@ -1,4 +1,4 @@
-/obj/effect/overmap/visitable/sector/exoplanet/shrouded
+/obj/overmap/visitable/sector/exoplanet/shrouded
 	name = "shrouded exoplanet"
 	desc = "An exoplanet shrouded in a perpetual storm of bizzare, light absorbing particles."
 	color = "#783ca4"
@@ -7,7 +7,7 @@
 	plant_colors = list("#3c5434", "#2f6655", "#0e703f", "#495139", "#394c66", "#1a3b77", "#3e3166", "#52457c", "#402d56", "#580d6d")
 	map_generators = list(/datum/random_map/noise/exoplanet/shrouded, /datum/random_map/noise/ore/poor)
 	ruin_tags_blacklist = RUIN_HABITAT
-	lightlevel = -0.15
+	sun_brightness_modifier = -0.5
 	surface_color = "#3e3960"
 	water_color = "#2b2840"
 	has_trees = TRUE
@@ -18,13 +18,13 @@
 					   /mob/living/simple_animal/hostile/leech)
 
 
-/obj/effect/overmap/visitable/sector/exoplanet/shrouded/generate_atmosphere()
+/obj/overmap/visitable/sector/exoplanet/shrouded/generate_atmosphere()
 	..()
 	if(atmosphere)
 		atmosphere.temperature = T20C - rand(10, 20)
 		atmosphere.update_values()
 
-/obj/effect/overmap/visitable/sector/exoplanet/shrouded/get_atmosphere_color()
+/obj/overmap/visitable/sector/exoplanet/shrouded/get_atmosphere_color()
 	return COLOR_BLACK
 
 /datum/random_map/noise/exoplanet/shrouded

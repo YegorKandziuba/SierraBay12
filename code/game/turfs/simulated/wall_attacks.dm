@@ -29,7 +29,7 @@
 		update_icon()
 		update_air()
 		sleep(15)
-		set_light(0.4, 0.1, 1)
+		set_light(1, 0.4)
 		src.blocks_air = 1
 		set_opacity(1)
 		for(var/turf/simulated/turf in loc)
@@ -88,7 +88,7 @@
 	radiate()
 	add_fingerprint(user)
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	var/rotting = (locate(/obj/effect/overlay/wallrot) in src)
+	var/rotting = (locate(/obj/overlay/wallrot) in src)
 	if (MUTATION_HULK in user.mutations)
 		if (rotting || !prob(material.hardness))
 			success_smash(user)
@@ -114,9 +114,9 @@
 					playsound(src, pick(GLOB.punch_sound), 20)
 				if (MUTATION_FERAL in user.mutations)
 					M.visible_message(SPAN_DANGER("[M.name] slams into \the [src]!"), SPAN_DANGER("You slam into \the [src]!"))
-					playsound(src, pick(GLOB.punch_sound), 45)
-					damage_health(5, DAMAGE_BRUTE)
-					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN*2) //Additional cooldown
+					playsound(src, 'sound/effects/clang.ogg', 45, 1)
+					damage_health(20, DAMAGE_BRUTE)
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN*5) //Additional cooldown
 					attack_animation(user)
 				else
 					M.visible_message(SPAN_DANGER("[M.name] punches \the [src]!"), SPAN_DANGER("You punch \the [src]!"))
@@ -133,7 +133,7 @@
 		return
 
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	var/rotting = (locate(/obj/effect/overlay/wallrot) in src)
+	var/rotting = (locate(/obj/overlay/wallrot) in src)
 	if(!damage || !wallbreaker)
 		try_touch(user, rotting)
 		return
@@ -175,13 +175,13 @@
 		if (heat_value)
 			burn(heat_value)
 
-	if(locate(/obj/effect/overlay/wallrot) in src)
+	if(locate(/obj/overlay/wallrot) in src)
 		if(isWelder(W))
 			var/obj/item/weldingtool/WT = W
 			if( WT.remove_fuel(0,user) )
 				to_chat(user, SPAN_NOTICE("You burn away the fungi with \the [WT]."))
 				playsound(src, 'sound/items/Welder.ogg', 10, 1)
-				for(var/obj/effect/overlay/wallrot/WR in src)
+				for(var/obj/overlay/wallrot/WR in src)
 					qdel(WR)
 				return
 		else if(!is_sharp(W) && W.force >= 10 || W.force >= 20)

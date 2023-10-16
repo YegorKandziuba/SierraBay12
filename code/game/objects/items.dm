@@ -256,7 +256,7 @@
 
 	if(user.put_in_active_hand(src))
 		if (isturf(old_loc))
-			var/obj/effect/temporary/item_pickup_ghost/ghost = new(old_loc, src)
+			var/obj/temporary/item_pickup_ghost/ghost = new(old_loc, src)
 			ghost.animate_towards(user)
 		if(randpixel)
 			pixel_x = rand(-randpixel, randpixel)
@@ -287,13 +287,6 @@
 					S.gather_all(src.loc, user)
 			else if (S.can_be_inserted(src, user))
 				S.handle_item_insertion(src)
-
-/obj/item/use_on(obj/target, mob/user)
-	if (istype(target, /obj/item/clothing))
-		var/obj/item/clothing/clothes = target
-		if (clothes.attempt_store_item(src, user))
-			return TRUE
-	return ..()
 
 /obj/item/can_embed()
 	if (!canremove)
@@ -548,7 +541,7 @@ var/global/list/slot_flags_enumeration = list(
 //For non-projectile attacks this usually means the attack is blocked.
 //Otherwise should return 0 to indicate that the attack is not affected in any way.
 /obj/item/proc/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")
-	var/parry_chance = get_parry_chance(user)
+	var/parry_chance = get_parry_chance(user, attacker)
 	if(parry_chance)
 		if(default_parry_check(user, attacker, damage_source) && prob(parry_chance))
 			user.visible_message(SPAN_DANGER("\The [user] parries [attack_text] with \the [src]!"))
@@ -561,12 +554,15 @@ var/global/list/slot_flags_enumeration = list(
 /obj/item/proc/on_parry(damage_source)
 	return
 
-/obj/item/proc/get_parry_chance(mob/user)
+/obj/item/proc/get_parry_chance(mob/user, mob/attacker)
 	. = base_parry_chance
+	if (!istype(user) || !istype(attacker))
+		return
 	if (user.a_intent == I_HELP)
 		. = 0
 	if (.)
-		. += clamp((user.get_skill_value(SKILL_COMBAT) * 10) - 20, 0, 75)
+		. += (user.get_skill_difference(SKILL_COMBAT, attacker) * 5)
+		. = clamp(., 0, 75)
 
 /obj/item/proc/on_disarm_attempt(mob/target, mob/living/attacker)
 	if(force < 1)
@@ -885,6 +881,8 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	var/ID = GetIdCard()
 	if(ID)
 		. += "  <a href='?src=\ref[ID];look_at_id=1'>\[Look at ID\]</a>"
+	else
+		. += "  <a href='?src=\ref[src];examine=1'>\[?\]</a>"
 
 /obj/item/proc/on_active_hand(mob/M)
 
@@ -951,3 +949,10 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 /// Virtual for behavior to do after successful do_after if equip_delay is set
 /obj/item/proc/equip_delay_after(mob/user, slot, equip_flags)
 	return
+
+/obj/item/OnTopic(href, href_list, datum/topic_state/state)
+	. = ..()
+
+	if (href_list["examine"])
+		examinate(usr, src)
+		return TOPIC_HANDLED

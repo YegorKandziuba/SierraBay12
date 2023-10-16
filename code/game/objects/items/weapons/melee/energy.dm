@@ -56,7 +56,7 @@
 	if (user)
 		playsound(user, 'sound/weapons/saberon.ogg', 50, 1)
 		to_chat(user, SPAN_NOTICE("\The [src] is now energised."))
-	set_light(0.8, 1, 2, 4, lighting_color)
+	set_light(2, 0.8, lighting_color)
 
 	if (istype(user,/mob/living/carbon/human))
 		var/mob/living/carbon/human/H = user
@@ -114,7 +114,7 @@
 		disabletime = 1.5 MINUTES
 
 	visible_message(SPAN_DANGER("\The [src] violently shudders!"))
-	new /obj/effect/overlay/self_deleting/emppulse(get_turf(src))
+	new /obj/overlay/self_deleting/emppulse(get_turf(src))
 
 	disabled = world.time + disabletime
 	var/mob/living/carbon/M = loc
@@ -233,13 +233,13 @@
 /obj/item/melee/energy/sword/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")
 	. = ..()
 	if(.)
-		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		var/datum/effect/spark_spread/spark_system = new /datum/effect/spark_spread()
 		spark_system.set_up(5, 0, user.loc)
 		spark_system.start()
 		playsound(user.loc, 'sound/weapons/blade1.ogg', 50, 1)
 
 
-/obj/item/melee/energy/sword/get_parry_chance(mob/user)
+/obj/item/melee/energy/sword/get_parry_chance(mob/user, mob/attacker)
 	return active ? ..() : 0
 
 
@@ -280,12 +280,12 @@
 	active_attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/blade1.ogg'
 	var/mob/living/creator
-	var/datum/effect/effect/system/spark_spread/spark_system
+	var/datum/effect/spark_spread/spark_system
 
 
 /obj/item/melee/energy/blade/New()
 	..()
-	spark_system = new /datum/effect/effect/system/spark_spread()
+	spark_system = new /datum/effect/spark_spread()
 	spark_system.set_up(5, 0, src)
 	spark_system.attach(src)
 

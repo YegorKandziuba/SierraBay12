@@ -23,7 +23,7 @@
 	var/custom_sprite = FALSE
 	var/crisis //Admin-settable for combat module use.
 	var/crisis_override = FALSE
-	var/integrated_light_max_bright = 0.75
+	var/integrated_light_power = 0.75
 	var/datum/wires/robot/wires
 	var/module_category = ROBOT_MODULE_TYPE_GROUNDED
 	var/dismantle_type = /obj/item/robot_parts/robot_suit
@@ -79,7 +79,7 @@
 	var/list/req_access = list(access_robotics)
 	var/ident = 0
 	var/modtype = "Default"
-	var/datum/effect/effect/system/spark_spread/spark_system //So they can initialize sparks whenever/N
+	var/datum/effect/spark_spread/spark_system //So they can initialize sparks whenever/N
 	var/lawupdate = TRUE //Cyborgs will sync their laws with their AI by default
 	var/lockcharge //If a robot is locked down
 	var/scrambledcodes = FALSE // Used to determine if a borg shows up on the robotics console.  Setting to one hides them.
@@ -96,7 +96,7 @@
 
 /mob/living/silicon/robot/Initialize()
 	. = ..()
-	spark_system = new /datum/effect/effect/system/spark_spread()
+	spark_system = new /datum/effect/spark_spread()
 	spark_system.set_up(5, 0, src)
 	spark_system.attach(src)
 
@@ -408,9 +408,9 @@
 /mob/living/silicon/robot/proc/update_robot_light()
 	if(lights_on)
 		if(intenselight)
-			set_light(1, 2, 6)
+			set_light(6, 1)
 		else
-			set_light(0.75, 1, 4)
+			set_light(4, 0.75)
 	else
 		set_light(0)
 
@@ -839,8 +839,11 @@
 
 	if(istype(user,/mob/living/carbon/human))
 		var/mob/living/carbon/human/H = user
-		if(H.species.can_shred(H))
-			attack_generic(H, rand(30,50), "slashed")
+		if(H.species.can_shred(H) || (MUTATION_FERAL in H.mutations))
+			attack_generic(H, rand(10,20), "slashed")
+			playsound(loc, 'sound/weapons/bite.ogg', 50, 1)
+			if (prob(20))
+				playsound(loc, 'sound/effects/sparks1.ogg', 50, 1)
 			return
 
 	if(opened && !wiresexposed && (!istype(user, /mob/living/silicon)))

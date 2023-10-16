@@ -118,7 +118,7 @@
 
 /singleton/vv_set_handler/light_handler
 	handled_type = /atom
-	handled_vars = list("light_max_bright","light_inner_range","light_outer_range","light_falloff_curve")
+	handled_vars = list("light_power","light_range")
 
 /singleton/vv_set_handler/light_handler/handle_set_var(atom/A, variable, var_value, client)
 	var_value = text2num(var_value)
@@ -126,12 +126,10 @@
 		return
 	// More sanity checks
 
-	var/new_max = variable == "light_max_bright" ? var_value : A.light_max_bright
-	var/new_inner = variable == "light_inner_range" ? var_value : A.light_inner_range
-	var/new_outer = variable == "light_outer_range" ? var_value : A.light_outer_range
-	var/new_falloff = variable == "light_falloff_curve" ? var_value : A.light_falloff_curve
+	var/new_max = variable == "light_power" ? var_value : A.light_power
+	var/new_range = variable == "light_range" ? var_value : A.light_range
 
-	A.set_light(new_max, new_inner, new_outer, new_falloff)
+	A.set_light(new_range, new_max)
 
 /singleton/vv_set_handler/health_value_handler
 	handled_type = /atom
@@ -156,7 +154,7 @@
 			target.revive_health()
 
 /singleton/vv_set_handler/vessel_mass
-	handled_type = /obj/effect/overmap/visitable/ship
+	handled_type = /obj/overmap/visitable/ship
 	handled_vars = list("vessel_mass")
 	predicates = list(
 		/proc/is_num_predicate,

@@ -160,7 +160,7 @@
 		set_light(0)
 	else
 		icon_state = "station_map"
-		set_light(0.8, 0.1, 2, 2, "#1dbe17")
+		set_light(2, 0.8, "#1dbe17")
 
 		// Put the little "map" overlay down where it looks nice
 		if(small_station_map)
@@ -331,7 +331,7 @@
 
 	//This is where the fun begins
 	if(GLOB.using_map.use_overmap)
-		var/obj/effect/overmap/visitable/O = map_sectors["[z]"]
+		var/obj/overmap/visitable/O = map_sectors["[z]"]
 
 		var/current_z_offset_x = (HOLOMAP_ICON_SIZE / 2) - world.maxx / 2
 		var/current_z_offset_y = (HOLOMAP_ICON_SIZE / 2) - world.maxy / 2

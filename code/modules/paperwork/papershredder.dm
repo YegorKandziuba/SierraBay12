@@ -128,12 +128,12 @@
 	FireBurn()
 
 /obj/item/shreddedp/proc/FireBurn()
-	new /obj/effect/decal/cleanable/ash(get_turf(src))
+	new /obj/decal/cleanable/ash(get_turf(src))
 	qdel(src)
 
 /obj/item/shreddedp
 	name = "shredded paper"
-	icon = 'icons/obj/paper.dmi'
+	icon = 'icons/obj/machines/bureaucracy/papershredder.dmi'
 	icon_state = "shredp"
 	randpixel = 5
 	throwforce = 0
