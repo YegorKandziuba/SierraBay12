@@ -138,6 +138,17 @@
 	icon_state = "engine"
 	sound_env = LARGE_ENCLOSED
 
+/area/engineering/fuelbay
+	name = "Third Deck - Engineering - Fuel Bay"
+	icon_state = "engineering"
+	req_access = list(access_construction)
+
+/area/engineering/atmos/storage
+	name = "Third Deck - Engineering - Atmospherics Storage"
+	icon_state = "atmos_storage"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_atmospherics)
+
 /area/turret_protected/ai_cyborg_station
 	name = "Third Deck - Cyborg Station"
 	icon_state = "ai_cyborg"
@@ -221,6 +232,11 @@
 	icon_state = "disposal"
 	sound_env = STANDARD_STATION
 	req_access = list(list(access_cargo, access_maint_tunnels))
+
+/area/maintenance/incinerator
+	name = "Third Deck - Incinerator"
+	icon_state = "disposal"
+	req_access = list(list(access_engine, access_medical, access_cargo))
 
 /* RND AREAS
  * =========

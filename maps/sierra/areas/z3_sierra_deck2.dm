@@ -260,13 +260,22 @@
 /* MEDBAY AREAS
  * ============
  */
+
+/area/medical/ward
+	name = "Second Deck - Patient Ward - Patients"
+	icon_state = "patients"
+
+/area/medical/wardhallway
+	name = "Second Deck - Patient Ward - Hallway"
+	icon_state = "medbay2"
+
 /area/medical/maintenance_equipstorage
 	name = "Second Deck - Infirmary - Lower Storage"
 	icon_state = "medbay4"
 	req_access = list(access_medical_equip)
 
 /area/medical/morgue
-	name = "First Deck - Infirmary - Morgue"
+	name = "Second Deck - Infirmary - Morgue"
 	icon_state = "morgue"
 	ambience = list(
 		'sound/ambience/ambimo1.ogg',
@@ -274,3 +283,14 @@
 		'sound/music/main.ogg'
 	)
 	req_access = list(access_morgue)
+
+// Virology
+
+/area/medical/virology
+	name = "Second Deck - Virology"
+	icon_state = "decontamination"
+	req_access = list(access_virology)
+
+/area/medical/virology/atmos
+	name = "Second Deck - Virology"
+	icon_state = "atmos"

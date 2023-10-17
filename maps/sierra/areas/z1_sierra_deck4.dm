@@ -62,8 +62,6 @@
 	icon_state = "heads_sea"
 	req_access = list(access_el)
 
-
-
 /* ENGINEERING AREAS
  * =================
  */
@@ -118,6 +116,9 @@
 	name = "Fourth Deck - Supply"
 	icon_state = "quartoffice"
 	req_access = list(access_mailsorting, access_cargo)
+
+/area/quartermaster/office/post
+	name = "Fourth Deck - Supply - Mail Delivery"
 
 /area/quartermaster/suplocker_room
 	name = "Fourth Deck - Supply - Locker room"
