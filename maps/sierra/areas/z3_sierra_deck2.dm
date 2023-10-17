@@ -292,5 +292,11 @@
 	req_access = list(access_virology)
 
 /area/medical/virology/atmos
-	name = "Second Deck - Virology"
+	name = "Second Deck - Virology - Atmospherics Storage"
 	icon_state = "atmos"
+
+/area/medical/virology/lab
+	name = "Second Deck - Virology - Laboratory"
+
+/area/medical/virology/ward
+	name = "Second Deck - Virology - Isolation"
