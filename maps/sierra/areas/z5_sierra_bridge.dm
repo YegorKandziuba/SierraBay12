@@ -10,6 +10,25 @@
 	name = "Bridge - Stairwell - Central"
 	icon_state = "hallC2"
 
+/area/maintenance/bridgedeck
+	name = "Bridge - Maintenance"
+	icon_state = "maintcentral"
+
+/area/maintenance/bridgedeck/aft
+	name = "Bridge - Maintenance - Aft"
+	icon_state = "amaint"
+
+/area/maintenance/bridgedeck/starboard
+	name = "Bridge - Maintenance - Starboard "
+	icon_state = "smaint"
+
+/area/maintenance/bridgedeck/port
+	name = "Bridge - Maintenance - Port"
+	icon_state = "pmaint"
+
+/area/maintenance/substation/bridgedeck
+	name = "Bridge - Substation"
+
 /area/crew_quarters/sleep/cryo/bridge
 	name = "Bridge - Living - Cryogenic Storage"
 
@@ -129,6 +148,11 @@
 	name = "Bridge - Command - CMO's Quarters"
 	req_access = list(access_cmo)
 
+/area/crew_quarters/heads/office/ce/cobed
+	icon_state = "heads_ce"
+	name = "Bridge - Command - CE's Quarters"
+	req_access = list(access_ce)
+
 /area/crew_quarters/heads/office/hos/cobed
 	icon_state = "heads_hos"
 	name = "Bridge - Command - HoS's Quarters"
@@ -155,14 +179,23 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
 /area/bridge/adjutants
-	name = "First Deck - Adjutants Room"
+	name = "Bridge - Adjutants Room"
 	icon = 'maps/sierra/icons/turf/areas.dmi'
 	icon_state = "bridge_gun"
+
+/area/bridge/adjutants/cobed
+	name = "Bridge - Adjutants Dormintories"
 
 
 /area/crew_quarters/heads/captain/secret_room/level_one
 	name = "Second Deck - Captain's restroom"
 	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/crew_quarters/head_big
+	name = "Bridge - Living - Restroom"
+	icon_state = "toilet"
+	sound_env = SMALL_ENCLOSED
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 // Solars
 
@@ -181,3 +214,9 @@
 /area/solar/bridge_port
 	name = "Bridge - Solar - Port Array"
 	icon_state = "panelsP"
+
+/area/engineering/atmos/bridge
+	name = "Bridge - Engineering - Atmospherics Suppliment"
+	icon_state = "atmos_storage"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_atmospherics)

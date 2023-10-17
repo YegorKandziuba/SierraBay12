@@ -436,6 +436,29 @@ SIERRA_ESCAPE_POD(11)
 	name = "In transit"
 	landmark_tag = "nav_transit_guppy"
 
+/datum/shuttle/autodock/overmap/crucian
+	name = "Crucian"
+	move_time = 40
+	shuttle_area = /area/crucian_hangar/start
+	dock_target ="crucian_shuttle"
+	current_location = "nav_hangar_crucian"
+	landmark_transition = "nav_transit_crucian"
+	sound_takeoff = 'sound/effects/rocket.ogg'
+	sound_landing = 'sound/effects/rocket_backwards.ogg'
+	fuel_consumption = 3
+	logging_home_tag = "nav_hangar_crucian"
+	logging_access = access_guppy_helm
+	skill_needed = SKILL_UNSKILLED
+	ceiling_type = /turf/simulated/floor/shuttle_ceiling/sierra
+	warmup_time = 6
+
+/obj/shuttle_landmark/sierra/hangar/crucian
+	name = "Guppy Hangar"
+	landmark_tag = "nav_hangar_crucian"
+	base_area = /area/maintenance/seconddeck/hangar
+	base_turf = /turf/simulated/floor/plating
+
+
 //Makes the deck management program use hangar access
 /datum/nano_module/deck_management
 	default_access = list(access_hangar, access_cargo, access_heads)

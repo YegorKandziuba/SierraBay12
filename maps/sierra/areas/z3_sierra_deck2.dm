@@ -108,14 +108,20 @@
 	icon_state = "xeno_lab"
 
 /area/assembly/chargebay
-	name = "First Deck - RND - Mech Bay"
+	name = "Second Deck - RND - Mech Bay"
 	icon_state = "mechbay"
 
 /area/assembly/robotics
-	name = "First Deck - RND - Robotics Lab"
+	name = "Second Deck - RND - Robotics Lab"
 	icon_state = "robotics"
 
+/area/rnd/toxins
+	name = "Second Deck - RND - Toxins Lab"
+	icon_state = "toxstorage"
+	req_access = list(access_tox_storage)
 
+/area/rnd/toxins/storage
+	name = "Second Deck - RND - Canister Storage"
 
 /* VACANT AREAS
  * ============
@@ -124,6 +130,20 @@
 	name = "Second Deck - Gambling Room"
 	icon_state = "restrooms"
 	sound_env = MEDIUM_SOFTFLOOR
+
+/area/vacant/dungeon
+	name = "Second Deck - Dungeon"
+	icon_state = "restrooms"
+	sound_env = MEDIUM_SOFTFLOOR
+
+/area/vacant/sauna
+	name = "Second Deck - Unused Sauna"
+	icon_state = "restrooms"
+	sound_env = MEDIUM_SOFTFLOOR
+
+/area/maintenance/seconddeck/hangar
+	name = "Second Deck - Auxiliary Hangar"
+	icon_state = "hangar"
 
 // Holodecks
 /area/holodeck
@@ -143,26 +163,23 @@
 	name = "Second Deck - Service - Hydroponics"
 	icon_state = "hydro"
 
-/area/crew_quarters/bar
-	name = "Second Deck - Service - Bar"
-	icon_state = "bar"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(list(access_kitchen, access_bar))
-
-
 /area/crew_quarters/galley
 	name = "Second Deck - Service - Galley"
 	icon_state = "kitchen"
 	req_access = list(list(access_kitchen, access_bar))
 
 /area/crew_quarters/galley/backroom
+	name = "Second Deck - Service - Galley Backroom"
+	icon_state = "kitchen"
+	req_access = list(list(access_kitchen, access_bar))
+
+/area/crew_quarters/galley/freezer
 	name = "Second Deck - Service - Galley Cold Storage"
 	icon_state = "kitchen"
 	req_access = list(list(access_kitchen, access_bar))
 
-/area/crew_quarters/cafe
+/area/crew_quarters/cafe/upper
 	name = "Second Deck - Living - Cafe"
-	icon_state = "cafeteria"
 
 /area/crew_quarters/sauna
 	name = "Second Deck - Living - Sauna"
@@ -174,17 +191,9 @@
 	icon_state = "toilet"
 	sound_env = SMALL_ENCLOSED
 
-/area/crew_quarters/head_big
-	name = "Second Deck - Living - Lounge - Restroom"
-	icon_state = "toilet"
-	sound_env = SMALL_ENCLOSED
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-
-/area/crew_quarters/game_room
-	name = "Second deck - living - Lounge - Game room"
+/area/crew_quarters/garden_room
+	name = "Second deck - living - Lounge"
 	icon_state = "game_room_inf"
-	sound_env = SMALL_ENCLOSED
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/crew_quarters/gym
 	name = "Second Deck - Living - Gym"
@@ -195,6 +204,9 @@
 	icon_state = "Theatre"
 	sound_env = SMALL_SOFTFLOOR
 	req_access = list(access_actor)
+
+/area/crew_quarters/actor/stage
+	name = "Second Deck - Service - Stage"
 
 /area/crew_quarters/lounge
 	name = "Second Deck - Living - Lounge"

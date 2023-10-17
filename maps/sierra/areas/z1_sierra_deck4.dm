@@ -54,6 +54,16 @@
 /area/crew_quarters/visitors
 	name = "Fourth Deck - Visitors"
 
+/area/crew_quarters/commissary
+	name = "Fourth Deck - Commissary"
+	icon_state = "crew_quarters"
+	req_access = list(access_commissary)
+
+/area/crew_quarters/docking
+	name = "Fourth Deck - Docking Bay"
+	icon_state = "crew_quarters"
+	lighting_tone = AREA_LIGHTING_COOL
+
 /* COMMAND AREAS
  * =============
  */
@@ -100,6 +110,10 @@
 
 /area/vacant/monitoring
 	name = "Fourth Deck - Abandoned - Monitoring"
+	icon_state = "engine_monitoring"
+
+/area/vacant/storage
+	name = "Fourth Deck - Abandoned - Storage"
 	icon_state = "engine_monitoring"
 
 /area/vacant/cargo

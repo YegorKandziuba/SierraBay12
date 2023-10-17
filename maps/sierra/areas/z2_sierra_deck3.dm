@@ -23,9 +23,13 @@
 	name = "Third Deck - Maintenance"
 	icon_state = "maintcentral"
 
-/area/maintenance/thirddeck/aft
-	name = "Third Deck - Maintenance - Aft"
-	icon_state = "amaint"
+/area/maintenance/thirddeck/aftstarboard
+	name = "Second Deck - Maintenance - Aft-Starboard "
+	icon_state = "asmaint"
+
+/area/maintenance/thirddeck/aftport
+	name = "Second Deck - Maintenance - Aft-Port"
+	icon_state = "apmaint"
 
 /area/maintenance/thirddeck/foreport
 	name = "Third Deck - Maintenance - Fore-Port "
@@ -53,6 +57,29 @@
 
 /area/crew_quarters/sleep/cryo/thirddeck
 	name = "Third Deck - Living - Cryogenic Storage"
+
+/area/crew_quarters/head/deck3
+	name = "Third Deck - Head"
+
+/area/crew_quarters/bar
+	name = "Third Deck - Service - Bar"
+	icon_state = "bar"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(list(access_kitchen, access_bar))
+
+/area/crew_quarters/bar/cobed
+	name = "Third Deck - Service - Bartender's Room"
+
+/area/crew_quarters/cafe
+	name = "Third Deck - Living - Cafe"
+	icon_state = "cafeteria"
+
+/area/crew_quarters/chief_steward
+	name = "Third Deck - Chief Steward's Office"
+	icon_state = "kitchen"
+	req_access = list(access_chief_steward)
+	sound_env = SMALL_ENCLOSED
+	lighting_tone = AREA_LIGHTING_WARM
 
 /* ENGINEERING AREAS
  * =================
@@ -206,11 +233,11 @@
 	sound_env = SPACE
 
 /area/solar/starboard
-	name = "First Deck - Solar - Starboard Array"
+	name = "Third Deck - Solar - Starboard Array"
 	icon_state = "panelsS"
 
 /area/solar/port
-	name = "First Deck - Solar - Port Array"
+	name = "Third Deck - Solar - Port Array"
 	icon_state = "panelsP"
 
 // Storage
@@ -218,6 +245,9 @@
 	name = "Third Deck - Engineering - Technical Storage"
 	icon_state = "storage"
 	req_access = list(access_tech_storage)
+
+/area/storage/tech/high_risk
+	name = "Third Deck - Engineering - High Security Storage"
 
 // Hangar
 /area/quartermaster/hangar/upper
@@ -237,6 +267,23 @@
 	name = "Third Deck - Incinerator"
 	icon_state = "disposal"
 	req_access = list(list(access_engine, access_medical, access_cargo))
+
+//Vacant
+
+/area/vacant/cargo
+	name = "Third Deck - Requisitions Office"
+	icon_state = "quart"
+	holomap_color = HOLOMAP_AREACOLOR_CARGO
+
+/area/vacant/mess
+	name = "Third Deck - Old Mess"
+	icon_state = "bar"
+	lighting_tone = AREA_LIGHTING_WARM
+
+/area/vacant/bar
+	name = "Third Deck - Hidden Bar"
+	icon_state = "bar"
+	lighting_tone = AREA_LIGHTING_WARM
 
 /* RND AREAS
  * =========

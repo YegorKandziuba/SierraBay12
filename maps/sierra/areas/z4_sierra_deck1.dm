@@ -266,6 +266,8 @@
 	icon_state = "detective"
 	req_access = list(list(access_forensics_lockers, access_security))
 
+/area/security/sierra/interrogation/second
+
 /area/security/sierra/evidence
 	name = "First Deck - Security - Evidence Storage"
 	icon_state = "detective"
@@ -358,3 +360,7 @@
 	name = "First Deck - Cabin"
 	icon_state = "restrooms"
 	sound_env = MEDIUM_SOFTFLOOR
+
+/area/vacant/utility
+	name = "First Deck - Utility Room"
+	icon_state = "restrooms"

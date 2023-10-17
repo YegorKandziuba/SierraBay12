@@ -10,7 +10,7 @@
 		/area/maintenance/exterior = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance/compactor = 0,
 		/area/turret_protected/ai_cyborg_station = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/thirddeck/aft = 0,
+		/area/maintenance/fourthdeck/aft = 0,
 		/area/maintenance/waterstore = 0,
 		/area/maintenance/abandoned_hydroponics = 0,
 		/area/maintenance/firstdeck/aftport = 0,
