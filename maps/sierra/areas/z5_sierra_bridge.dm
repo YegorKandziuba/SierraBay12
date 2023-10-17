@@ -1,6 +1,17 @@
+/area/hallway/primary/bridgedeck/center
+	name = "Bridge - Hallway - Central"
+	icon_state = "hallC3"
+
+/area/hallway/primary/bridgedeck/aft
+	name = "Bridge - Hallway - Aft"
+	icon_state = "hallA"
+
 /area/hallway/primary/bridgedeck/central_stairwell
-	name = "Fourth Deck - Stairwell - Central"
+	name = "Bridge - Stairwell - Central"
 	icon_state = "hallC2"
+
+/area/crew_quarters/sleep/cryo/bridge
+	name = "Bridge - Living - Cryogenic Storage"
 
 /* COMMAND AREAS
  * =============
@@ -31,11 +42,6 @@
 	sound_env = PLAIN
 	req_access = list()
 
-/area/crew_quarters/heads/office/ce
-	icon_state = "heads_ce"
-	name = "Bridge - Command - CE's Office"
-	req_access = list(access_ce)
-
 /area/bridge
 	name = "Bridge Deck - Bridge"
 	icon_state = "bridge"
@@ -44,6 +50,7 @@
 
 /area/bridge/nano
 	icon = 'maps/sierra/icons/turf/areas.dmi'
+	name = "Bridge Deck - Entrance"
 	icon_state = "bridge_room"
 
 /area/bridge/meeting_room
@@ -53,12 +60,16 @@
 	sound_env = MEDIUM_SOFTFLOOR
 
 /area/bridge/marine_room
+	icon = 'maps/sierra/icons/turf/areas.dmi'
 	name = "Bridge - Command - Briefing Room"
 	icon_state = "bridge_room"
 
 /area/bridge/lobby
 	name = "Bridge - Lobby"
 	req_access = list()
+
+/area/bridge/hallway
+	name = "Bridge - Hallway"
 
 /area/bridge/storage
 	name = "Bridge - Storage"
@@ -95,8 +106,8 @@
 	name = "First Deck - AI Upload"
 	icon_state = "ai_upload"
 
-/area/bridge/hall/port
-	name = "Bridge - Hall - Port"
+/area/bridge/hall/
+	name = "Bridge - Hall - Command"
 	req_access = list(access_sec_doors)
 
 /area/bridge/hall/starboard
@@ -107,6 +118,21 @@
 
 /area/crew_quarters/safe_room/bridge
 	name = "Bridge - Safe Room"
+
+/area/crew_quarters/heads/office/rd/cobed
+	icon_state = "heads_rd"
+	name = "Bridge - Command - RD's Quarters"
+	req_access = list(access_rd)
+
+/area/crew_quarters/heads/office/cmo/cobed
+	icon_state = "heads_cmo"
+	name = "Bridge - Command - CMO's Quarters"
+	req_access = list(access_cmo)
+
+/area/crew_quarters/heads/office/hos/cobed
+	icon_state = "heads_hos"
+	name = "Bridge - Command - HoS's Quarters"
+	req_access = list(access_hos)
 
 /area/crew_quarters/heads/office/hop
 	name = "Bridge - Command - HoP's Office"
@@ -120,6 +146,9 @@
 	icon_state = "heads_cl"
 	name = "Bridge - Command - IAA's Office"
 	req_access = list(access_iaa)
+
+/area/crew_quarters/heads/office/iaa/high_sec
+	name = "Bridge - Command - IAA's Communication Relay"
 
 /area/crew_quarters/heads/office/iaa/cobed
 	name = "Bridge - Command - IAA's Quarters"

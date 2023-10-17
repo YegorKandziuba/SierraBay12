@@ -51,6 +51,9 @@
 	icon_state = "disposal"
 	req_access = list(list(access_cargo, access_engine, access_el))
 
+/area/crew_quarters/sleep/cryo/thirddeck
+	name = "Third Deck - Living - Cryogenic Storage"
+
 /* ENGINEERING AREAS
  * =================
  */
@@ -149,6 +152,13 @@
 
 /area/shield/thirddeck
 	name = "Third Deck - Shield Generator"
+
+// Chief Engineer
+
+/area/crew_quarters/heads/office/ce
+	icon_state = "heads_ce"
+	name = "Bridge - Command - CE's Office"
+	req_access = list(access_ce)
 
 /* RUST
  * =================

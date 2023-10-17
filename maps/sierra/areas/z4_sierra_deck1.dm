@@ -78,7 +78,8 @@
 
 /area/command/bsa
 	name = "Fourth Deck - Obstruction Field Disperser"
-	icon_state = "firingrange"
+	icon = 'maps/sierra/icons/turf/areas.dmi'
+	icon_state = "bridge_gun"
 	req_access = list(access_gun)
 
 /* ENGINEERING AREAS
@@ -191,8 +192,8 @@
 /* CREW AREAS
  * ==========
  */
-/area/crew_quarters/sleep/cryo/upper
-	name = "First Deck - Living - Cryogenic Storage - Upper"
+/area/crew_quarters/sleep/cryo/firstdeck
+	name = "First Deck - Living - Cryogenic Storage"
 	icon_state = "cryo_up"
 
 /area/crew_quarters/unused_office
@@ -205,6 +206,10 @@
 
 /area/crew_quarters/lounge/upper
 	name = "First Deck - Living - Library"
+
+/area/crew_quarters/safe_room
+	name = "First Deck - Citadel"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /* SECURITY AREAS
  * ==============
