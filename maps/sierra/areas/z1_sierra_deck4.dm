@@ -15,6 +15,10 @@
 	name = "Fourth Deck - Stairwell - Central"
 	icon_state = "hallC2"
 
+/area/hallway/primary/fourthdeck/aft_stairwell
+	name = "Fourth Deck - Stairwell - Fore "
+	icon_state = "hallA"
+
 /area/maintenance/fourthdeck
 	name = "Fourth Deck - Maintenance"
 	icon_state = "maintcentral"
@@ -58,10 +62,7 @@
 	icon_state = "heads_sea"
 	req_access = list(access_el)
 
-/area/command/bsa
-	name = "Fourth Deck - Obstruction Field Disperser"
-	icon_state = "firingrange"
-	req_access = list(access_gun)
+
 
 /* ENGINEERING AREAS
  * =================
@@ -147,9 +148,18 @@
 	icon_state = "mining"
 
 /area/quartermaster/exploration
-	name = "Fourth Deck - Expedition - Equipment"
+	name = "Fourth Deck - Expedition - Locker Room"
 	icon_state = "exploration"
 	req_access = list(access_explorer)
+
+/area/quartermaster/exploration/eva
+	name = "Fourth Deck - Expedition - EVA"
+
+/area/quartermaster/exploration/storage
+	name = "Fourth Deck - Expedition - Storage"
+
+/area/quartermaster/exploration/briefing_room
+	name = "Fourth Deck - Expedition - Briefing Room"
 
 /area/quartermaster/shuttlefuel
 	name = "Fourth Deck - Hangar - Fuel Bay"
@@ -173,6 +183,10 @@
 
 /area/quartermaster/hangar_atmos
 	name = "Fourth Deck - Hangar - Atmospherics Storage"
+	icon_state = "auxstorage"
+
+/area/quartermaster/hangar_stairs
+	name = "Fourth Deck - Hangar - Stairs"
 	icon_state = "auxstorage"
 
 /* CREW AREAS

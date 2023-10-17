@@ -14,9 +14,9 @@
 	name = "Second Deck - Stairwell - Central "
 	icon_state = "hallC2"
 
-/area/hallway/primary/seconddeck/fore_stairwell
+/area/hallway/primary/seconddeck/aft_stairwell
 	name = "Second Deck - Stairwell - Fore "
-	icon_state = "hallC2"
+	icon_state = "hallA"
 
 /area/maintenance/seconddeck
 	name = "Second Deck - Maintenance"
@@ -77,6 +77,43 @@
 	turf_initializer = /singleton/turf_initializer/maintenance/heavy
 
 
+/* RND AREAS
+ * =========
+ */
+
+/area/rnd/xenobiology/entry
+	name = "Xenobiology Access"
+	icon_state = "xeno_lab"
+
+/area/rnd/xenobiology/storage2
+	name = "Xenobiology Access"
+	icon_state = "xeno_lab"
+
+/area/rnd/xenobiology/level1
+	name = "Xenobiology Level One"
+	icon_state = "xeno_lab"
+
+/area/rnd/canister
+	name = "Third Deck - Hangar - Canister Storage"
+	icon_state = "toxstorage"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_tox_storage)
+
+/area/rnd/xenobiology/atmos
+	name = "Xenobiology - Atmos Hub"
+	icon_state = "xeno_lab"
+
+/area/rnd/xenobiology/water_cell
+	name = "Xenobiology - Water Cell"
+	icon_state = "xeno_lab"
+
+/area/assembly/chargebay
+	name = "First Deck - RND - Mech Bay"
+	icon_state = "mechbay"
+
+/area/assembly/robotics
+	name = "First Deck - RND - Robotics Lab"
+	icon_state = "robotics"
 
 
 
@@ -214,6 +251,12 @@
 	color = COLOR_GRAY80
 	sound_env = SMALL_SOFTFLOOR
 
+/area/chapel/mortuary
+	name = "Second Deck - Chapel - Morgue"
+	req_access = list(access_chapel_office)
+	color = COLOR_GRAY80
+
+
 /* MEDBAY AREAS
  * ============
  */
@@ -221,3 +264,13 @@
 	name = "Second Deck - Infirmary - Lower Storage"
 	icon_state = "medbay4"
 	req_access = list(access_medical_equip)
+
+/area/medical/morgue
+	name = "First Deck - Infirmary - Morgue"
+	icon_state = "morgue"
+	ambience = list(
+		'sound/ambience/ambimo1.ogg',
+		'sound/ambience/ambimo2.ogg',
+		'sound/music/main.ogg'
+	)
+	req_access = list(access_morgue)

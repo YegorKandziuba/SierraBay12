@@ -65,7 +65,6 @@
 	icon_state = "thruster"
 	req_access = list(access_engine)
 
-#include "areas/multideck.dm"
 #include "areas/shuttles.dm"
 #include "areas/z1_sierra_deck4.dm"
 #include "areas/z2_sierra_deck3.dm"

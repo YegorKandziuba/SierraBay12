@@ -1,3 +1,7 @@
+/area/hallway/primary/bridgedeck/central_stairwell
+	name = "Fourth Deck - Stairwell - Central"
+	icon_state = "hallC2"
+
 /* COMMAND AREAS
  * =============
  */
@@ -44,8 +48,13 @@
 
 /area/bridge/meeting_room
 	name = "Bridge - Command - Meeting Room"
+	icon_state = "briefing_room"
 	ambience = list()
 	sound_env = MEDIUM_SOFTFLOOR
+
+/area/bridge/marine_room
+	name = "Bridge - Command - Briefing Room"
+	icon_state = "bridge_room"
 
 /area/bridge/lobby
 	name = "Bridge - Lobby"
@@ -86,14 +95,6 @@
 	name = "First Deck - AI Upload"
 	icon_state = "ai_upload"
 
-
-/area/crew_quarters/safe_room/bridge
-	name = "Bridge - Safe Room"
-
-/area/crew_quarters/heads/captain/secret_room/level_two
-	name = "First Deck - Captain's bathroom"
-	area_flags = AREA_FLAG_RAD_SHIELDED
-
 /area/bridge/hall/port
 	name = "Bridge - Hall - Port"
 	req_access = list(access_sec_doors)
@@ -101,6 +102,34 @@
 /area/bridge/hall/starboard
 	name = "Bridge - Hall - Starboard"
 	req_access = list(access_sec_doors)
+
+// Heads Quarters
+
+/area/crew_quarters/safe_room/bridge
+	name = "Bridge - Safe Room"
+
+/area/crew_quarters/heads/office/hop
+	name = "Bridge - Command - HoP's Office"
+	icon_state = "heads_hop"
+	req_access = list(access_hop)
+
+/area/crew_quarters/heads/office/hop/cobed
+	name = "Bridge - Command - HoP's Quarters"
+
+/area/crew_quarters/heads/office/iaa
+	icon_state = "heads_cl"
+	name = "Bridge - Command - IAA's Office"
+	req_access = list(access_iaa)
+
+/area/crew_quarters/heads/office/iaa/cobed
+	name = "Bridge - Command - IAA's Quarters"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/bridge/adjutants
+	name = "First Deck - Adjutants Room"
+	icon = 'maps/sierra/icons/turf/areas.dmi'
+	icon_state = "bridge_gun"
+
 
 /area/crew_quarters/heads/captain/secret_room/level_one
 	name = "Second Deck - Captain's restroom"

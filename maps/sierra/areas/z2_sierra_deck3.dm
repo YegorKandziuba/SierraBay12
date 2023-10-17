@@ -15,6 +15,10 @@
 	name = "Third Deck - Stairwell - Central"
 	icon_state = "hallC2"
 
+/area/hallway/primary/thirddeck/aft_stairwell
+	name = "Third Deck - Stairwell - Fore "
+	icon_state = "hallA"
+
 /area/maintenance/thirddeck
 	name = "Third Deck - Maintenance"
 	icon_state = "maintcentral"
@@ -194,7 +198,12 @@
 	icon_state = "storage"
 	req_access = list(access_tech_storage)
 
+// Hangar
+/area/quartermaster/hangar/upper
+	name = "Third Deck - Hangar"
 
+/area/quartermaster/hangar_stairs/upper
+	name = "Third Deck - Hangar - Stairs"
 
 // Compactor
 /area/maintenance/compactor
@@ -202,3 +211,18 @@
 	icon_state = "disposal"
 	sound_env = STANDARD_STATION
 	req_access = list(list(access_cargo, access_maint_tunnels))
+
+/* RND AREAS
+ * =========
+ */
+/area/rnd/xenobiology/entry2
+	name = "Xenobiology Access"
+	icon_state = "xeno_lab"
+
+/area/rnd/xenobiology/level2
+	name = "Xenobiology Level Two"
+	icon_state = "xeno_lab"
+
+/area/rnd/xenobiology/storage
+	name = "Xenobiology - Storage"
+	icon_state = "xeno_lab"

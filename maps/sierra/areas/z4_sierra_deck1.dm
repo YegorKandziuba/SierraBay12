@@ -50,9 +50,9 @@
 	name = "First Deck - Stairwell - Central"
 	icon_state = "hallC2"
 
-/area/hallway/primary/firstdeck/fore_stairwell
+/area/hallway/primary/firstdeck/aft_stairwell
 	name = "First Deck - Stairwell - Fore"
-	icon_state = "hallC2"
+	icon_state = "hallA"
 
 /area/maintenance/substation/firstdeck
 	name = "First Deck - Substation"
@@ -60,13 +60,6 @@
 /* COMMAND AREAS
  * =============
  */
-/area/crew_quarters/heads/office/hop
-	name = "First Deck - Command - HoP's Office"
-	icon_state = "heads_hop"
-	req_access = list(access_hop)
-
-/area/crew_quarters/heads/office/hop/cobed
-	name = "First Deck - Command - HoP's Quarters"
 
 /area/crew_quarters/heads/office/rd
 	icon_state = "heads_rd"
@@ -83,15 +76,10 @@
 	name = "First Deck - Command - HoS' Office"
 	req_access = list(access_hos)
 
-/area/crew_quarters/heads/office/iaa
-	icon_state = "heads_cl"
-	name = "First Deck - Command - IAA's Office"
-	req_access = list(access_iaa)
-
-/area/bridge/adjutants
-	name = "First Deck - Adjutants Room"
-	icon = 'maps/sierra/icons/turf/areas.dmi'
-	icon_state = "bridge_gun"
+/area/command/bsa
+	name = "Fourth Deck - Obstruction Field Disperser"
+	icon_state = "firingrange"
+	req_access = list(access_gun)
 
 /* ENGINEERING AREAS
  * =================
@@ -172,8 +160,16 @@
 	name = "First Deck - RND - Lobby"
 	icon_state = "decontamination"
 
+/area/rnd/containment
+	name = "First Deck - RND - Containment Zone"
+	icon_state = "decontamination"
+
 /area/rnd/locker
 	name = "First Deck - RND - Locker Room"
+	icon_state = "locker"
+
+/area/rnd/office
+	name = "First Deck - RND - Research Office"
 	icon_state = "locker"
 
 /area/rnd/servers
@@ -186,13 +182,11 @@
 /area/assembly
 	req_access = list(access_robotics)
 
-/area/assembly/chargebay
-	name = "First Deck - RND - Mech Bay"
+/area/assembly/office
+	name = "First Deck - RND - Robotics Office"
 	icon_state = "mechbay"
 
-/area/assembly/robotics
-	name = "First Deck - RND - Robotics Lab"
-	icon_state = "robotics"
+
 
 /* CREW AREAS
  * ==========
@@ -281,6 +275,10 @@
 	icon_state = "nuke_storage"
 	req_access = list(access_heads_vault)
 
+/area/security/opscheck
+	name = "First Deck - RND - Security Checkpoint"
+	icon_state = "checkpoint"
+
 /* MEDBAY AREAS
  * ============
  */
@@ -318,15 +316,9 @@
 	icon_state = "chem"
 	req_access = list(access_chemistry)
 
-/area/medical/morgue
-	name = "First Deck - Infirmary - Morgue"
-	icon_state = "morgue"
-	ambience = list(
-		'sound/ambience/ambimo1.ogg',
-		'sound/ambience/ambimo2.ogg',
-		'sound/music/main.ogg'
-	)
-	req_access = list(access_morgue)
+/area/medical/morgue/autopsy
+	name = "First Deck - Infirmary - Autopsy"
+	icon_state = "autopsy"
 
 /area/medical/sleeper
 	name = "First Deck - Infirmary - Emergency Treatment Center"
