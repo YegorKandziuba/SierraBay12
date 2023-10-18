@@ -72,6 +72,16 @@
 	vessel_size = SHIP_SIZE_TINY
 	skill_needed = SKILL_BASIC //was trained
 
+/obj/overmap/visitable/ship/landable/crucian
+	name = "Crucian"
+	shuttle = "Crucian"
+	max_speed = 1/(4 SECONDS)
+	burn_delay = 1 SECONDS
+	vessel_mass = 1000
+	fore_dir = SOUTH
+	vessel_size = SHIP_SIZE_TINY
+	skill_needed = SKILL_BASIC
+
 /obj/machinery/computer/shuttle_control/explore/exploration_shuttle
 	name = "charon control console"
 	shuttle_tag = "Charon"
@@ -81,3 +91,7 @@
 	name = "guppy control console"
 	shuttle_tag = "Guppy"
 	req_access = list(access_guppy_helm)
+
+/obj/machinery/computer/shuttle_control/explore/crucian
+	name = "crucian control console"
+	shuttle_tag = "Crucian"

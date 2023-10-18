@@ -125,6 +125,87 @@
 	name = "Shuttle - Petrov - Isolation Cell 3"
 	icon_state = "shuttle"
 
+/* ELEVATORS
+ * =========
+ */
+
+/obj/machinery/computer/shuttle_control/lift/rndmaint
+	name = "RND maintenance lift controls"
+	shuttle_tag = "RND Maintenance Lift"
+	ui_template = "shuttle_control_console_lift.tmpl"
+	icon_state = "tiny"
+	icon_keyboard = "tiny_keyboard"
+	icon_screen = "lift"
+	density = FALSE
+
+/obj/machinery/computer/shuttle_control/lift/medical
+	name = "medical lift controls"
+	shuttle_tag = "Medical Lift"
+	ui_template = "shuttle_control_console_lift.tmpl"
+	icon_state = "tiny"
+	icon_keyboard = "tiny_keyboard"
+	icon_screen = "lift"
+	density = FALSE
+
+/datum/shuttle/autodock/ferry/rndmaint_lift
+	name = "RND Maintenance Lift"
+	shuttle_area = /area/turbolift/rndmaint_lift
+	warmup_time = 3
+	waypoint_station = "nav_rndmaint_lift_top"
+	waypoint_offsite = "nav_rndmaint_lift_bottom"
+	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
+	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
+	ceiling_type = null
+	knockdown = 0
+
+/datum/shuttle/autodock/ferry/medical_lift
+	name = "Medical Lift"
+	shuttle_area = /area/turbolift/medical_lift
+	warmup_time = 3
+	waypoint_station = "nav_medical_lift_top"
+	waypoint_offsite = "nav_medical_lift_bottom"
+	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
+	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
+	ceiling_type = null
+	knockdown = 0
+
+/obj/shuttle_landmark/lift/rndmaint_top
+	name = "First Deck - RND Maintenance"
+	landmark_tag = "nav_rndmaint_lift_top"
+	base_area = /area/maintenance/firstdeck/aftport
+	base_turf = /turf/simulated/open
+
+/obj/shuttle_landmark/lift/rndmaint_bottom
+	name = "Second Deck - RND Toxins Lab"
+	landmark_tag = "nav_rndmaint_lift_bottom"
+	flags = SLANDMARK_FLAG_AUTOSET
+	base_area = /area/maintenance/seconddeck/port
+	base_turf = /turf/simulated/floor/plating
+
+/obj/shuttle_landmark/lift/medical_top
+	name = "First Deck - Autopsy"
+	landmark_tag = "nav_medical_lift_top"
+	base_area = /area/medical/morgue/autopsy
+	base_turf = /turf/simulated/open
+
+/obj/shuttle_landmark/lift/medical_bottom
+	name = "Second Deck - Morgue"
+	landmark_tag = "nav_medical_lift_bottom"
+	flags = SLANDMARK_FLAG_AUTOSET
+	base_area = /area/medical/morgue
+	base_turf = /turf/simulated/floor/plating
+
+//Base Area
+/area/turbolift/rndmaint_lift
+	name = "Research - Maintenance Lift"
+	icon_state = "shuttle3"
+	base_turf = /turf/simulated/open
+
+/area/turbolift/medical_lift
+	name = "Medical - Morgue Lift"
+	icon_state = "shuttle3"
+	base_turf = /turf/simulated/open
+	lighting_tone = AREA_LIGHTING_COOL
 
 /* TURBOLIFT
  * =========
@@ -136,26 +217,42 @@
 	req_access = list(access_maint_tunnels)
 
 /area/turbolift/sierra_top
+	name = "Elevator - Bridge"
+	lift_floor_label = "Мостик"
+	lift_floor_name = "Командование судна"
+	lift_announce_str = "Мостик."
+
+/area/turbolift/sierra_d1
 	name = "Elevator - First Deck"
 	lift_floor_label = "1 Палуба"
 	lift_floor_name = "Оперативная палуба"
 	lift_announce_str = "Палуба 1 - Оперативная."
 
-/area/turbolift/sierra_middle
+/area/turbolift/sierra_d2
 	name = "Elevator - Second Deck"
 	lift_floor_label = "2 Палуба"
 	lift_floor_name = "Жилая палуба"
 	lift_announce_str = "Палуба 2 - Жилая."
 
+/area/turbolift/sierra_d3
+	name = "Elevator - Third Deck"
+	lift_floor_label = "3 Палуба"
+	lift_floor_name = "Инженерная палуба"
+	lift_announce_str = "Палуба 3 - Инженерная."
+
 /area/turbolift/sierra_ground
 	name = "Elevator - Third Deck"
 	lift_floor_label = "3 Палуба"
 	lift_floor_name = "Лётная палуба"
-	lift_announce_str = "Палуба 3 - Лётная."
+	lift_announce_str = "Палуба 4 - Лётная."
 	base_turf = /turf/simulated/floor
 
 /area/turbolift/start
 	name = "Elevator - Start"
+
+/area/turbolift/bridgedeck
+	name = "bridge"
+	base_turf = /turf/simulated/open
 
 /area/turbolift/firstdeck
 	name = "first deck"
@@ -167,4 +264,8 @@
 
 /area/turbolift/thirddeck
 	name = "third deck"
+	base_turf = /turf/simulated/open
+
+/area/turbolift/fourthdeck
+	name = "fourth deck"
 	base_turf = /turf/simulated/open
