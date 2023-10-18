@@ -3316,8 +3316,6 @@
 #include "interface\skin.dmf"
 #include "maps\_map_include.dm"
 #include "maps\_maps.dm"
-#include "maps\sierra\areas\z2_sierra_deck3.dm"
-#include "maps\sierra\areas\z5_sierra_bridge.dm"
 #include "mods\_modpack.dm"
 #include "mods\global_modpacks.dm"
 #include "mods\_master_files\code\game\objects\effects\decals\contraband.dm"

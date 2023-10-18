@@ -109,6 +109,12 @@
 /area/shuttle/petrov/airlock
 	name = "Shuttle - Petrov - Airlock"
 	icon_state = "shuttlered"
+/area/shuttle/petrov/equipment
+	name = "Shuttle - Petrov - Equipment"
+	icon_state = "shuttlered"
+/area/shuttle/petrov/eva
+	name = "Shuttle - Petrov - Storage"
+	icon_state = "shuttlered"
 /area/shuttle/petrov/security
 	name = "Shuttle - Petrov - Security Room"
 	icon_state = "shuttlered"
