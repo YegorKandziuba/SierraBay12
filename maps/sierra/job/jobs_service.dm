@@ -9,7 +9,7 @@
 	economic_power = 6
 	minimal_player_age = 7
 	supervisors = "Главе Персонала"
-	outfit_type = /singleton/hierarchy/outfit/job/sierra/crew/service/cook
+	outfit_type = /singleton/hierarchy/outfit/job/sierra/crew/service/chief_steward
 	allowed_branches = list(/datum/mil_branch/employee)
 	allowed_ranks = list(/datum/mil_rank/civ/nt)
 	min_skill = list(
@@ -136,8 +136,8 @@
 
 
 /datum/job/steward/get_description_blurb()
-	return "Вы - повар, чья миссия на этом корабле - спасти экипаж от поедания невкусной и отвратительной, с кулинарной точки зрения, еды из автоматов.\
-	Только ради Вашей великой цели корпорация закупила передовое кулинарное оборудование и большой запас продуктов, перевести который за одну смену сможете только Вы и никто больше!"
+	return "Стюарды исполняют роль младшего повара, помощника бармена, а так же вы ответственны за состояние и чистоту кафетерия.\
+	Вам поручено не только управлять кухней и кафе, но и сделать столовую приятным и гостеприимным местом, где можно поесть, выпить и пообщаться."
 
 /datum/job/bartender
 	title = "Bartender"
@@ -147,6 +147,9 @@
 	department_flag = SRV
 	supervisors = "Главному Стюарду и Главе Персонала"
 	ideal_character_age = 30
+	alt_titles = list(
+		"Barista"
+		)
 	selection_color = "#515151"
 	outfit_type = /singleton/hierarchy/outfit/job/sierra/crew/service/bartender
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/civilian, /datum/mil_branch/contractor)
