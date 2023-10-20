@@ -107,3 +107,10 @@
 	name = "pilot bowman headset"
 	icon_state = "pilot_headset_alt"
 	item_state = "pilot_headset_alt"
+
+/obj/item/device/radio/headset/sierra_chief_steward
+	name = "chief steward's radio headset"
+	desc = "The headset of the menu maker."
+	icon_state = "srv_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/sierra_chief_steward
