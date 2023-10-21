@@ -4,7 +4,6 @@
 		/area/space = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/exoplanet = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/engineering/auxpower = NO_SCRUBBER|NO_VENT,
-		/area/engineering/engine_smes = NO_SCRUBBER|NO_VENT,
 		/area/crucian_hangar/start = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/holodeck = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance = NO_SCRUBBER|NO_VENT,
@@ -19,6 +18,14 @@
 		/area/maintenance/firstdeck/aftport = 0,
 		/area/maintenance/incinerator = 0,
 		/area/maintenance/abandoned_common = 0,
+		/area/maintenance/thirddeck/aftstarboard = 0,
+		/area/maintenance/seconddeck/hangar = 0,
+		/area/maintenance/seconddeck/aftstarboard = 0,
+		/area/maintenance/substation/seconddeck = 0,
+		/area/maintenance/substation/bridgedeck = 0,
+		/area/maintenance/firstdeck/foreport = 0,
+		/area/maintenance/firstdeck/centralport = 0,
+		/area/maintenance/firstdeck/forestarboard = 0,
 		/area/shuttle = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/shuttle/petrov = 0,
 		/area/solar = NO_SCRUBBER|NO_VENT|NO_APC,
@@ -33,9 +40,9 @@
 		/area/thruster = NO_SCRUBBER,
 		/area/turbolift = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/vacant/bar = 0,
+		/area/vacant/bar = NO_APC,
 		/area/vacant/gambling = 0,
-		/area/vacant/mess = 0,
+		/area/vacant/mess = NO_APC,
 		/area/vacant/utility = 0,
 		/area/vacant/dormintories = 0,
 		/area/vacant/cargo = NO_SCRUBBER|NO_VENT,
@@ -46,8 +53,7 @@
 		/area/rnd/xenobiology/cell_1 = NO_APC,
 		/area/rnd/xenobiology/cell_2 = NO_APC,
 		/area/rnd/xenobiology/cell_3 = NO_APC,
-		/area/rnd/xenobiology/cell_4 = NO_APC,
-		/area/hydroponics/third_deck_storage = NO_SCRUBBER|NO_VENT
+		/area/rnd/xenobiology/cell_4 = NO_APC
 	)
 
 	area_coherency_test_exempt_areas = list(
