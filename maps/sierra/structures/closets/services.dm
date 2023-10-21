@@ -140,7 +140,7 @@
 		/obj/item/storage/box/glasses,
 		/obj/item/storage/plants,
 		/obj/item/device/scanner/plant,
-		/obj/item/storage/slide_projector,
+		//obj/item/storage/slide_projector,
 		/obj/item/clothing/accessory/armband/hydro,
 		/obj/item/reagent_containers/spray/cleaner,
 		/obj/item/device/megaphone,
