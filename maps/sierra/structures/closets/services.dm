@@ -125,7 +125,7 @@
 
 /obj/structure/closet/secure_closet/chief_steward_sierra
 	name = "chief steward's locker"
-	req_access = list()
+	req_access = list(access_chief_steward)
 	closet_appearance = /singleton/closet_appearance/cabinet/secure
 
 /obj/structure/closet/secure_closet/chief_steward_sierra/WillContain()
