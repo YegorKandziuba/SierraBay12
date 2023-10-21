@@ -114,3 +114,8 @@
 	icon_state = "srv_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/sierra_chief_steward
+
+/obj/item/device/radio/headset/sierra_chief_steward/alt
+	name = "chief steward's bowman headset"
+	icon_state = "med_headset_alt"
+	item_state = "headset"

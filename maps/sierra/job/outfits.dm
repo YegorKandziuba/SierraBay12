@@ -387,7 +387,7 @@ Keeping them simple for now, just spawning with basic EC uniforms, and pretty mu
 
 /singleton/hierarchy/outfit/job/sierra/crew/service/steward
 	name = OUTFIT_JOB_NAME("Steward - Sierra")
-	uniform = /obj/item/clothing/under/rank/bartender
+	uniform = /obj/item/clothing/under/waiter
 	id_types = list(/obj/item/card/id/sierra/crew/service/steward)
 
 /singleton/hierarchy/outfit/job/sierra/crew/service/bartender

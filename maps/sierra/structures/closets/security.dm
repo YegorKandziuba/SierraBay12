@@ -79,7 +79,7 @@
 /obj/structure/closet/secure_closet/cabinet/forensics
 	name = "forensics technician's locker"
 	req_access = list(access_forensics_lockers)
-	closet_appearance = /singleton/closet_appearance/secure_closet/sierra/security/forensics
+	closet_appearance = /singleton/closet_appearance/cabinet/secure
 
 
 /obj/structure/closet/secure_closet/cabinet/forensics/WillContain()
