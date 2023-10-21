@@ -90,14 +90,6 @@
 	icon_state = "engine_smes"
 	sound_env = SMALL_ENCLOSED
 
-
-// Storage
-/area/storage/bridge
-	name = "First Deck - Bridge - Storage"
-	icon_state = "bridge"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_bridge)
-
 // Tcomm
 /area/tcommsat/
 	ambience = list(
@@ -196,10 +188,6 @@
 	name = "First Deck - Living - Cryogenic Storage"
 	icon_state = "cryo_up"
 
-/area/crew_quarters/unused_office
-	name = "First Deck - Living - Unused Office"
-	icon_state = "Sleep"
-
 /area/crew_quarters/dungeon_master_lounge
 	name = "First Deck - Living Room"
 	sound_env = MEDIUM_SOFTFLOOR
@@ -243,11 +231,6 @@
 
 /area/security/sierra/breakroom
 	name = "First Deck - Security - Break Room"
-
-/area/security/sierra/hosbed
-	name = "First Deck - Security - HOS Bedroom"
-	icon_state = "sec_hos"
-	req_access = list(access_hos)
 
 /area/security/sierra/forensic
 	name = "First Deck - Security - Forensic"

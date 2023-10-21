@@ -7,10 +7,6 @@
 	name = "Third Deck - Hallway - Central"
 	icon_state = "hallC3"
 
-/area/hallway/primary/thirddeck/aft
-	name = "Third Deck - Hallway - Aft"
-	icon_state = "hallA"
-
 /area/hallway/primary/thirddeck/central_stairwell
 	name = "Third Deck - Stairwell - Central"
 	icon_state = "hallC2"
@@ -84,10 +80,6 @@
 /* ENGINEERING AREAS
  * =================
  */
-/area/engineering/hallway
-	name = "Third Deck - Engineering - Hallway"
-	icon_state = "engineering_workshop"
-
 /area/engineering/hardstorage
 	name = "Third Deck - Engineering - Storage"
 	icon_state = "engineering_storage"
@@ -289,8 +281,4 @@
 
 /area/rnd/xenobiology/level2
 	name = "Xenobiology Level Two"
-	icon_state = "xeno_lab"
-
-/area/rnd/xenobiology/storage
-	name = "Xenobiology - Storage"
 	icon_state = "xeno_lab"

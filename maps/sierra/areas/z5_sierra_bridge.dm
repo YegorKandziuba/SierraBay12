@@ -125,14 +125,6 @@
 	name = "First Deck - AI Upload"
 	icon_state = "ai_upload"
 
-/area/bridge/hall/
-	name = "Bridge - Hall - Command"
-	req_access = list(access_sec_doors)
-
-/area/bridge/hall/starboard
-	name = "Bridge - Hall - Starboard"
-	req_access = list(access_sec_doors)
-
 // Heads Quarters
 
 /area/crew_quarters/safe_room/bridge
