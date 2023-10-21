@@ -75,52 +75,16 @@
 
 /datum/unit_test/area_power_tally_accuracy/start_test()
 	var/failed = FALSE
-	var/list/failure
 	var/list/channel_names = list("equip", "light", "environ")
 	for(var/area/A in world)
 		var/list/old_values = list(A.used_equip, A.used_light, A.used_environ)
-		var/list/retally = A.retally_power()
+		A.retally_power()
 		var/list/new_values = list(A.used_equip, A.used_light, A.used_environ)
 		for(var/i in 1 to length(old_values))
 			if(abs(old_values[i] - new_values[i]) > 1) // Round because there can in fact be roundoff error here apparently.
 				failed = TRUE
-				failure = retally
 				log_bad("The area [A.name] had improper power use values on the [channel_names[i]] channel: was [old_values[i]] but should be [new_values[i]].")
-				if (length(retally))
-					if (length(retally["EQUIP"]))
-						for (var/a in retally["EQUIP"])
-							log_bad("EQUIP [a]")
-					else
-						log_bad("ЭКВИП НЕТ")
-					if (length(retally["LIGHT"]))
-						for (var/a in retally["LIGHT"])
-							log_bad("LIGHT [a]")
-					else
-						log_bad("ЛАЙТ НЕТ")
-					if (length(retally["ENVIRON"]))
-						for (var/a in retally["ENVIRON"])
-							log_bad("ENVIRON [a]")
-					else
-						log_bad("ЕНВИРОН НЕТ")
 
-	if (length(failure))
-		if (length(failure["EQUIP"]))
-			for (var/a in failure["EQUIP"])
-				log_bad("EQUIP [a]")
-		else
-			log_bad("ЭКВИП НЕТ")
-		if (length(failure["LIGHT"]))
-			for (var/a in failure["LIGHT"])
-				log_bad("LIGHT [a]")
-		else
-			log_bad("ЛАЙТ НЕТ")
-		if (length(failure["ENVIRON"]))
-			for (var/a in failure["ENVIRON"])
-				log_bad("ENVIRON [a]")
-		else
-			log_bad("ЕНВИРОН НЕТ")
-	else
-		log_bad("В ЗОНЕ НИЧАВО НЕТ")
 	if(failed)
 		fail("At least one area had improper power use values")
 	else
