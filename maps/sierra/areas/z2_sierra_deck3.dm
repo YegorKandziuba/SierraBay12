@@ -70,12 +70,12 @@
 	name = "Third Deck - Living - Cafe"
 	icon_state = "cafeteria"
 
-/area/crew_quarters/chief_steward
-	name = "Third Deck - Chief Steward's Office"
+/area/command/chief_steward
+	name = "Third Deck - Service - Chief Steward's Office"
 	icon_state = "kitchen"
-	req_access = list(access_chief_steward)
 	sound_env = SMALL_ENCLOSED
 	lighting_tone = AREA_LIGHTING_WARM
+	req_access = list(access_chief_steward)
 
 /* ENGINEERING AREAS
  * =================
