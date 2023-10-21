@@ -35,12 +35,6 @@
 /* COMMAND AREAS
  * =============
  */
-/area/crew_quarters/heads/cobed
-	name = "Bridge - Command - Captain's Quarters"
-	sound_env = MEDIUM_SOFTFLOOR
-	icon_state = "captain"
-	req_access = list(access_captain)
-
 /area/crew_quarters/heads/office/captain
 	name = "Bridge - Command - Captain's Office"
 	icon_state = "heads_cap"
@@ -50,10 +44,6 @@
 /area/crew_quarters/heads/captain
 	req_access = list(access_captain)
 	icon_state = "heads_cap"
-
-/area/crew_quarters/heads/captain/office_anteroom
-	name = "Bridge - Command - Captain's Office Anteroom"
-	sound_env = MEDIUM_SOFTFLOOR
 
 /area/crew_quarters/heads/captain/beach
 	name = "Bridge - Command - Captain's Recreation Facility"

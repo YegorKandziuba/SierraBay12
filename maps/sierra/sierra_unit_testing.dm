@@ -50,7 +50,7 @@
 		/area/vacant/infirmary = NO_SCRUBBER|NO_VENT,
 		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/prototype = 0,
-		/area/vacant/storage = 0,
+		/area/vacant/storage = NO_SCRUBBER|NO_VENT,
 		/area/rnd/xenobiology/atmos  = NO_SCRUBBER|NO_VENT,
 		/area/rnd/xenobiology/cell_1 = NO_APC,
 		/area/rnd/xenobiology/cell_2 = NO_APC,
