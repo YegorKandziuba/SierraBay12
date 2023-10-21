@@ -8519,7 +8519,7 @@
 "phb" = (/obj/floor_decal/steeldecal/steel_decals4{dir = 9},/obj/floor_decal/steeldecal/steel_decals4{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled,/area/crew_quarters/docking)
 "phc" = (/obj/floor_decal/corner/black/full,/obj/structure/bed/chair/padded/blue{dir = 8},/turf/simulated/floor/tiled/dark,/area/bridge/marine_room)
 "phi" = (/obj/decal/cleanable/dirt,/obj/structure/bed/chair/comfy/brown{dir = 1},/turf/simulated/floor/plating,/area/vacant/mess)
-"phs" = (/obj/structure/closet/secure_closet/chief_steward_sierra,/turf/simulated/floor/wood,/area/command/chief_steward)
+"phs" = (/obj/structure/closet/secure_closet/chief_steward_sierra,/obj/item/device/camera/tvcamera,/turf/simulated/floor/wood,/area/command/chief_steward)
 "phx" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/curtain{color = "#aa0000"},/turf/simulated/floor/wood/maple,/area/crew_quarters/actor/stage)
 "phE" = (/obj/structure/bed/chair/padded/blue{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/crew_quarters/safe_room/seconddeck)
 "phN" = (/obj/machinery/door/blast/regular/open{density = 0; id_tag = "calypso_shutters"; name = "Protective Shutters"; opacity = 0},/obj/machinery/door/firedoor,/obj/wallframe_spawn/reinforced/titanium,/obj/structure/cable/cyan{d2 = 8; icon_state = "0-8"},/obj/paint/black,/obj/paint_stripe/blue,/turf/simulated/floor/plating,/area/exploration_shuttle/cargo_l)

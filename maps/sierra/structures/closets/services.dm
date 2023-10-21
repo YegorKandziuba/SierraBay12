@@ -147,7 +147,7 @@
 		/obj/item/device/flashlight/upgraded,
 		/obj/item/device/taperecorder,
 		/obj/item/device/tape/random = 3,
-		/obj/item/device/camera/tvcamera,
+		//obj/item/device/camera/tvcamera,
 		/obj/item/device/camera_film = 2,
 		/obj/item/device/radio/headset/sierra_chief_steward,
 		/obj/item/device/radio/headset/sierra_chief_steward/alt,
