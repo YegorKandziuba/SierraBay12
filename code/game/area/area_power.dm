@@ -101,11 +101,16 @@
 	used_equip = 0
 	used_light = 0
 	used_environ = 0
+	var/list/govno = list("EQUIP"=list(), "LIGHT" = list(), "ENVIRON"=list())
 	for(var/obj/machinery/M in src)
 		switch(M.power_channel)
 			if(EQUIP)
 				used_equip += M.get_power_usage()
+				govno["EQUIP"] = "[M] - [M.get_power_usage()]W"
 			if(LIGHT)
 				used_light += M.get_power_usage()
+				govno["LIGHT"] = "[M] - [M.get_power_usage()]W"
 			if(ENVIRON)
 				used_environ += M.get_power_usage()
+				govno["ENVIRON"] = "[M] - [M.get_power_usage()]W"
+	return govno

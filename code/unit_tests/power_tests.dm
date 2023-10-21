@@ -75,16 +75,28 @@
 
 /datum/unit_test/area_power_tally_accuracy/start_test()
 	var/failed = FALSE
+	var/list/failure
 	var/list/channel_names = list("equip", "light", "environ")
 	for(var/area/A in world)
 		var/list/old_values = list(A.used_equip, A.used_light, A.used_environ)
-		A.retally_power()
+		var/list/retally = A.retally_power()
 		var/list/new_values = list(A.used_equip, A.used_light, A.used_environ)
 		for(var/i in 1 to length(old_values))
 			if(abs(old_values[i] - new_values[i]) > 1) // Round because there can in fact be roundoff error here apparently.
 				failed = TRUE
+				failure = retally
 				log_bad("The area [A.name] had improper power use values on the [channel_names[i]] channel: was [old_values[i]] but should be [new_values[i]].")
 
+	if (length(failure))
+		if (length(failure["EQUIP"]))
+			for (var/a in failure["EQUIP"])
+				log_unit_test("EQUIP", a)
+		if (length(failure["LIGHT"]))
+			for (var/a in failure["LIGHT"])
+				log_unit_test("LIGHT", a)
+		if (length(failure["ENVIRON"]))
+			for (var/a in failure["ENVIRON"])
+				log_unit_test("ENVIRON", a)
 	if(failed)
 		fail("At least one area had improper power use values")
 	else
