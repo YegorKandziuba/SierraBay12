@@ -119,6 +119,17 @@
 /area/vacant/cargo
 	name = "Fourth Deck - Abandoned - Requisition"
 	icon_state = "quart"
+	holomap_color = HOLOMAP_AREACOLOR_CARGO
+
+/* RND AREAS
+ * =========
+ */
+
+/area/rnd/canister
+	name = "Fourth Deck - Hangar - Canister Storage"
+	icon_state = "toxstorage"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_tox_storage)
 
 /* SUPPLY AREAS
  * ============

@@ -270,11 +270,6 @@
 
 //Vacant
 
-/area/vacant/cargo
-	name = "Third Deck - Requisitions Office"
-	icon_state = "quart"
-	holomap_color = HOLOMAP_AREACOLOR_CARGO
-
 /area/vacant/mess
 	name = "Third Deck - Old Mess"
 	icon_state = "bar"
