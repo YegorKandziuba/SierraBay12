@@ -86,17 +86,41 @@
 				failed = TRUE
 				failure = retally
 				log_bad("The area [A.name] had improper power use values on the [channel_names[i]] channel: was [old_values[i]] but should be [new_values[i]].")
+				if (length(retally))
+					if (length(retally["EQUIP"]))
+						for (var/a in retally["EQUIP"])
+							log_bad("EQUIP [a]")
+					else
+						log_bad("ЭКВИП НЕТ")
+					if (length(retally["LIGHT"]))
+						for (var/a in retally["LIGHT"])
+							log_bad("LIGHT [a]")
+					else
+						log_bad("ЛАЙТ НЕТ")
+					if (length(retally["ENVIRON"]))
+						for (var/a in retally["ENVIRON"])
+							log_bad("ENVIRON [a]")
+					else
+						log_bad("ЕНВИРОН НЕТ")
 
 	if (length(failure))
 		if (length(failure["EQUIP"]))
 			for (var/a in failure["EQUIP"])
-				log_unit_test("EQUIP", a)
+				log_bad("EQUIP [a]")
+		else
+			log_bad("ЭКВИП НЕТ")
 		if (length(failure["LIGHT"]))
 			for (var/a in failure["LIGHT"])
-				log_unit_test("LIGHT", a)
+				log_bad("LIGHT [a]")
+		else
+			log_bad("ЛАЙТ НЕТ")
 		if (length(failure["ENVIRON"]))
 			for (var/a in failure["ENVIRON"])
-				log_unit_test("ENVIRON", a)
+				log_bad("ENVIRON [a]")
+		else
+			log_bad("ЕНВИРОН НЕТ")
+	else
+		log_bad("В ЗОНЕ НИЧАВО НЕТ")
 	if(failed)
 		fail("At least one area had improper power use values")
 	else
