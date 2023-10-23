@@ -2224,6 +2224,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/centcom/holding)
 "apf" = (
+/obj/paint/dark_gunmetal,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/specops/centcom)
 "apr" = (
@@ -5127,9 +5128,6 @@
 	name = "hacked Robust Softdrinks";
 	prices = list()
 	},
-/turf/unsimulated/floor/plating,
-/area/acting/backstage)
-"aGC" = (
 /turf/unsimulated/floor/plating,
 /area/acting/backstage)
 "aGD" = (
@@ -12748,17 +12746,9 @@
 /turf/unsimulated/floor/techfloor,
 /area/centcom/holding)
 "mAT" = (
-/obj/structure/table/glass,
-/obj/machinery/reagent_temperature{
-	density = 0
-	},
-/obj/floor_decal/corner/beige{
-	dir = 10
-	},
-/turf/unsimulated/floor{
-	icon_state = "white"
-	},
-/area/tdome/testing)
+/obj/paint/hull,
+/turf/simulated/wall/r_titanium,
+/area/shuttle/transport1/centcom)
 "mCp" = (
 /obj/floor_decal/carpet/purple{
 	dir = 1
@@ -15506,6 +15496,8 @@
 /turf/space,
 /area/centcom/living)
 "sgM" = (
+/obj/paint/red,
+/obj/paint_stripe/red,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/transport1/centcom)
 "sih" = (
@@ -16025,19 +16017,9 @@
 	},
 /area/centcom/creed)
 "tdl" = (
-/obj/structure/table/marble,
-/obj/machinery/reagent_temperature,
-/obj/floor_decal/corner/paleblue/diagonal,
-/obj/floor_decal/corner/white/diagonal{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/unsimulated/floor{
-	icon_state = "steel"
-	},
-/area/centcom/living)
+/obj/paint/red,
+/turf/simulated/wall/r_titanium,
+/area/shuttle/specops/centcom)
 "thW" = (
 /obj/structure/flora/pottedplant/minitree,
 /obj/floor_decal/borderfloor{
@@ -17693,6 +17675,7 @@
 /area/centcom/living)
 "wHG" = (
 /obj/wallframe_spawn/reinforced/titanium,
+/obj/paint/hull,
 /turf/simulated/floor/plating,
 /area/shuttle/transport1/centcom)
 "wIs" = (
@@ -31042,7 +31025,7 @@ aGl
 aGq
 aGA
 aGB
-aGC
+aFJ
 aGE
 aGI
 aGP
@@ -35334,8 +35317,8 @@ anH
 avF
 aab
 aab
-apf
-apf
+tdl
+tdl
 apf
 apf
 apf
@@ -35537,7 +35520,7 @@ apr
 aab
 aab
 acF
-apf
+tdl
 aeX
 agN
 ahX
@@ -35739,7 +35722,7 @@ avF
 aab
 aab
 acF
-apf
+tdl
 afa
 ajM
 ajM
@@ -35941,7 +35924,7 @@ apr
 aab
 aab
 acF
-apf
+tdl
 afb
 agP
 ahZ
@@ -36142,8 +36125,8 @@ anH
 avF
 aab
 aab
-apf
-apf
+tdl
+tdl
 apf
 apf
 apf
@@ -39634,13 +39617,13 @@ aag
 cgR
 sgM
 wHG
-sgM
+mAT
 wHG
-sgM
-sgM
-aab
-aab
-aab
+wHG
+mAT
+wHG
+mAT
+mAT
 aab
 aab
 aab
@@ -39838,12 +39821,12 @@ sgM
 lvg
 iFF
 iFF
+iFF
+iFF
+iFF
 xWN
-sgM
-sgM
-aab
-aab
-aab
+mAT
+mAT
 aab
 aab
 qep
@@ -40039,13 +40022,13 @@ fBR
 kQb
 urj
 viY
+viY
+viY
+viY
 hEt
 oTp
 mXE
 wHG
-aab
-aab
-aab
 aab
 aab
 qep
@@ -40242,12 +40225,12 @@ sgM
 vlh
 oFG
 ucL
+ucL
+oFG
+ucL
 dJT
-sgM
-sgM
-aab
-aab
-aab
+mAT
+mAT
 aab
 aab
 qep
@@ -40442,13 +40425,13 @@ aag
 rcI
 sgM
 wHG
-sgM
+mAT
 wHG
-sgM
-sgM
-aab
-aab
-aab
+wHG
+mAT
+wHG
+mAT
+mAT
 aab
 aab
 aab
@@ -40872,7 +40855,7 @@ bmz
 tce
 rno
 uQt
-mAT
+iQN
 lCd
 aab
 aab
@@ -44866,7 +44849,7 @@ rGe
 rGe
 rGe
 rGe
-tdl
+tSO
 rME
 opB
 mCp
