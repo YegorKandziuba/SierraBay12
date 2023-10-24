@@ -453,11 +453,34 @@ SIERRA_ESCAPE_POD(11)
 	warmup_time = 6
 
 /obj/shuttle_landmark/sierra/hangar/crucian
-	name = "Guppy Hangar"
+	name = "Auxiliary Hangar"
 	landmark_tag = "nav_hangar_crucian"
 	base_area = /area/maintenance/seconddeck/hangar
 	base_turf = /turf/simulated/floor/plating
 
+/obj/shuttle_landmark/sierra/deck1/crucian
+	name = "Space near Fourth Deck"
+	landmark_tag = "nav_deck1_crucian"
+
+/obj/shuttle_landmark/sierra/deck2/crucian
+	name = "Space near Third Deck"
+	landmark_tag = "nav_deck2_crucian"
+
+/obj/shuttle_landmark/sierra/deck3/crucian
+	name = "Space near Second Deck"
+	landmark_tag = "nav_deck3_crucian"
+
+/obj/shuttle_landmark/sierra/deck4/crucian
+	name = "Space near First Deck"
+	landmark_tag = "nav_deck4_crucian"
+
+/obj/shuttle_landmark/sierra/deck5/crucian
+	name = "Space near Bridge"
+	landmark_tag = "nav_bridge_crucian"
+
+/obj/shuttle_landmark/sierra/transit/crucian
+	name = "In transit"
+	landmark_tag = "nav_transit_crucian"
 
 //Makes the deck management program use hangar access
 /datum/nano_module/deck_management
