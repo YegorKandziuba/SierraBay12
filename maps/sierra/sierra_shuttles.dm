@@ -503,6 +503,6 @@ SIERRA_ESCAPE_POD(11)
 	docking_controller = "admin_shuttle_dock"
 
 /obj/shuttle_landmark/sierra/deck1/skrellscout
-	name = "First Deck Auxillary Dock"
+	name = "Fourth Deck Auxillary Dock"
 	landmark_tag = "nav_deck1_skrellscout"
-	docking_controller = "fd_starboard"
+	docking_controller = "rescue_shuttle_dock_airlock"
