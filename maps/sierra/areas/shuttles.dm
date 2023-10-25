@@ -226,7 +226,7 @@
 	name = "Elevator - Bridge"
 	lift_floor_label = "Мостик"
 	lift_floor_name = "Командование судна"
-	lift_announce_str = "Мостик."
+	lift_announce_str = "Мостик - Командование судна."
 
 /area/turbolift/sierra_d1
 	name = "Elevator - First Deck"
