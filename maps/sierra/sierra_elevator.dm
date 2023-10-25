@@ -10,4 +10,4 @@
 		/area/turbolift/sierra_d2,
 		/area/turbolift/sierra_d1,
 		/area/turbolift/sierra_top,
-		)
+	)
