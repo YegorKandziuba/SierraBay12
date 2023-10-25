@@ -159,6 +159,13 @@
 		"security" = COLOR_NT_RED
 	)
 
+/singleton/closet_appearance/secure_closet/sierra/security/forensics
+	color = COLOR_OFF_WHITE
+	extra_decals = list(
+		"stripe_vertical_mid_full" = COLOR_NT_RED,
+		"forensics" = COLOR_NT_RED
+	)
+
 /singleton/closet_appearance/secure_closet/sierra/security/warden
 	color = COLOR_WALL_GUNMETAL
 	extra_decals = list(
