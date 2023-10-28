@@ -301,7 +301,7 @@ var/global/const/access_away_cavalry_commander = "ACCESS_CAVALRY_COMMANDER"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 4
 
-/datum/mil_rank/fleet/e6
+/datum/mil_rank/fleet/e5
 	name = "Petty Officer Second Class"
 	name_short = "PO2"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e5, /obj/item/clothing/accessory/solgov/specialty/enlisted)
@@ -325,7 +325,7 @@ var/global/const/access_away_cavalry_commander = "ACCESS_CAVALRY_COMMANDER"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/o2, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 12
 
-/datum/mil_rank/fleet/o2
+/datum/mil_rank/fleet/o3
 	name = "Lieutenant"
 	name_short = "LT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/o3, /obj/item/clothing/accessory/solgov/specialty/officer)
