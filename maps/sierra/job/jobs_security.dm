@@ -7,7 +7,7 @@
 	supervisors = "Главе Службы безопасности"
 	economic_power = 8
 	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 26	)
+	minimum_character_age = list(SPECIES_HUMAN = 26)
 	ideal_character_age = 28
 	alt_titles = list(
 		"Security Sergeant",
