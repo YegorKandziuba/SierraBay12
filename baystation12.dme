@@ -1541,6 +1541,7 @@
 #include "code\modules\client\preference_setup\background\01_culture.dm"
 #include "code\modules\client\preference_setup\background\02_language.dm"
 #include "code\modules\client\preference_setup\background\03_records.dm"
+#include "code\modules\client\preference_setup\background\04_records_blank.dm"
 #include "code\modules\client\preference_setup\general\01_basic.dm"
 #include "code\modules\client\preference_setup\general\02_body.dm"
 #include "code\modules\client\preference_setup\general\03_equipment.dm"

@@ -355,7 +355,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	return // don't build away sites during unit testing
 #else
 	report_progress("Loading away sites...")
-
+	return
 	var/list/guaranteed = list()
 	var/list/selected = list()
 	var/list/available = list()

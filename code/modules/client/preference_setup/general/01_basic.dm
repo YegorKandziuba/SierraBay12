@@ -2,7 +2,10 @@
 	var/age = 30						//age of character
 	var/spawnpoint = "Default" 			//where this character will spawn (0-2).
 	var/metadata = ""
-	var/real_name						//our character's name
+	var/real_name
+	var/birth_day = 1
+	var/birth_month	= 1
+	var/birth_year			//our character's name
 
 /datum/category_item/player_setup_item/physical/basic
 	name = "Basic"

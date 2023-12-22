@@ -38,6 +38,11 @@
 	var/datum/browser/panel
 
 /datum/preferences/New(client/C)
+	public_blank = get_publical_records_blank()
+	conf_blank = get_confidential_records_blank()
+	med_blank = get_medical_records_blank()
+	gen_blank = get_general_records_blank()
+	sec_blank = get_security_records_blank()
 	if(istype(C))
 		client = C
 		client_ckey = C.ckey
